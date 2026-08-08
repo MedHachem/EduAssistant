@@ -1,0 +1,9 @@
+# Squelette Phase 1 — l'implementation complete (init pgvector, volumes, healthcheck)
+# arrive en Phase 2. Ne pas lancer encore.
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    env_file:
+      - .env
+    ports:
+      - "${POSTGRES_PORT}:5432"

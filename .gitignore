@@ -1,0 +1,33 @@
+# Secrets
+.env
+*.env.local
+
+# Java / Maven / Spring Boot
+backend/target/
+*.class
+*.jar
+!.mvn/wrapper/maven-wrapper.jar
+
+# Node / Angular
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+npm-debug.log*
+
+# Python
+ai-service/**/__pycache__/
+ai-service/**/*.pyc
+ai-service/.venv/
+ai-service/venv/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
