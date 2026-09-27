@@ -4,6 +4,7 @@
 
 # Java / Maven / Spring Boot
 backend/target/
+backend/data/
 *.class
 *.jar
 !.mvn/wrapper/maven-wrapper.jar
@@ -19,7 +20,14 @@ ai-service/**/__pycache__/
 ai-service/**/*.pyc
 ai-service/.venv/
 ai-service/venv/
+__pycache__/
+*.pyc
+.venv/
+venv/
 *.egg-info/
+
+# Claude Code local state
+.claude/
 
 # IDE
 .idea/
