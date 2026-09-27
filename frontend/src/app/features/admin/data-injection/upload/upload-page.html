@@ -1,0 +1,138 @@
+<a class="back" routerLink="..">← Data injection</a>
+
+@if (type(); as t) {
+  <div class="page" [style.--accent]="t.accent" [style.--accent-soft]="t.accentSoft">
+    <header class="head">
+      <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path [attr.d]="t.icon" /></svg></span>
+      <div>
+        <h1>Upload — {{ t.label }}</h1>
+        <p>{{ t.description }} {{ t.studentVisibility }}</p>
+      </div>
+    </header>
+
+    <div class="layout">
+      <div class="main">
+        <section class="card step">
+          <h2><span class="num">1</span> PDF file</h2>
+          <app-pdf-dropzone [(file)]="file" [label]="'Upload the ' + t.singular + ' PDF'" />
+        </section>
+
+        <section class="card step">
+          <h2><span class="num">2</span> Information</h2>
+          <form class="fields" [formGroup]="form()" (submit)="$event.preventDefault()">
+            @for (f of t.fields; track f.key) {
+              <label class="field" [class.span-2]="f.span === 2" [class.invalid]="fieldError(f)">
+                <span class="label">{{ f.label }} @if (f.required) { <span class="req" aria-hidden="true">*</span> }</span>
+                @switch (f.type) {
+                  @case ('select') {
+                    <select [formControlName]="f.key">
+                      @if (!f.required) { <option [ngValue]="null">—</option> }
+                      @for (o of f.options; track o.value) { <option [ngValue]="o.value">{{ o.label }}</option> }
+                    </select>
+                  }
+                  @case ('number') {
+                    <input type="number" [formControlName]="f.key" [placeholder]="f.placeholder ?? ''" [attr.min]="f.min" [attr.max]="f.max" />
+                  }
+                  @case ('textarea') {
+                    <textarea rows="3" [formControlName]="f.key" [placeholder]="f.placeholder ?? ''"></textarea>
+                  }
+                  @default {
+                    <input type="text" [formControlName]="f.key" [placeholder]="f.placeholder ?? ''" />
+                  }
+                }
+                @if (fieldError(f); as e) {
+                  <span class="error">{{ e }}</span>
+                } @else if (f.hint) {
+                  <span class="hint">{{ f.hint }}</span>
+                }
+              </label>
+            }
+          </form>
+        </section>
+
+        @if (t.acceptsCorrection) {
+          <section class="card step">
+            <h2><span class="num">3</span> Correction <span class="optional">optional</span></h2>
+            <app-pdf-dropzone [(file)]="correction" label="Upload the correction PDF" [compact]="true" />
+          </section>
+        }
+
+        <section class="card step">
+          <h2><span class="num">{{ t.acceptsCorrection ? 4 : 3 }}</span> Visibility</h2>
+          <div class="choices" role="radiogroup" aria-label="Visibility">
+            @for (c of visibilityChoices; track c.value) {
+              <button
+                type="button"
+                class="choice"
+                role="radio"
+                [attr.aria-checked]="visibility() === c.value"
+                [class.on]="visibility() === c.value"
+                (click)="visibility.set(c.value)"
+              >
+                <strong>{{ c.title }}</strong>
+                <span>{{ c.text }}</span>
+              </button>
+            }
+          </div>
+        </section>
+      </div>
+
+      <aside class="side">
+        <section class="card summary">
+          <h2>Summary</h2>
+          <dl>
+            <dt>Title</dt>
+            <dd>{{ previewTitle() || '—' }}</dd>
+            <dt>File</dt>
+            <dd>
+              @if (file(); as f) { {{ f.name }} <span class="muted">({{ size(f.size) }})</span> } @else { <span class="muted">—</span> }
+            </dd>
+            @if (t.acceptsCorrection) {
+              <dt>Correction</dt>
+              <dd>{{ correction()?.name ?? 'None' }}</dd>
+            }
+            <dt>Visibility</dt>
+            <dd>{{ visibility() === 'PUBLISHED' ? 'Published to students' : 'Draft' }}</dd>
+          </dl>
+
+          <button type="button" class="btn-upload" [disabled]="!canUpload()" (click)="upload()">
+            {{ state() === 'uploading' ? 'Uploading…' : 'Upload' }}
+          </button>
+
+          @if (missing().length && state() !== 'uploading') {
+            <div class="missing">
+              <span>To complete:</span>
+              <ul>@for (m of missing(); track m) { <li>{{ m }}</li> }</ul>
+            </div>
+          }
+
+          @if (state() === 'uploading') {
+            <div class="progress" role="progressbar" [attr.aria-valuenow]="progress()" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar" [style.width.%]="progress()"></div>
+            </div>
+            <p class="muted small">Uploading… {{ progress() }}%</p>
+          }
+          @if (uploaded(); as d) {
+            <p class="alert success">
+              <strong>“{{ d.title }}”</strong> uploaded{{ d.status === 'PUBLISHED' ? ' and published' : ' as draft' }}.
+              @if (d.type === 'book' && d.status === 'PUBLISHED') { It is now available to students as a course. }
+            </p>
+          }
+          @if (error(); as e) {
+            <p class="alert error">{{ e }}</p>
+          }
+        </section>
+      </aside>
+    </div>
+
+    <section class="card documents">
+      <h2>{{ t.label }} in the library</h2>
+      <app-document-table [documents]="typeDocuments()" [showType]="false" [emptyText]="'No ' + t.singular + ' uploaded yet.'" />
+    </section>
+  </div>
+} @else {
+  <section class="card not-found">
+    <h1>Unknown document type</h1>
+    <a routerLink=".." class="btn-primary">Back to data injection</a>
+  </section>
+}

@@ -1,0 +1,61 @@
+app-math-text {
+  display: block;
+}
+
+.math-rendered,
+.math-raw {
+  margin: 0;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  line-height: 1.6;
+}
+
+.math-rendered {
+  font-size: 0.95rem;
+
+  .katex {
+    font-size: 1.08em;
+  }
+
+  .katex-display {
+    margin: 0.25em 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+.math-rendered .md-heading {
+  font-size: 1.05em;
+}
+
+.math-rendered code {
+  padding: 0.05rem 0.3rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.06);
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.85em;
+}
+
+.math-raw {
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.82rem;
+}
+
+.figure-tag {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.75rem;
+  border-left: 3px solid var(--primary);
+  background: var(--primary-soft);
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+.figure-tag-head {
+  display: block;
+  font-weight: 600;
+  font-size: 0.75rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}

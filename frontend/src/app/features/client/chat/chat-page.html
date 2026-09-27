@@ -1,0 +1,83 @@
+<div class="chat" [class.drawer-open]="drawerOpen()">
+  <aside class="history" aria-label="Conversations">
+    <button type="button" class="new-chat" (click)="newConversation()">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 5h2v6h6v2h-6v6h-2v-6H5v-2h6z" /></svg>
+      Nouvelle conversation
+    </button>
+
+    <ul class="conversations">
+      @for (c of store.conversations(); track c.id) {
+        <li>
+          <button
+            type="button"
+            class="conversation"
+            [class.active]="c.id === store.activeId()"
+            (click)="open(c)"
+          >
+            <span class="c-title">{{ c.title }}</span>
+            <span class="c-date">{{ when(c.updatedAt) }}</span>
+          </button>
+          <button type="button" class="c-delete" (click)="remove(c, $event)" aria-label="Supprimer" title="Supprimer">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7zm3-3h6l1 2H8z" /></svg>
+          </button>
+        </li>
+      } @empty {
+        <li class="no-history">Aucune conversation pour l'instant.</li>
+      }
+    </ul>
+  </aside>
+  <div class="backdrop" (click)="drawerOpen.set(false)"></div>
+
+  <section class="thread">
+    <header class="thread-header">
+      <button type="button" class="icon-btn menu" (click)="drawerOpen.set(true)" aria-label="Conversations">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" /></svg>
+      </button>
+      <div class="thread-title">
+        <strong>{{ store.active()?.title ?? 'Professeur IA' }}</strong>
+        <span>Chapitre 1 — Continuité et limites</span>
+      </div>
+      <span class="connection" [attr.data-status]="store.connection()" role="status">
+        <span class="dot"></span>{{ connectionLabel() }}
+      </span>
+    </header>
+
+    <div class="messages" #scroller (scroll)="onScroll(scroller)">
+      <div class="messages-inner">
+        @if (!store.messages().length) {
+          <div class="welcome">
+            <span class="welcome-avatar">IA</span>
+            <h2>Bonjour ! Je suis ton professeur IA.</h2>
+            <p>Pose-moi une question sur le cours ou demande de l'aide sur un exercice. Je t'explique pas à pas.</p>
+            <div class="suggestions">
+              @for (s of suggestions; track s) {
+                <button type="button" class="suggestion" (click)="send(s)">{{ s }}</button>
+              }
+            </div>
+          </div>
+        }
+
+        @for (m of store.messages(); track m.id) {
+          <app-message-bubble [message]="m" (retry)="store.retry($event)" />
+        }
+
+        @if (store.awaitingReply()) {
+          <div class="typing" aria-label="Le professeur IA réfléchit">
+            <span class="avatar">IA</span>
+            <span class="dots"><i></i><i></i><i></i></span>
+          </div>
+        }
+      </div>
+    </div>
+
+    @if (!atBottom()) {
+      <button type="button" class="to-bottom" (click)="scrollToBottom()" aria-label="Aller en bas">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4h2v12l5-5 1.4 1.4L12 19.8 4.6 12.4 6 11l5 5z" /></svg>
+      </button>
+    }
+
+    <footer class="composer-wrap">
+      <app-chat-composer [busy]="store.busy()" (send)="send($event)" (stop)="store.cancel()" />
+    </footer>
+  </section>
+</div>

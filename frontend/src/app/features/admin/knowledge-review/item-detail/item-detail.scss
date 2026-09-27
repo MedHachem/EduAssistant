@@ -1,0 +1,132 @@
+:host {
+  display: block;
+}
+
+.block {
+  padding: 1rem 0;
+  border-top: 1px solid var(--border);
+
+  &:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+}
+
+h3 {
+  margin: 0 0 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.meta {
+  display: grid;
+  grid-template-columns: 9rem 1fr;
+  gap: 0.3rem 1rem;
+  margin: 0;
+  font-size: 0.875rem;
+
+  dt {
+    color: var(--muted);
+  }
+
+  dd {
+    margin: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+}
+
+code {
+  font-family: ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font-size: 0.8rem;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.tag {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0 0.4rem;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  font-size: 0.72rem;
+  color: var(--muted);
+
+  &.ok {
+    color: #1e6b3a;
+    border-color: #b7e0c4;
+  }
+}
+
+.content-box {
+  padding: 0.85rem 1rem;
+  background: #fbfbfd;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.empty {
+  margin: 0;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.warning {
+  margin: 0.75rem 0 0;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius);
+  background: #fff7e6;
+  color: #8a5a00;
+  font-size: 0.85rem;
+}
+
+.choices,
+.figures {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.choices li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+
+.choice-label {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.figures li {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+}
+
+.figure-image,
+.page-image img {
+  display: block;
+  max-width: 100%;
+  margin-top: 0.5rem;
+  border: 1px solid var(--border);
+}
+
+.page-image {
+  margin: 0 0 0.75rem;
+
+  figcaption {
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+}
