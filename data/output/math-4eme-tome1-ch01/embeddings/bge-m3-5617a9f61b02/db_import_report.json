@@ -1,0 +1,42 @@
+{
+  "chapter_id": "math-4eme-tome1-ch01",
+  "embedding_model": "BAAI/bge-m3",
+  "model_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "embedding_dimension": 1024,
+  "dry_run": false,
+  "input_embeddings": 102,
+  "inserted": 0,
+  "updated": 0,
+  "reused": 102,
+  "stale_marked": 0,
+  "skipped": 0,
+  "errors": [],
+  "table": "embeddings_1024",
+  "validation": {
+    "chapter_id": "math-4eme-tome1-ch01",
+    "pipeline_version": "embed-v1",
+    "counts": {
+      "records": 102,
+      "active": 102,
+      "stale": 0,
+      "vectors": 102,
+      "dimension": 1024
+    },
+    "passed": true,
+    "total_errors": 0,
+    "checks": {
+      "manifest_schema": [],
+      "record_schema": [],
+      "count_and_shape": [],
+      "numerical": [],
+      "duplicate_ids": [],
+      "row_index": [],
+      "chunk_coverage": [],
+      "content_hash": [],
+      "manifest_consistency": [],
+      "source_chunks_hash": [],
+      "table_dimension": [],
+      "normalization_compatibility": []
+    }
+  }
+}
