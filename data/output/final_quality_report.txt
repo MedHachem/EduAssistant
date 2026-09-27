@@ -1,0 +1,28 @@
+FINAL QUALITY REPORT
+====================
+
+Total pages: 23
+
+page_005 -- layer1=ok, layer2=not_validated
+page_006 -- layer1=ok, layer2=pass confidence=0.94
+page_007 -- layer1=ok, layer2=pass confidence=0.95
+page_008 -- layer1=ok, layer2=not_validated
+page_009 -- layer1=ok, layer2=not_validated
+page_010 -- layer1=ok, layer2=not_validated
+page_011 -- layer1=ok, layer2=not_validated
+page_012 -- layer1=ok, layer2=not_validated
+page_013 -- layer1=ok, layer2=not_validated
+page_014 -- layer1=ok, layer2=not_validated
+page_015 -- layer1=ok, layer2=not_validated
+page_016 -- layer1=ok, layer2=not_validated
+page_017 -- layer1=ok, layer2=not_validated
+page_018 -- layer1=ok, layer2=not_validated
+page_019 -- layer1=ok, layer2=not_validated
+page_020 -- layer1=ok, layer2=not_validated
+page_021 -- layer1=ok, layer2=not_validated
+page_022 -- layer1=ok, layer2=not_validated
+page_023 -- layer1=ok, layer2=pass confidence=0.96
+page_024 -- layer1=ok, layer2=not_validated
+page_025 -- layer1=ok, layer2=not_validated
+page_026 -- layer1=ok, layer2=not_validated
+page_027 -- layer1=ok, layer2=not_validated

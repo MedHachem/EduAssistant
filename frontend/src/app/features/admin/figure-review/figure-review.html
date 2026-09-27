@@ -1,0 +1,187 @@
+<div class="page">
+  <header class="page-header">
+    <h1>Figure Review</h1>
+    <p>Chapter 1 — Continuité et limites · {{ round().roundLabel }}</p>
+  </header>
+
+  @if (loadError(); as e) {
+    <p class="card load-error">{{ e }}</p>
+  } @else if (!report()) {
+    <p class="muted">Loading figure candidates…</p>
+  } @else {
+    @let s = stats();
+
+    <section class="card dashboard">
+      <div class="stats">
+        <div class="stat"><span class="stat-value">{{ s.total }}</span><span class="stat-label">Total</span></div>
+        <div class="stat"><span class="stat-value">{{ s.reviewed }}</span><span class="stat-label">Reviewed</span></div>
+        <div class="stat ok"><span class="stat-value">{{ s.validated }}</span><span class="stat-label">Validated</span></div>
+        <div class="stat ko"><span class="stat-value">{{ s.rejected }}</span><span class="stat-label">Rejected</span></div>
+        <div class="stat warn"><span class="stat-value">{{ s.needsCorrection }}</span><span class="stat-label">Needs correction</span></div>
+        <div class="stat pending"><span class="stat-value">{{ s.unreviewed }}</span><span class="stat-label">Unreviewed</span></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress" role="progressbar" [attr.aria-valuenow]="s.reviewed" aria-valuemin="0" [attr.aria-valuemax]="s.total">
+          <div class="progress-bar" [style.width.%]="s.percent"></div>
+        </div>
+        <span class="progress-label">{{ s.reviewed }} / {{ s.total }} reviewed</span>
+        <button type="button" class="btn-link reset" (click)="resetAll()" [disabled]="!s.reviewed">Reset review state</button>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <input
+        type="search"
+        class="search"
+        placeholder="Search candidates… (ID or page number)"
+        [value]="search()"
+        (input)="search.set($any($event.target).value)"
+      />
+      <select [value]="statusFilter()" (change)="setStatusFilter($any($event.target).value)" aria-label="Status filter">
+        @for (opt of statusOptions; track opt) {
+          <option [value]="opt">{{ opt === 'ALL' ? 'All statuses' : statusLabels[opt] }}</option>
+        }
+      </select>
+      <select [value]="hintFilter()" (change)="hintFilter.set($any($event.target).value)" aria-label="Classification filter">
+        @for (opt of hintOptions; track opt) {
+          <option [value]="opt">{{ opt === 'ALL' ? 'All types' : hintLabels[opt] }}</option>
+        }
+      </select>
+      <select [value]="likelyTextBoxFilter()" (change)="likelyTextBoxFilter.set($any($event.target).value)" aria-label="Likely text box filter">
+        <option value="ALL">Text box: all</option>
+        <option value="YES">Text box: yes</option>
+        <option value="NO">Text box: no</option>
+      </select>
+      <select [value]="needsReviewFilter()" (change)="needsReviewFilter.set($any($event.target).value)" aria-label="Needs review filter">
+        <option value="ALL">Needs review: all</option>
+        <option value="YES">Needs review: yes</option>
+        <option value="NO">Needs review: no</option>
+      </select>
+      <span class="muted count">{{ filtered().length }} candidate{{ filtered().length === 1 ? '' : 's' }}</span>
+    </section>
+
+    <div class="workspace">
+      <section class="card list-pane">
+        <div class="thumb-list" #list>
+          @for (r of filtered(); track r.candidateId) {
+            <button
+              type="button"
+              class="thumb-card"
+              [attr.data-id]="r.candidateId"
+              [class.selected]="r.candidateId === selectedId()"
+              (click)="select(r.candidateId)"
+            >
+              @if (cropUrl(r.cropPath); as src) {
+                <img [src]="src" [alt]="r.candidateId" loading="lazy" />
+              } @else {
+                <div class="thumb-missing">no crop</div>
+              }
+              <div class="thumb-meta">
+                <code>{{ r.candidateId }}</code>
+                <span class="badge" [attr.data-status]="r.status">{{ statusLabels[r.status] }}</span>
+              </div>
+            </button>
+          } @empty {
+            <p class="empty">No candidates match the current filters.</p>
+          }
+        </div>
+      </section>
+
+      <section class="card panel">
+        @if (selected(); as sel) {
+          <header class="panel-header">
+            <div>
+              <div class="panel-kicker">
+                page {{ sel.page }}
+                @if (sel.type) { · {{ hintLabels[sel.type] }} }
+                @if (sel.confidence !== undefined) { · confidence {{ sel.confidence }} }
+              </div>
+              <div class="panel-title"><code>{{ sel.candidateId }}</code></div>
+            </div>
+            <div class="panel-tools">
+              <span class="badge" [attr.data-status]="sel.status">{{ statusLabels[sel.status] }}</span>
+              @if (sel.likelyTextBox) { <span class="flag warn">likely text box</span> }
+              @if (sel.needsReview) { <span class="flag">needs review</span> }
+              @if (hasSeedCrop(sel.cropPath)) {
+                <button type="button" class="btn-toggle" [class.on]="showSeedCompare()" (click)="showSeedCompare.set(!showSeedCompare())">
+                  Compare seed / refined
+                </button>
+              }
+              <button type="button" class="btn-toggle" [class.on]="showSource()" (click)="showSource.set(!showSource())">
+                Source page
+              </button>
+            </div>
+          </header>
+
+          <div class="panel-body" #panel>
+            <div class="crop-view">
+              <h3>Refined crop</h3>
+              @if (cropUrl(sel.cropPath); as src) {
+                <img class="crop-main" [src]="src" [alt]="sel.candidateId" />
+              } @else {
+                <p class="empty">No crop image available for this candidate.</p>
+              }
+              <dl class="bbox-info">
+                <dt>Refined bbox</dt>
+                <dd><code>[{{ sel.refinedBbox.join(', ') }}]</code></dd>
+                @if (sel.seedBbox) {
+                  <dt>Seed bbox</dt>
+                  <dd><code>[{{ sel.seedBbox.join(', ') }}]</code></dd>
+                }
+              </dl>
+            </div>
+
+            @if (showSeedCompare()) {
+              <div class="compare-view">
+                <h3>Seed vs. refined</h3>
+                <div class="compare-grid">
+                  <figure>
+                    <figcaption>Seed (original detection)</figcaption>
+                    @if (seedCropUrl(sel.cropPath); as src) {
+                      <img [src]="src" [alt]="sel.candidateId + ' seed'" />
+                    } @else {
+                      <p class="empty">No seed crop available.</p>
+                    }
+                  </figure>
+                  <figure>
+                    <figcaption>Refined</figcaption>
+                    @if (cropUrl(sel.cropPath); as src) {
+                      <img [src]="src" [alt]="sel.candidateId + ' refined'" />
+                    }
+                  </figure>
+                </div>
+              </div>
+            }
+
+            @if (showSource()) {
+              <div class="source-view">
+                <h3>Source page {{ sel.page }}</h3>
+                <img class="source-image" [src]="pageImageUrl(sel.page)" [alt]="'PDF page ' + sel.page" loading="lazy" />
+              </div>
+            }
+          </div>
+
+          <footer class="panel-actions">
+            <button type="button" class="btn-secondary" (click)="previous()" [disabled]="!hasPrev()" title="Previous (K / ↑)">← Previous</button>
+            <label class="pending-only">
+              <input type="checkbox" [checked]="pendingOnly()" (change)="pendingOnly.set($any($event.target).checked)" />
+              Unreviewed only
+            </label>
+            <span class="spacer"></span>
+            @if (sel.status !== 'UNREVIEWED') {
+              <button type="button" class="btn-link" (click)="undo()" title="Undo (U)">Undo</button>
+            }
+            <button type="button" class="btn-correction" (click)="decide('NEEDS_CORRECTION')" title="Needs correction (C)">Needs Correction</button>
+            <button type="button" class="btn-reject" (click)="decide('REJECTED')" title="Reject (R)">Reject / Not a Figure</button>
+            <button type="button" class="btn-validate" (click)="decide('VALIDATED')" title="Validate (V)">Validate Figure</button>
+            <button type="button" class="btn-secondary" (click)="next()" [disabled]="!hasNext()" title="Next (J / ↓)">Next →</button>
+          </footer>
+        } @else {
+          <p class="empty">Select a candidate to review.</p>
+        }
+      </section>
+    </div>
+
+    <p class="hint">Shortcuts: <kbd>V</kbd> validate · <kbd>R</kbd> reject · <kbd>C</kbd> needs correction · <kbd>U</kbd> undo · <kbd>J</kbd>/<kbd>↓</kbd> next · <kbd>K</kbd>/<kbd>↑</kbd> previous. Review decisions are stored in this browser only (localStorage, separate from knowledge-item review); the generated report/crops/JSON are never modified.</p>
+  }
+</div>

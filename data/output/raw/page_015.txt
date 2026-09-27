@@ -1,0 +1,38 @@
+On en déduit, compte tenu de l’hypothèse, que x € I et O<[x-a|<a > f(x)>u(x)>A.
+La propriété en découle.
+» La deuxième propriété découle de la première en considérant les fonctions —u et —f.
+
+Activité 3
+. . —cosx —, . . .
+Soit la fonction f : x —> . Déterminer limf et limf.
+Xx +œ —.
+
+Activité 4
+
+Soit la fonction f : x —> % +cos” (1) + \/; .
+
+x x
+1. Montrer que f(x)> %, xeR|.
+x
+
+2. En déduire limf.
+0+
+
+V. Image d’un intervalle par une fonction continue
+V. 1 Théorème des valeurs intermédiaires
+
+Activité 1
+Dans chacun des cas suivants, déterminer graphiquement l’image f (I) de l’intervalle I.
+
+Théorème (Rappel)
+L’image d’un intervalle par une fonction continue est un intervalle.
+Activité 2
+
+Le graphique ci-contre représente une
+fonction g définie sur [-6,+o|.
+
+Déterminer g([—6,4]) et g([—3,5]).
+
+—Continuité et limites
+
+15

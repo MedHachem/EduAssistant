@@ -1,0 +1,55 @@
+n(x*+x—12
+( )
+x—3
+
+Activité 2
+Soit la fonction £ : x -— sin
+
+f est-elle prolongeable par continuité en 3 ?
+
+Activité 3
+Dans la figure ci-contre est représentée une fonction f
+définie sur R.
+; . . 2 ; x—4 . ;
+Déterminer lim f (—] , limf ( ) et lim f(sinx—1).
+
+x—>2 x x—>4 x x—>0
+
+Théorème (admis)
+Soit u et v deux fonctions. Soit a, b et c finis ou infinis.
+Si limu(x)=b et lim v(x)=c alors lim vou(x)=c.
+x—>a x—>b x—>a
+
+Activité 4
+
+Soit la fonction f : x H> x sin (l) .
+x
+
+Déterminer lim f(x).
+x—>+00
+
+Activité 5
+Déterminer lim tan (21] et lim (x—1) cos(ï).
+x
+
+x—1t x—-+00 x-—l
+
+IV. Limites et ordre
+Activité 1
+
+Soit f, g et h les fonctions définies par f (x) = x" sin (l] +1 , g(x)=-x"+1 et
+x
+
+h(x)=x2+l.
+
+1. Montrer que pour tout réel non nul x ona g(x)<f(x)<h(x).
+2. Dans la figure ci-contre on a représenté G
+les trois fonctions f, g et h.
+a. Identifier la courbe de chacune de ces fonctions. c I
+b. Que peut-on conjecturer sur la limite de f(x)
+
+lorsque x tend vers 0 ? C;
+
+—Continuité et limites
+
+13

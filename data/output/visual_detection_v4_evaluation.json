@@ -1,0 +1,1222 @@
+{
+  "total_candidates": 39,
+  "ground_truth_counts": {
+    "VALIDATED": 13,
+    "NEEDS_CORRECTION": 6,
+    "REJECTED": 20
+  },
+  "classification_counts": {
+    "FIGURE": 17,
+    "FIGURE_REVIEW": 12,
+    "NOT_FIGURE": 10
+  },
+  "recall": {
+    "validated": "13/13",
+    "needs_correction": "6/6",
+    "overall_real_figures": "19/19",
+    "overall_real_figures_pct": 100.0
+  },
+  "false_negatives_real_figures_lost": [],
+  "false_positives": {
+    "rejected_still_in_queue": [
+      "page_006_candidate_01",
+      "page_008_candidate_01",
+      "page_008_candidate_02",
+      "page_017_candidate_01",
+      "page_017_candidate_03",
+      "page_019_candidate_01",
+      "page_019_candidate_02",
+      "page_023_candidate_01",
+      "page_024_candidate_01",
+      "page_027_candidate_01"
+    ],
+    "rejected_still_in_queue_count": 10,
+    "rejected_confidently_excluded_count": 10,
+    "rejected_confidently_excluded": [
+      "page_006_candidate_02",
+      "page_011_candidate_02",
+      "page_011_candidate_03",
+      "page_012_candidate_01",
+      "page_012_candidate_02",
+      "page_013_candidate_02",
+      "page_015_candidate_01",
+      "page_015_candidate_05",
+      "page_018_candidate_03",
+      "page_019_candidate_04"
+    ]
+  },
+  "queue_size": 29,
+  "precision_queue_real_figures_over_queue": 0.655,
+  "precision_figure_bucket_only": 0.941,
+  "confusion_matrix": {
+    "NEEDS_CORRECTION->FIGURE": [
+      "page_015_candidate_02",
+      "page_025_candidate_01",
+      "page_027_candidate_04"
+    ],
+    "NEEDS_CORRECTION->FIGURE_REVIEW": [
+      "page_009_candidate_01",
+      "page_016_candidate_01",
+      "page_018_candidate_01"
+    ],
+    "REJECTED->FIGURE": [
+      "page_006_candidate_01"
+    ],
+    "REJECTED->FIGURE_REVIEW": [
+      "page_008_candidate_01",
+      "page_008_candidate_02",
+      "page_017_candidate_01",
+      "page_017_candidate_03",
+      "page_019_candidate_01",
+      "page_019_candidate_02",
+      "page_023_candidate_01",
+      "page_024_candidate_01",
+      "page_027_candidate_01"
+    ],
+    "REJECTED->NOT_FIGURE": [
+      "page_006_candidate_02",
+      "page_011_candidate_02",
+      "page_011_candidate_03",
+      "page_012_candidate_01",
+      "page_012_candidate_02",
+      "page_013_candidate_02",
+      "page_015_candidate_01",
+      "page_015_candidate_05",
+      "page_018_candidate_03",
+      "page_019_candidate_04"
+    ],
+    "VALIDATED->FIGURE": [
+      "page_011_candidate_01",
+      "page_011_candidate_04",
+      "page_013_candidate_01",
+      "page_013_candidate_03",
+      "page_014_candidate_01",
+      "page_015_candidate_03",
+      "page_015_candidate_04",
+      "page_017_candidate_02",
+      "page_018_candidate_02",
+      "page_019_candidate_03",
+      "page_024_candidate_02",
+      "page_027_candidate_02",
+      "page_027_candidate_03"
+    ]
+  },
+  "candidates": [
+    {
+      "candidate_id": "page_006_candidate_01",
+      "page": 6,
+      "bbox": [
+        139,
+        2045,
+        2082,
+        2973
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.8,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE"
+      ],
+      "features": {
+        "ink_density": 0.1981,
+        "text_density": 0.78,
+        "long_component_score": 0.0174,
+        "curve_score": 2,
+        "axis_score": 92,
+        "text_line_score": 8,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.704,
+        "aspect_ratio": 2.09,
+        "max_band_width_frac": 0.945
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_006_candidate_02",
+      "page": 6,
+      "bbox": [
+        541,
+        457,
+        1004,
+        796
+      ],
+      "classification": "NOT_FIGURE",
+      "confidence": 0.75,
+      "reason_codes": [
+        "LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE"
+      ],
+      "features": {
+        "ink_density": 0.0857,
+        "text_density": 0.557,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 0,
+        "text_line_score": 2,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.236,
+        "aspect_ratio": 1.37,
+        "max_band_width_frac": 1.0
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_008_candidate_01",
+      "page": 8,
+      "bbox": [
+        139,
+        77,
+        1324,
+        376
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.1745,
+        "text_density": 0.404,
+        "long_component_score": 0.0562,
+        "curve_score": 3,
+        "axis_score": 15,
+        "text_line_score": 3,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.647,
+        "aspect_ratio": 3.96,
+        "max_band_width_frac": 0.979
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_008_candidate_02",
+      "page": 8,
+      "bbox": [
+        117,
+        1695,
+        476,
+        2124
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.3953,
+        "text_density": 0.842,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 51,
+        "text_line_score": 3,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.807,
+        "aspect_ratio": 0.84,
+        "max_band_width_frac": 0.93
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_009_candidate_01",
+      "page": 9,
+      "bbox": [
+        139,
+        82,
+        2085,
+        1016
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.1028,
+        "text_density": 0.332,
+        "long_component_score": 0.0174,
+        "curve_score": 2,
+        "axis_score": 15,
+        "text_line_score": 4,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.213,
+        "aspect_ratio": 2.08,
+        "max_band_width_frac": 0.973
+      },
+      "ground_truth": "NEEDS_CORRECTION"
+    },
+    {
+      "candidate_id": "page_011_candidate_01",
+      "page": 11,
+      "bbox": [
+        1440,
+        1733,
+        2043,
+        2375
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.0984,
+        "text_density": 0.157,
+        "long_component_score": 0.0526,
+        "curve_score": 2,
+        "axis_score": 8,
+        "text_line_score": 1,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.556,
+        "aspect_ratio": 0.94,
+        "max_band_width_frac": 0.917
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_011_candidate_02",
+      "page": 11,
+      "bbox": [
+        143,
+        1456,
+        1520,
+        1610
+      ],
+      "classification": "NOT_FIGURE",
+      "confidence": 0.75,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE"
+      ],
+      "features": {
+        "ink_density": 0.1617,
+        "text_density": 0.721,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 0,
+        "text_line_score": 1,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.204,
+        "aspect_ratio": 8.94,
+        "max_band_width_frac": 0.964
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_011_candidate_03",
+      "page": 11,
+      "bbox": [
+        143,
+        1589,
+        986,
+        1736
+      ],
+      "classification": "NOT_FIGURE",
+      "confidence": 0.75,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE"
+      ],
+      "features": {
+        "ink_density": 0.162,
+        "text_density": 0.608,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 0,
+        "text_line_score": 2,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.291,
+        "aspect_ratio": 5.73,
+        "max_band_width_frac": 0.941
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_011_candidate_04",
+      "page": 11,
+      "bbox": [
+        1418,
+        284,
+        2030,
+        878
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.0449,
+        "text_density": 0.116,
+        "long_component_score": 0.031,
+        "curve_score": 3,
+        "axis_score": 8,
+        "text_line_score": 1,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.938,
+        "aspect_ratio": 1.03,
+        "max_band_width_frac": 0.959
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_012_candidate_01",
+      "page": 12,
+      "bbox": [
+        426,
+        1996,
+        1053,
+        2124
+      ],
+      "classification": "NOT_FIGURE",
+      "confidence": 0.75,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE"
+      ],
+      "features": {
+        "ink_density": 0.1988,
+        "text_density": 0.594,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 0,
+        "text_line_score": 2,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.34,
+        "aspect_ratio": 4.9,
+        "max_band_width_frac": 0.962
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_012_candidate_02",
+      "page": 12,
+      "bbox": [
+        143,
+        448,
+        1212,
+        594
+      ],
+      "classification": "NOT_FIGURE",
+      "confidence": 0.75,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE"
+      ],
+      "features": {
+        "ink_density": 0.1404,
+        "text_density": 0.649,
+        "long_component_score": 0.0016,
+        "curve_score": 2,
+        "axis_score": 0,
+        "text_line_score": 2,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.245,
+        "aspect_ratio": 7.32,
+        "max_band_width_frac": 0.917
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_013_candidate_01",
+      "page": 13,
+      "bbox": [
+        1524,
+        422,
+        1994,
+        970
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.0982,
+        "text_density": 0.155,
+        "long_component_score": 0.0468,
+        "curve_score": 12,
+        "axis_score": 9,
+        "text_line_score": 1,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.542,
+        "aspect_ratio": 0.86,
+        "max_band_width_frac": 0.947
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_013_candidate_02",
+      "page": 13,
+      "bbox": [
+        139,
+        1774,
+        756,
+        2020
+      ],
+      "classification": "NOT_FIGURE",
+      "confidence": 0.75,
+      "reason_codes": [
+        "LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE"
+      ],
+      "features": {
+        "ink_density": 0.1173,
+        "text_density": 0.731,
+        "long_component_score": 0.0013,
+        "curve_score": 4,
+        "axis_score": 0,
+        "text_line_score": 3,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.271,
+        "aspect_ratio": 2.51,
+        "max_band_width_frac": 0.848
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_013_candidate_03",
+      "page": 13,
+      "bbox": [
+        1316,
+        2256,
+        2068,
+        2712
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.0647,
+        "text_density": 0.146,
+        "long_component_score": 0.0572,
+        "curve_score": 4,
+        "axis_score": 9,
+        "text_line_score": 2,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.889,
+        "aspect_ratio": 1.65,
+        "max_band_width_frac": 0.871
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_014_candidate_01",
+      "page": 14,
+      "bbox": [
+        1166,
+        284,
+        2065,
+        656
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.0524,
+        "text_density": 0.152,
+        "long_component_score": 0.0453,
+        "curve_score": 2,
+        "axis_score": 9,
+        "text_line_score": 2,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.941,
+        "aspect_ratio": 2.42,
+        "max_band_width_frac": 0.892
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_015_candidate_01",
+      "page": 15,
+      "bbox": [
+        281,
+        508,
+        400,
+        748
+      ],
+      "classification": "NOT_FIGURE",
+      "confidence": 0.75,
+      "reason_codes": [
+        "LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE"
+      ],
+      "features": {
+        "ink_density": 0.2054,
+        "text_density": 0.794,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 0,
+        "text_line_score": 3,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.255,
+        "aspect_ratio": 0.5,
+        "max_band_width_frac": 1.0
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_015_candidate_02",
+      "page": 15,
+      "bbox": [
+        139,
+        1948,
+        2066,
+        2753
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.8,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE"
+      ],
+      "features": {
+        "ink_density": 0.1694,
+        "text_density": 0.683,
+        "long_component_score": 0.0098,
+        "curve_score": 2,
+        "axis_score": 93,
+        "text_line_score": 6,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.53,
+        "aspect_ratio": 2.39,
+        "max_band_width_frac": 0.974
+      },
+      "ground_truth": "NEEDS_CORRECTION"
+    },
+    {
+      "candidate_id": "page_015_candidate_03",
+      "page": 15,
+      "bbox": [
+        212,
+        1458,
+        716,
+        1960
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.1044,
+        "text_density": 0.155,
+        "long_component_score": 0.0481,
+        "curve_score": 4,
+        "axis_score": 10,
+        "text_line_score": 2,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.511,
+        "aspect_ratio": 1.0,
+        "max_band_width_frac": 0.972
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_015_candidate_04",
+      "page": 15,
+      "bbox": [
+        802,
+        1504,
+        1418,
+        1976
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.1142,
+        "text_density": 0.176,
+        "long_component_score": 0.0537,
+        "curve_score": 2,
+        "axis_score": 16,
+        "text_line_score": 3,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.541,
+        "aspect_ratio": 1.31,
+        "max_band_width_frac": 0.919
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_015_candidate_05",
+      "page": 15,
+      "bbox": [
+        139,
+        1084,
+        1574,
+        1389
+      ],
+      "classification": "NOT_FIGURE",
+      "confidence": 0.75,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE"
+      ],
+      "features": {
+        "ink_density": 0.1302,
+        "text_density": 0.722,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 0,
+        "text_line_score": 3,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.138,
+        "aspect_ratio": 4.7,
+        "max_band_width_frac": 0.965
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_016_candidate_01",
+      "page": 16,
+      "bbox": [
+        135,
+        92,
+        2085,
+        1792
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.3643,
+        "text_density": 0.732,
+        "long_component_score": 0.0095,
+        "curve_score": 1,
+        "axis_score": 234,
+        "text_line_score": 14,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.563,
+        "aspect_ratio": 1.15,
+        "max_band_width_frac": 0.972
+      },
+      "ground_truth": "NEEDS_CORRECTION"
+    },
+    {
+      "candidate_id": "page_017_candidate_01",
+      "page": 17,
+      "bbox": [
+        139,
+        2524,
+        2082,
+        2972
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.225,
+        "text_density": 0.742,
+        "long_component_score": 0.0359,
+        "curve_score": 1,
+        "axis_score": 34,
+        "text_line_score": 4,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.598,
+        "aspect_ratio": 4.34,
+        "max_band_width_frac": 0.944
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_017_candidate_02",
+      "page": 17,
+      "bbox": [
+        1642,
+        256,
+        2001,
+        853
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.0458,
+        "text_density": 0.124,
+        "long_component_score": 0.0388,
+        "curve_score": 2,
+        "axis_score": 9,
+        "text_line_score": 1,
+        "geometric_score": 1.0,
+        "dominant_fraction": 1.0,
+        "aspect_ratio": 0.6,
+        "max_band_width_frac": 0.861
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_017_candidate_03",
+      "page": 17,
+      "bbox": [
+        139,
+        2579,
+        476,
+        2892
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.2935,
+        "text_density": 0.837,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 36,
+        "text_line_score": 2,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.605,
+        "aspect_ratio": 1.08,
+        "max_band_width_frac": 0.807
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_018_candidate_01",
+      "page": 18,
+      "bbox": [
+        135,
+        1603,
+        2066,
+        2323
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.4818,
+        "text_density": 0.887,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 214,
+        "text_line_score": 4,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.942,
+        "aspect_ratio": 2.68,
+        "max_band_width_frac": 0.952
+      },
+      "ground_truth": "NEEDS_CORRECTION"
+    },
+    {
+      "candidate_id": "page_018_candidate_02",
+      "page": 18,
+      "bbox": [
+        1335,
+        1060,
+        1997,
+        1477
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.1108,
+        "text_density": 0.183,
+        "long_component_score": 0.056,
+        "curve_score": 7,
+        "axis_score": 9,
+        "text_line_score": 2,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.581,
+        "aspect_ratio": 1.59,
+        "max_band_width_frac": 0.924
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_018_candidate_03",
+      "page": 18,
+      "bbox": [
+        139,
+        963,
+        1777,
+        1121
+      ],
+      "classification": "NOT_FIGURE",
+      "confidence": 0.75,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE"
+      ],
+      "features": {
+        "ink_density": 0.1395,
+        "text_density": 0.748,
+        "long_component_score": 0.0018,
+        "curve_score": 1,
+        "axis_score": 0,
+        "text_line_score": 2,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.135,
+        "aspect_ratio": 10.37,
+        "max_band_width_frac": 0.982
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_019_candidate_01",
+      "page": 19,
+      "bbox": [
+        139,
+        1548,
+        2063,
+        2342
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.3337,
+        "text_density": 0.809,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 117,
+        "text_line_score": 6,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.848,
+        "aspect_ratio": 2.42,
+        "max_band_width_frac": 0.954
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_019_candidate_02",
+      "page": 19,
+      "bbox": [
+        139,
+        77,
+        1324,
+        344
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.1674,
+        "text_density": 0.404,
+        "long_component_score": 0.063,
+        "curve_score": 1,
+        "axis_score": 16,
+        "text_line_score": 3,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.765,
+        "aspect_ratio": 4.44,
+        "max_band_width_frac": 0.979
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_019_candidate_03",
+      "page": 19,
+      "bbox": [
+        1502,
+        591,
+        1944,
+        1043
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.0932,
+        "text_density": 0.224,
+        "long_component_score": 0.0854,
+        "curve_score": 1,
+        "axis_score": 10,
+        "text_line_score": 1,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.947,
+        "aspect_ratio": 0.98,
+        "max_band_width_frac": 0.887
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_019_candidate_04",
+      "page": 19,
+      "bbox": [
+        139,
+        1480,
+        1960,
+        1645
+      ],
+      "classification": "NOT_FIGURE",
+      "confidence": 0.75,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE"
+      ],
+      "features": {
+        "ink_density": 0.1439,
+        "text_density": 0.752,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 0,
+        "text_line_score": 2,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.182,
+        "aspect_ratio": 11.04,
+        "max_band_width_frac": 0.973
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_023_candidate_01",
+      "page": 23,
+      "bbox": [
+        724,
+        2759,
+        1500,
+        2920
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.1739,
+        "text_density": 0.284,
+        "long_component_score": 0.1174,
+        "curve_score": 1,
+        "axis_score": 10,
+        "text_line_score": 2,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.661,
+        "aspect_ratio": 4.82,
+        "max_band_width_frac": 1.0
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_024_candidate_01",
+      "page": 24,
+      "bbox": [
+        147,
+        572,
+        316,
+        1080
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.122,
+        "text_density": 0.885,
+        "long_component_score": 0.0061,
+        "curve_score": 2,
+        "axis_score": 0,
+        "text_line_score": 5,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.268,
+        "aspect_ratio": 0.33,
+        "max_band_width_frac": 0.852
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_024_candidate_02",
+      "page": 24,
+      "bbox": [
+        1164,
+        938,
+        2038,
+        1627
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.0562,
+        "text_density": 0.12,
+        "long_component_score": 0.0534,
+        "curve_score": 1,
+        "axis_score": 16,
+        "text_line_score": 1,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.983,
+        "aspect_ratio": 1.27,
+        "max_band_width_frac": 0.942
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_025_candidate_01",
+      "page": 25,
+      "bbox": [
+        1303,
+        476,
+        1948,
+        1034
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.65,
+      "reason_codes": [
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.084,
+        "text_density": 0.175,
+        "long_component_score": 0.0443,
+        "curve_score": 4,
+        "axis_score": 4,
+        "text_line_score": 3,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.524,
+        "aspect_ratio": 1.16,
+        "max_band_width_frac": 0.845
+      },
+      "ground_truth": "NEEDS_CORRECTION"
+    },
+    {
+      "candidate_id": "page_027_candidate_01",
+      "page": 27,
+      "bbox": [
+        692,
+        79,
+        1548,
+        239
+      ],
+      "classification": "FIGURE_REVIEW",
+      "confidence": 0.4,
+      "reason_codes": [
+        "ASPECT_RATIO_OUTSIDE_FIGURE_RANGE",
+        "MIXED_SIGNALS_NEEDS_HUMAN_REVIEW"
+      ],
+      "features": {
+        "ink_density": 0.5486,
+        "text_density": 0.841,
+        "long_component_score": 0.0,
+        "curve_score": 0,
+        "axis_score": 366,
+        "text_line_score": 1,
+        "geometric_score": 0.0,
+        "dominant_fraction": 0.993,
+        "aspect_ratio": 5.35,
+        "max_band_width_frac": 1.0
+      },
+      "ground_truth": "REJECTED"
+    },
+    {
+      "candidate_id": "page_027_candidate_02",
+      "page": 27,
+      "bbox": [
+        1364,
+        1184,
+        1836,
+        1512
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.9,
+      "reason_codes": [
+        "CLEAN_FIGURE_SIGNATURE",
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.0964,
+        "text_density": 0.17,
+        "long_component_score": 0.0792,
+        "curve_score": 2,
+        "axis_score": 11,
+        "text_line_score": 1,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.907,
+        "aspect_ratio": 1.44,
+        "max_band_width_frac": 1.0
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_027_candidate_03",
+      "page": 27,
+      "bbox": [
+        141,
+        1762,
+        997,
+        2093
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.65,
+      "reason_codes": [
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.0627,
+        "text_density": 0.139,
+        "long_component_score": 0.0327,
+        "curve_score": 2,
+        "axis_score": 4,
+        "text_line_score": 2,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.531,
+        "aspect_ratio": 2.59,
+        "max_band_width_frac": 0.567
+      },
+      "ground_truth": "VALIDATED"
+    },
+    {
+      "candidate_id": "page_027_candidate_04",
+      "page": 27,
+      "bbox": [
+        141,
+        510,
+        983,
+        1038
+      ],
+      "classification": "FIGURE",
+      "confidence": 0.65,
+      "reason_codes": [
+        "SPARSE_GRAPHICAL_COMPONENT_FOUND"
+      ],
+      "features": {
+        "ink_density": 0.0775,
+        "text_density": 0.153,
+        "long_component_score": 0.0277,
+        "curve_score": 2,
+        "axis_score": 9,
+        "text_line_score": 4,
+        "geometric_score": 1.0,
+        "dominant_fraction": 0.455,
+        "aspect_ratio": 1.59,
+        "max_band_width_frac": 0.716
+      },
+      "ground_truth": "NEEDS_CORRECTION"
+    }
+  ]
+}

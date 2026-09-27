@@ -1,0 +1,1727 @@
+{
+  "note": "Third human verification round (V3): candidates are the same 39 that reached the review queue in V2, with bboxes further refined for completeness (small labels/axes/curve fragments recovered where V2's trim cut them off). classification_hint is a SOFT TRIAGE HINT, not a verified label -- needs_review is unconditionally true for every candidate here; nothing is auto-excluded.",
+  "round": "v3",
+  "total_candidates": 39,
+  "counts_by_hint": {
+    "figure": 14,
+    "ambiguous": 25
+  },
+  "candidates": [
+    {
+      "candidate_id": "page_006_candidate_01",
+      "pdf_page": 6,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        2460,
+        2064,
+        2892
+      ],
+      "refined_bbox": [
+        139,
+        2045,
+        2082,
+        2973
+      ],
+      "bbox": [
+        139,
+        2045,
+        2082,
+        2973
+      ],
+      "pre_trim_bbox": [
+        144,
+        2105,
+        2077,
+        2968
+      ],
+      "v2_bbox": [
+        144,
+        2105,
+        2077,
+        2968
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_006/page_006_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_006_candidate_02",
+      "pdf_page": 6,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        476,
+        944,
+        796
+      ],
+      "refined_bbox": [
+        541,
+        457,
+        1004,
+        796
+      ],
+      "bbox": [
+        541,
+        457,
+        1004,
+        796
+      ],
+      "pre_trim_bbox": [
+        160,
+        476,
+        944,
+        796
+      ],
+      "v2_bbox": [
+        541,
+        476,
+        933,
+        796
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_006/page_006_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_008_candidate_01",
+      "pdf_page": 8,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        92,
+        1264,
+        316
+      ],
+      "refined_bbox": [
+        139,
+        77,
+        1324,
+        376
+      ],
+      "bbox": [
+        139,
+        77,
+        1324,
+        376
+      ],
+      "pre_trim_bbox": [
+        160,
+        92,
+        1264,
+        316
+      ],
+      "v2_bbox": [
+        160,
+        92,
+        1264,
+        316
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_008/page_008_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_008_candidate_02",
+      "pdf_page": 8,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        128,
+        1708,
+        416,
+        2124
+      ],
+      "refined_bbox": [
+        117,
+        1695,
+        476,
+        2124
+      ],
+      "bbox": [
+        117,
+        1695,
+        476,
+        2124
+      ],
+      "pre_trim_bbox": [
+        128,
+        1708,
+        416,
+        2124
+      ],
+      "v2_bbox": [
+        128,
+        1708,
+        416,
+        2124
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_008/page_008_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_009_candidate_01",
+      "pdf_page": 9,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        92,
+        2032,
+        988
+      ],
+      "refined_bbox": [
+        139,
+        82,
+        2085,
+        1016
+      ],
+      "bbox": [
+        139,
+        82,
+        2085,
+        1016
+      ],
+      "pre_trim_bbox": [
+        144,
+        82,
+        2085,
+        1011
+      ],
+      "v2_bbox": [
+        144,
+        82,
+        2085,
+        1011
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_009/page_009_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_011_candidate_01",
+      "pdf_page": 11,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.12) forming one dominant connected stroke (0.60) spanning 1.00 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1568,
+        1756,
+        2000,
+        2300
+      ],
+      "refined_bbox": [
+        1440,
+        1733,
+        2043,
+        2375
+      ],
+      "bbox": [
+        1440,
+        1733,
+        2043,
+        2375
+      ],
+      "pre_trim_bbox": [
+        1444,
+        1736,
+        2038,
+        2370
+      ],
+      "v2_bbox": [
+        1517,
+        1736,
+        1997,
+        2370
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_011/page_011_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_011_candidate_02",
+      "pdf_page": 11,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1516,
+        1504,
+        1596
+      ],
+      "refined_bbox": [
+        143,
+        1456,
+        1520,
+        1610
+      ],
+      "bbox": [
+        143,
+        1456,
+        1520,
+        1610
+      ],
+      "pre_trim_bbox": [
+        160,
+        1516,
+        1504,
+        1596
+      ],
+      "v2_bbox": [
+        160,
+        1516,
+        1504,
+        1596
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_011/page_011_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_011_candidate_03",
+      "pdf_page": 11,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1612,
+        976,
+        1676
+      ],
+      "refined_bbox": [
+        143,
+        1589,
+        986,
+        1736
+      ],
+      "bbox": [
+        143,
+        1589,
+        986,
+        1736
+      ],
+      "pre_trim_bbox": [
+        160,
+        1612,
+        976,
+        1676
+      ],
+      "v2_bbox": [
+        160,
+        1612,
+        976,
+        1676
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_011/page_011_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_011_candidate_04",
+      "pdf_page": 11,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.05) forming one dominant connected stroke (0.95) spanning 0.93 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1680,
+        492,
+        2000,
+        812
+      ],
+      "refined_bbox": [
+        1418,
+        284,
+        2030,
+        878
+      ],
+      "bbox": [
+        1418,
+        284,
+        2030,
+        878
+      ],
+      "pre_trim_bbox": [
+        1478,
+        289,
+        2025,
+        874
+      ],
+      "v2_bbox": [
+        1478,
+        289,
+        2025,
+        874
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_011/page_011_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_012_candidate_01",
+      "pdf_page": 12,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1996,
+        1056,
+        2124
+      ],
+      "refined_bbox": [
+        426,
+        1996,
+        1053,
+        2124
+      ],
+      "bbox": [
+        426,
+        1996,
+        1053,
+        2124
+      ],
+      "pre_trim_bbox": [
+        160,
+        1996,
+        1056,
+        2124
+      ],
+      "v2_bbox": [
+        426,
+        1996,
+        1053,
+        2124
+      ],
+      "bbox_grew_in_v3": false,
+      "image_path": "figure_candidates_v3/page_012/page_012_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_012_candidate_02",
+      "pdf_page": 12,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        508,
+        1152,
+        572
+      ],
+      "refined_bbox": [
+        143,
+        448,
+        1212,
+        594
+      ],
+      "bbox": [
+        143,
+        448,
+        1212,
+        594
+      ],
+      "pre_trim_bbox": [
+        160,
+        508,
+        1152,
+        572
+      ],
+      "v2_bbox": [
+        160,
+        508,
+        1152,
+        572
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_012/page_012_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_013_candidate_01",
+      "pdf_page": 13,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.11) forming one dominant connected stroke (0.57) spanning 1.00 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1552,
+        476,
+        1920,
+        956
+      ],
+      "refined_bbox": [
+        1524,
+        422,
+        1994,
+        970
+      ],
+      "bbox": [
+        1524,
+        422,
+        1994,
+        970
+      ],
+      "pre_trim_bbox": [
+        1451,
+        427,
+        1989,
+        965
+      ],
+      "v2_bbox": [
+        1524,
+        427,
+        1921,
+        965
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_013/page_013_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_013_candidate_02",
+      "pdf_page": 13,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1852,
+        704,
+        1996
+      ],
+      "refined_bbox": [
+        139,
+        1774,
+        756,
+        2020
+      ],
+      "bbox": [
+        139,
+        1774,
+        756,
+        2020
+      ],
+      "pre_trim_bbox": [
+        144,
+        1834,
+        711,
+        2017
+      ],
+      "v2_bbox": [
+        144,
+        1834,
+        711,
+        2017
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_013/page_013_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_013_candidate_03",
+      "pdf_page": 13,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.08) forming one dominant connected stroke (1.00) spanning 0.97 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1376,
+        2316,
+        2048,
+        2652
+      ],
+      "refined_bbox": [
+        1316,
+        2256,
+        2068,
+        2712
+      ],
+      "bbox": [
+        1316,
+        2256,
+        2068,
+        2712
+      ],
+      "pre_trim_bbox": [
+        1376,
+        2316,
+        2048,
+        2652
+      ],
+      "v2_bbox": [
+        1376,
+        2316,
+        2048,
+        2652
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_013/page_013_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_014_candidate_01",
+      "pdf_page": 14,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.07) forming one dominant connected stroke (0.96) spanning 0.95 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1232,
+        412,
+        2000,
+        540
+      ],
+      "refined_bbox": [
+        1166,
+        284,
+        2065,
+        656
+      ],
+      "bbox": [
+        1166,
+        284,
+        2065,
+        656
+      ],
+      "pre_trim_bbox": [
+        1216,
+        289,
+        2060,
+        596
+      ],
+      "v2_bbox": [
+        1216,
+        289,
+        2060,
+        596
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_014/page_014_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_015_candidate_01",
+      "pdf_page": 15,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        508,
+        400,
+        748
+      ],
+      "refined_bbox": [
+        281,
+        508,
+        400,
+        748
+      ],
+      "bbox": [
+        281,
+        508,
+        400,
+        748
+      ],
+      "pre_trim_bbox": [
+        160,
+        508,
+        400,
+        748
+      ],
+      "v2_bbox": [
+        281,
+        508,
+        400,
+        748
+      ],
+      "bbox_grew_in_v3": false,
+      "image_path": "figure_candidates_v3/page_015/page_015_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_015_candidate_02",
+      "pdf_page": 15,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.18) forming one dominant connected stroke (0.54) spanning 0.98 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        2028,
+        2048,
+        2732
+      ],
+      "refined_bbox": [
+        139,
+        1948,
+        2066,
+        2753
+      ],
+      "bbox": [
+        139,
+        1948,
+        2066,
+        2753
+      ],
+      "pre_trim_bbox": [
+        140,
+        2008,
+        2063,
+        2753
+      ],
+      "v2_bbox": [
+        140,
+        2008,
+        2063,
+        2753
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_015/page_015_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_015_candidate_03",
+      "pdf_page": 15,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.15) forming one dominant connected stroke (0.59) spanning 1.00 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        272,
+        1516,
+        656,
+        1900
+      ],
+      "refined_bbox": [
+        212,
+        1458,
+        716,
+        1960
+      ],
+      "bbox": [
+        212,
+        1458,
+        716,
+        1960
+      ],
+      "pre_trim_bbox": [
+        272,
+        1516,
+        656,
+        1900
+      ],
+      "v2_bbox": [
+        272,
+        1516,
+        656,
+        1900
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_015/page_015_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_015_candidate_04",
+      "pdf_page": 15,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.14) forming one dominant connected stroke (0.62) spanning 1.00 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        832,
+        1564,
+        1392,
+        1916
+      ],
+      "refined_bbox": [
+        802,
+        1504,
+        1418,
+        1976
+      ],
+      "bbox": [
+        802,
+        1504,
+        1418,
+        1976
+      ],
+      "pre_trim_bbox": [
+        832,
+        1564,
+        1392,
+        1916
+      ],
+      "v2_bbox": [
+        832,
+        1564,
+        1392,
+        1916
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_015/page_015_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_015_candidate_05",
+      "pdf_page": 15,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1164,
+        1552,
+        1228
+      ],
+      "refined_bbox": [
+        139,
+        1084,
+        1574,
+        1389
+      ],
+      "bbox": [
+        139,
+        1084,
+        1574,
+        1389
+      ],
+      "pre_trim_bbox": [
+        140,
+        1144,
+        1571,
+        1329
+      ],
+      "v2_bbox": [
+        220,
+        1144,
+        1559,
+        1329
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_015/page_015_candidate_05.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_016_candidate_01",
+      "pdf_page": 16,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        92,
+        2064,
+        1692
+      ],
+      "refined_bbox": [
+        135,
+        92,
+        2085,
+        1792
+      ],
+      "bbox": [
+        135,
+        92,
+        2085,
+        1792
+      ],
+      "pre_trim_bbox": [
+        140,
+        72,
+        2085,
+        1860
+      ],
+      "v2_bbox": [
+        140,
+        92,
+        2085,
+        1792
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_016/page_016_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_017_candidate_01",
+      "pdf_page": 17,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        416,
+        2652,
+        2064,
+        2892
+      ],
+      "refined_bbox": [
+        139,
+        2524,
+        2082,
+        2972
+      ],
+      "bbox": [
+        139,
+        2524,
+        2082,
+        2972
+      ],
+      "pre_trim_bbox": [
+        144,
+        2584,
+        2077,
+        2967
+      ],
+      "v2_bbox": [
+        144,
+        2584,
+        2077,
+        2967
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_017/page_017_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_017_candidate_02",
+      "pdf_page": 17,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.05) forming one dominant connected stroke (1.00) spanning 0.89 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1744,
+        380,
+        1920,
+        796
+      ],
+      "refined_bbox": [
+        1642,
+        256,
+        2001,
+        853
+      ],
+      "bbox": [
+        1642,
+        256,
+        2001,
+        853
+      ],
+      "pre_trim_bbox": [
+        1647,
+        261,
+        1996,
+        849
+      ],
+      "v2_bbox": [
+        1647,
+        261,
+        1996,
+        849
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_017/page_017_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_017_candidate_03",
+      "pdf_page": 17,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        2604,
+        416,
+        2892
+      ],
+      "refined_bbox": [
+        139,
+        2579,
+        476,
+        2892
+      ],
+      "bbox": [
+        139,
+        2579,
+        476,
+        2892
+      ],
+      "pre_trim_bbox": [
+        160,
+        2604,
+        416,
+        2892
+      ],
+      "v2_bbox": [
+        160,
+        2604,
+        416,
+        2892
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_017/page_017_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_018_candidate_01",
+      "pdf_page": 18,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        416,
+        1676,
+        2048,
+        2140
+      ],
+      "refined_bbox": [
+        135,
+        1603,
+        2066,
+        2323
+      ],
+      "bbox": [
+        135,
+        1603,
+        2066,
+        2323
+      ],
+      "pre_trim_bbox": [
+        140,
+        1608,
+        2063,
+        2323
+      ],
+      "v2_bbox": [
+        140,
+        1608,
+        2063,
+        2323
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_018/page_018_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_018_candidate_02",
+      "pdf_page": 18,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.13) forming one dominant connected stroke (0.59) spanning 0.94 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1392,
+        1100,
+        1952,
+        1436
+      ],
+      "refined_bbox": [
+        1335,
+        1060,
+        1997,
+        1477
+      ],
+      "bbox": [
+        1335,
+        1060,
+        1997,
+        1477
+      ],
+      "pre_trim_bbox": [
+        1340,
+        1065,
+        1992,
+        1472
+      ],
+      "v2_bbox": [
+        1340,
+        1075,
+        1992,
+        1433
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_018/page_018_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_018_candidate_03",
+      "pdf_page": 18,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        988,
+        1696,
+        1052
+      ],
+      "refined_bbox": [
+        139,
+        963,
+        1777,
+        1121
+      ],
+      "bbox": [
+        139,
+        963,
+        1777,
+        1121
+      ],
+      "pre_trim_bbox": [
+        140,
+        968,
+        1717,
+        1061
+      ],
+      "v2_bbox": [
+        140,
+        968,
+        1717,
+        1061
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_018/page_018_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_019_candidate_01",
+      "pdf_page": 19,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1676,
+        2032,
+        2172
+      ],
+      "refined_bbox": [
+        139,
+        1548,
+        2063,
+        2342
+      ],
+      "bbox": [
+        139,
+        1548,
+        2063,
+        2342
+      ],
+      "pre_trim_bbox": [
+        144,
+        1608,
+        2063,
+        2342
+      ],
+      "v2_bbox": [
+        144,
+        1608,
+        2063,
+        2342
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_019/page_019_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_019_candidate_02",
+      "pdf_page": 19,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        92,
+        1264,
+        284
+      ],
+      "refined_bbox": [
+        139,
+        77,
+        1324,
+        344
+      ],
+      "bbox": [
+        139,
+        77,
+        1324,
+        344
+      ],
+      "pre_trim_bbox": [
+        160,
+        92,
+        1264,
+        284
+      ],
+      "v2_bbox": [
+        160,
+        92,
+        1264,
+        284
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_019/page_019_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_019_candidate_03",
+      "pdf_page": 19,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.10) forming one dominant connected stroke (0.95) spanning 0.91 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1664,
+        700,
+        1904,
+        876
+      ],
+      "refined_bbox": [
+        1502,
+        591,
+        1944,
+        1043
+      ],
+      "bbox": [
+        1502,
+        591,
+        1944,
+        1043
+      ],
+      "pre_trim_bbox": [
+        1506,
+        596,
+        1939,
+        1038
+      ],
+      "v2_bbox": [
+        1506,
+        596,
+        1939,
+        1038
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_019/page_019_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_019_candidate_04",
+      "pdf_page": 19,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1500,
+        1936,
+        1564
+      ],
+      "refined_bbox": [
+        139,
+        1480,
+        1960,
+        1645
+      ],
+      "bbox": [
+        139,
+        1480,
+        1960,
+        1645
+      ],
+      "pre_trim_bbox": [
+        140,
+        1480,
+        1957,
+        1585
+      ],
+      "v2_bbox": [
+        140,
+        1480,
+        1957,
+        1585
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_019/page_019_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_023_candidate_01",
+      "pdf_page": 23,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        784,
+        2780,
+        1440,
+        2860
+      ],
+      "refined_bbox": [
+        724,
+        2759,
+        1500,
+        2920
+      ],
+      "bbox": [
+        724,
+        2759,
+        1500,
+        2920
+      ],
+      "pre_trim_bbox": [
+        784,
+        2780,
+        1440,
+        2860
+      ],
+      "v2_bbox": [
+        784,
+        2780,
+        1440,
+        2860
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_023/page_023_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_024_candidate_01",
+      "pdf_page": 24,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        572,
+        256,
+        1020
+      ],
+      "refined_bbox": [
+        147,
+        572,
+        316,
+        1080
+      ],
+      "bbox": [
+        147,
+        572,
+        316,
+        1080
+      ],
+      "pre_trim_bbox": [
+        160,
+        572,
+        256,
+        1020
+      ],
+      "v2_bbox": [
+        160,
+        572,
+        256,
+        1020
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_024/page_024_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_024_candidate_02",
+      "pdf_page": 24,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.06) forming one dominant connected stroke (0.98) spanning 0.94 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1184,
+        956,
+        2016,
+        1612
+      ],
+      "refined_bbox": [
+        1164,
+        938,
+        2038,
+        1627
+      ],
+      "bbox": [
+        1164,
+        938,
+        2038,
+        1627
+      ],
+      "pre_trim_bbox": [
+        1164,
+        938,
+        2037,
+        1623
+      ],
+      "v2_bbox": [
+        1164,
+        938,
+        2037,
+        1623
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_024/page_024_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_025_candidate_01",
+      "pdf_page": 25,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.13) forming one dominant connected stroke (0.59) spanning 1.00 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1440,
+        556,
+        1872,
+        940
+      ],
+      "refined_bbox": [
+        1303,
+        476,
+        1948,
+        1034
+      ],
+      "bbox": [
+        1303,
+        476,
+        1948,
+        1034
+      ],
+      "pre_trim_bbox": [
+        1308,
+        536,
+        1893,
+        1029
+      ],
+      "v2_bbox": [
+        1345,
+        552,
+        1846,
+        964
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_025/page_025_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_027_candidate_01",
+      "pdf_page": 27,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "refined_bbox": [
+        692,
+        79,
+        1548,
+        239
+      ],
+      "bbox": [
+        692,
+        79,
+        1548,
+        239
+      ],
+      "pre_trim_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "v2_bbox": [
+        752,
+        94,
+        1488,
+        239
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_027/page_027_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_027_candidate_02",
+      "pdf_page": 27,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "sparse ink (coverage=0.17) forming one dominant connected stroke (0.96) spanning 1.00 of the crop width",
+      "confidence": 0.7,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1424,
+        1244,
+        1776,
+        1452
+      ],
+      "refined_bbox": [
+        1364,
+        1184,
+        1836,
+        1512
+      ],
+      "bbox": [
+        1364,
+        1184,
+        1836,
+        1512
+      ],
+      "pre_trim_bbox": [
+        1424,
+        1244,
+        1776,
+        1452
+      ],
+      "v2_bbox": [
+        1424,
+        1244,
+        1776,
+        1452
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_027/page_027_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_027_candidate_03",
+      "pdf_page": 27,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        416,
+        1756,
+        736,
+        2060
+      ],
+      "refined_bbox": [
+        141,
+        1762,
+        997,
+        2093
+      ],
+      "bbox": [
+        141,
+        1762,
+        997,
+        2093
+      ],
+      "pre_trim_bbox": [
+        146,
+        1638,
+        992,
+        2310
+      ],
+      "v2_bbox": [
+        178,
+        1762,
+        948,
+        2093
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_027/page_027_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_027_candidate_04",
+      "pdf_page": 27,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.4,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        336,
+        604,
+        896,
+        940
+      ],
+      "refined_bbox": [
+        141,
+        510,
+        983,
+        1038
+      ],
+      "bbox": [
+        141,
+        510,
+        983,
+        1038
+      ],
+      "pre_trim_bbox": [
+        146,
+        392,
+        978,
+        1033
+      ],
+      "v2_bbox": [
+        146,
+        510,
+        978,
+        1017
+      ],
+      "bbox_grew_in_v3": true,
+      "image_path": "figure_candidates_v3/page_027/page_027_candidate_04.png",
+      "needs_review": true
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+1.3 Opérations sur les limites
+Soit L et L'deux réels.
+
+Les résultats qui suivent concernent les opérations sur les limites en un réel ou à l’infini.
+
+L L+L’ IË
+L -+00 +00 -+00 L' >0 +00
+—0 L’ —— +o . L'<0 —0 L L'=0 L’
+*> *> *> #0 5 5s +00 L’>0 +00
+_ u _ +_: î î: +00 L'<0 —0
+L +00 0
+mt fl mml L — 0
+œ ( On
+Z lLl ‘ll—l L=0 " appli(que la
++00 +00 00 règle des
+—0 +00 +00
+
+signes).
+
+Les règles énoncées dans les tableaux précédents ne s’appliquent pas lorsqu’il s’agit
+
+d’étudier
+
+* la limite de la somme de deux fonctions dont l’une tend vers +oo l’autre tend vers —.
+* la limite du produit de deux fonctions dont l’une tend vers l’infini l’autre tend vers 0.
+
+* la limite du quotient de deux fonctions qui tendent toutes les deux vers l’infini
+les deux vers 0.
+
+ou toutes
+
+Une transformation d’écriture adéquate pourra nous ramener à l’un des théorèmes résumés
+
+dans les tableaux ci-dessus.
+
+Théorème
+- La limite d’une fonction polynôme à l’infini est la même que celle de son terme de
+plus haut degré.
+
+- La limite d’une fonction rationnelle à l’infini est la même que celle du quotient des
+termes de plus haut degré.
+
+Activité
+Déterminer les limites ci-dessous.
+. 1
+us rrrs 5. m J2x=3) —-
+x—>. _—
+2. lim J75x+1—3x. (x-3)
+x—>—0
+. 2 6. lim —2x |(x*+x
+2
+3. x1_1)1ï1{)ü(—x —x) +V2 x. x_…°[ 241 ]( )
+_ 7. lim Jx -
+4. lim 5x*+ 3x —1 . x>+0
+x—>2 lX—2l
+
+—Continuité et limites
+
+8

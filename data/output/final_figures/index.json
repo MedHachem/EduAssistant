@@ -1,0 +1,385 @@
+{
+  "chapter_id": "math-4eme-tome1-ch01",
+  "figures": [
+    {
+      "figure_id": "figure_001",
+      "source_page": 9,
+      "candidate_id": "page_009_candidate_01",
+      "status": "CORRECTED",
+      "original_bbox": [
+        139,
+        82,
+        2085,
+        1016
+      ],
+      "final_bbox": [
+        1121,
+        385,
+        2065,
+        1016
+      ],
+      "image": "figure_001.png",
+      "source_image": "page_009.png"
+    },
+    {
+      "figure_id": "figure_002",
+      "source_page": 11,
+      "candidate_id": "page_011_candidate_01",
+      "status": "VALIDATED",
+      "original_bbox": [
+        1440,
+        1733,
+        2043,
+        2375
+      ],
+      "final_bbox": [
+        1440,
+        1733,
+        2043,
+        2375
+      ],
+      "image": "figure_002.png",
+      "source_image": "page_011.png"
+    },
+    {
+      "figure_id": "figure_003",
+      "source_page": 11,
+      "candidate_id": "page_011_candidate_04",
+      "status": "VALIDATED",
+      "original_bbox": [
+        1418,
+        284,
+        2030,
+        878
+      ],
+      "final_bbox": [
+        1418,
+        284,
+        2030,
+        878
+      ],
+      "image": "figure_003.png",
+      "source_image": "page_011.png"
+    },
+    {
+      "figure_id": "figure_004",
+      "source_page": 13,
+      "candidate_id": "page_013_candidate_01",
+      "status": "VALIDATED",
+      "original_bbox": [
+        1524,
+        422,
+        1994,
+        970
+      ],
+      "final_bbox": [
+        1524,
+        422,
+        1994,
+        970
+      ],
+      "image": "figure_004.png",
+      "source_image": "page_013.png"
+    },
+    {
+      "figure_id": "figure_005",
+      "source_page": 13,
+      "candidate_id": "page_013_candidate_03",
+      "status": "VALIDATED",
+      "original_bbox": [
+        1316,
+        2256,
+        2068,
+        2712
+      ],
+      "final_bbox": [
+        1316,
+        2256,
+        2068,
+        2712
+      ],
+      "image": "figure_005.png",
+      "source_image": "page_013.png"
+    },
+    {
+      "figure_id": "figure_006",
+      "source_page": 14,
+      "candidate_id": "page_014_candidate_01",
+      "status": "VALIDATED",
+      "original_bbox": [
+        1166,
+        284,
+        2065,
+        656
+      ],
+      "final_bbox": [
+        1166,
+        284,
+        2065,
+        656
+      ],
+      "image": "figure_006.png",
+      "source_image": "page_014.png"
+    },
+    {
+      "figure_id": "figure_007",
+      "source_page": 15,
+      "candidate_id": "page_015_candidate_02",
+      "status": "CORRECTED",
+      "original_bbox": [
+        139,
+        1948,
+        2066,
+        2753
+      ],
+      "final_bbox": [
+        1141,
+        2209,
+        2024,
+        2750
+      ],
+      "image": "figure_007.png",
+      "source_image": "page_015.png"
+    },
+    {
+      "figure_id": "figure_008",
+      "source_page": 15,
+      "candidate_id": "page_015_candidate_03",
+      "status": "VALIDATED",
+      "original_bbox": [
+        212,
+        1458,
+        716,
+        1960
+      ],
+      "final_bbox": [
+        212,
+        1458,
+        716,
+        1960
+      ],
+      "image": "figure_008.png",
+      "source_image": "page_015.png"
+    },
+    {
+      "figure_id": "figure_009",
+      "source_page": 15,
+      "candidate_id": "page_015_candidate_04",
+      "status": "VALIDATED",
+      "original_bbox": [
+        802,
+        1504,
+        1418,
+        1976
+      ],
+      "final_bbox": [
+        802,
+        1504,
+        1418,
+        1976
+      ],
+      "image": "figure_009.png",
+      "source_image": "page_015.png"
+    },
+    {
+      "figure_id": "figure_010",
+      "source_page": 16,
+      "candidate_id": "page_016_candidate_01",
+      "status": "CORRECTED",
+      "original_bbox": [
+        135,
+        92,
+        2085,
+        1792
+      ],
+      "final_bbox": [
+        1353,
+        251,
+        2085,
+        921
+      ],
+      "image": "figure_010.png",
+      "source_image": "page_016.png"
+    },
+    {
+      "figure_id": "figure_011",
+      "source_page": 17,
+      "candidate_id": "page_017_candidate_02",
+      "status": "VALIDATED",
+      "original_bbox": [
+        1642,
+        256,
+        2001,
+        853
+      ],
+      "final_bbox": [
+        1642,
+        256,
+        2001,
+        853
+      ],
+      "image": "figure_011.png",
+      "source_image": "page_017.png"
+    },
+    {
+      "figure_id": "figure_012",
+      "source_page": 18,
+      "candidate_id": "page_018_candidate_01",
+      "status": "CORRECTED",
+      "original_bbox": [
+        135,
+        1603,
+        2066,
+        2323
+      ],
+      "final_bbox": [
+        1509,
+        1676,
+        1996,
+        2143
+      ],
+      "image": "figure_012.png",
+      "source_image": "page_018.png"
+    },
+    {
+      "figure_id": "figure_013",
+      "source_page": 18,
+      "candidate_id": "page_018_candidate_02",
+      "status": "VALIDATED",
+      "original_bbox": [
+        1335,
+        1060,
+        1997,
+        1477
+      ],
+      "final_bbox": [
+        1335,
+        1060,
+        1997,
+        1477
+      ],
+      "image": "figure_013.png",
+      "source_image": "page_018.png"
+    },
+    {
+      "figure_id": "figure_014",
+      "source_page": 19,
+      "candidate_id": "page_019_candidate_03",
+      "status": "VALIDATED",
+      "original_bbox": [
+        1502,
+        591,
+        1944,
+        1043
+      ],
+      "final_bbox": [
+        1502,
+        591,
+        1944,
+        1043
+      ],
+      "image": "figure_014.png",
+      "source_image": "page_019.png"
+    },
+    {
+      "figure_id": "figure_015",
+      "source_page": 24,
+      "candidate_id": "page_024_candidate_02",
+      "status": "VALIDATED",
+      "original_bbox": [
+        1164,
+        938,
+        2038,
+        1627
+      ],
+      "final_bbox": [
+        1164,
+        938,
+        2038,
+        1627
+      ],
+      "image": "figure_015.png",
+      "source_image": "page_024.png"
+    },
+    {
+      "figure_id": "figure_016",
+      "source_page": 25,
+      "candidate_id": "page_025_candidate_01",
+      "status": "CORRECTED",
+      "original_bbox": [
+        1303,
+        476,
+        1948,
+        1034
+      ],
+      "final_bbox": [
+        1303,
+        552,
+        1948,
+        964
+      ],
+      "image": "figure_016.png",
+      "source_image": "page_025.png"
+    },
+    {
+      "figure_id": "figure_017",
+      "source_page": 27,
+      "candidate_id": "page_027_candidate_02",
+      "status": "VALIDATED",
+      "original_bbox": [
+        1364,
+        1184,
+        1836,
+        1512
+      ],
+      "final_bbox": [
+        1364,
+        1184,
+        1836,
+        1512
+      ],
+      "image": "figure_017.png",
+      "source_image": "page_027.png"
+    },
+    {
+      "figure_id": "figure_018",
+      "source_page": 27,
+      "candidate_id": "page_027_candidate_03",
+      "status": "VALIDATED",
+      "original_bbox": [
+        141,
+        1762,
+        997,
+        2093
+      ],
+      "final_bbox": [
+        141,
+        1762,
+        997,
+        2093
+      ],
+      "image": "figure_018.png",
+      "source_image": "page_027.png"
+    },
+    {
+      "figure_id": "figure_019",
+      "source_page": 27,
+      "candidate_id": "page_027_candidate_04",
+      "status": "CORRECTED",
+      "original_bbox": [
+        141,
+        510,
+        983,
+        1038
+      ],
+      "final_bbox": [
+        141,
+        566,
+        983,
+        1038
+      ],
+      "image": "figure_019.png",
+      "source_image": "page_027.png"
+    }
+  ]
+}

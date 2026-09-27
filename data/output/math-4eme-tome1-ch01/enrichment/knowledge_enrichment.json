@@ -1,0 +1,4064 @@
+{
+  "schema_version": "enrichment-1.0",
+  "algorithm_version": "enrich-v1",
+  "generated_at": "2026-09-27T11:01:15.042312+00:00",
+  "chapter_id": "math-4eme-tome1-ch01",
+  "items": [
+    {
+      "item_id": "math-4eme-tome1-ch01-act-001",
+      "item_type": "activity",
+      "topics": [
+        "Rappels",
+        "Continuité et limite en un réel"
+      ],
+      "keywords": [
+        "continuité",
+        "continue"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "sin",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "justify",
+        "determine"
+      ],
+      "concepts": [
+        "rappels",
+        "continuité et limite en un réel",
+        "continuité"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-001",
+      "item_type": "theorem",
+      "topics": [
+        "Rappels",
+        "Continuité et limite en un réel"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "in",
+          "neq",
+          "sqrt"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "rappels",
+        "continuité et limite en un réel",
+        "continuité",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-002",
+      "item_type": "activity",
+      "topics": [
+        "Rappels",
+        "Continuité et limite en un réel"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "lim",
+          "neq"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "deduce"
+      ],
+      "concepts": [
+        "rappels",
+        "continuité et limite en un réel"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-002",
+      "item_type": "theorem",
+      "topics": [
+        "Rappels",
+        "Continuité et limite en un réel"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "lim",
+          "neq"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "rappels",
+        "continuité et limite en un réel",
+        "continuité",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-003",
+      "item_type": "activity",
+      "topics": [
+        "Rappels",
+        "Continuité et limite en un réel"
+      ],
+      "keywords": [
+        "continuité"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "lim",
+          "sin"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "prove",
+        "determine"
+      ],
+      "concepts": [
+        "rappels",
+        "continuité et limite en un réel",
+        "continuité"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-003",
+      "item_type": "theorem",
+      "topics": [
+        "Rappels",
+        "Continuité et limite en un réel"
+      ],
+      "keywords": [
+        "limite",
+        "continue",
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g"
+        ],
+        "intervals": [],
+        "equations": [
+          "x=a"
+        ],
+        "notations": [
+          "neq"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "rappels",
+        "continuité et limite en un réel",
+        "limites",
+        "continuité",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-004",
+      "item_type": "activity",
+      "topics": [
+        "Rappels",
+        "Continuité et limite en un réel"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [
+          "x=1"
+        ],
+        "notations": [
+          "lim",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "compute"
+      ],
+      "concepts": [
+        "rappels",
+        "continuité et limite en un réel",
+        "continuité",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-005",
+      "item_type": "activity",
+      "topics": [
+        "Rappels",
+        "Continuité et limite en un réel"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "rappels",
+        "continuité et limite en un réel",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "not_populated",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-006",
+      "item_type": "activity",
+      "topics": [
+        "Rappels",
+        "1.2 Continuité sur un intervalle"
+      ],
+      "keywords": [
+        "continuité",
+        "continue",
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[0,\\pi]",
+          "[a,+\\infty[",
+          "[a,b[",
+          "[a,b]",
+          "]-\\infty,a]",
+          "]0,\\pi]",
+          "]a,b[",
+          "]a,b]"
+        ],
+        "equations": [],
+        "notations": [
+          "cos",
+          "in",
+          "infty"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "prove"
+      ],
+      "concepts": [
+        "rappels",
+        "1.2 continuité sur un intervalle",
+        "continuité",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-004",
+      "item_type": "theorem",
+      "topics": [
+        "Rappels",
+        "Opérations sur les limites"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "rappels",
+        "opérations sur les limites",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "not_populated",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-007",
+      "item_type": "activity",
+      "topics": [
+        "Rappels",
+        "Opérations sur les limites"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "infty",
+          "lim",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "rappels",
+        "opérations sur les limites",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-008",
+      "item_type": "activity",
+      "topics": [
+        "Branches infinies"
+      ],
+      "keywords": [
+        "asymptote",
+        "équation"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "]-\\infty,-1[",
+          "]1,+\\infty["
+        ],
+        "equations": [
+          "x=-1",
+          "x=1",
+          "y=-x-3",
+          "y=0"
+        ],
+        "notations": [
+          "cup",
+          "infty",
+          "lim"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "branches infinies",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-009",
+      "item_type": "activity",
+      "topics": [
+        "Branches infinies"
+      ],
+      "keywords": [
+        "courbe représentative"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "infty",
+          "lim",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "determine",
+        "deduce"
+      ],
+      "concepts": [
+        "branches infinies"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-010",
+      "item_type": "activity",
+      "topics": [
+        "Branches infinies"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [
+          "x=\\dfrac{1+\\dfrac{1}{x"
+        ],
+        "notations": [
+          "infty",
+          "lim",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "compute",
+        "deduce",
+        "interpret"
+      ],
+      "concepts": [
+        "branches infinies"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-prop-001",
+      "item_type": "property",
+      "topics": [
+        "Branches infinies"
+      ],
+      "keywords": [
+        "limite",
+        "asymptote",
+        "branche infinie",
+        "équation",
+        "courbe représentative"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [
+          "y=ax"
+        ],
+        "notations": [
+          "in",
+          "infty",
+          "lim"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "branches infinies",
+        "limites",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-011",
+      "item_type": "activity",
+      "topics": [
+        "Branches infinies"
+      ],
+      "keywords": [
+        "branche infinie"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[-1,+\\infty["
+        ],
+        "equations": [],
+        "notations": [
+          "infty",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine",
+        "represent_graphically"
+      ],
+      "concepts": [
+        "branches infinies"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-012",
+      "item_type": "activity",
+      "topics": [
+        "Branches infinies"
+      ],
+      "keywords": [
+        "limite",
+        "asymptote",
+        "équation",
+        "courbe représentative"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [
+          "x=\\dfrac{1}{2}",
+          "y=1-x",
+          "y=\\sqrt{2}x"
+        ],
+        "notations": [
+          "infty",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "represent_graphically"
+      ],
+      "concepts": [
+        "branches infinies",
+        "limites",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-prop-002",
+      "item_type": "property",
+      "topics": [
+        "Branches infinies"
+      ],
+      "keywords": [
+        "courbe représentative"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [
+          "x=a"
+        ],
+        "notations": [
+          "in"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "branches infinies"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-013",
+      "item_type": "activity",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Composée de deux fonctions"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine",
+        "identify_or_read"
+      ],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "composée de deux fonctions"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-def-001",
+      "item_type": "definition",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Composée de deux fonctions"
+      ],
+      "keywords": [
+        "fonction composée"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "u",
+          "v"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "circ"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "composée de deux fonctions",
+        "fonction composée"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-014",
+      "item_type": "activity",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Composée de deux fonctions"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [
+          "f=v"
+        ],
+        "notations": [
+          "circ",
+          "cos",
+          "sin",
+          "tan"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "composée de deux fonctions"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-005",
+      "item_type": "theorem",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Continuité d'une fonction composée"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "u"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "circ"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "continuité d'une fonction composée",
+        "continuité",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-prop-003",
+      "item_type": "property",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Continuité d'une fonction composée"
+      ],
+      "keywords": [
+        "continue"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "continuité d'une fonction composée",
+        "continuité"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "not_populated",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-015",
+      "item_type": "activity",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Continuité d'une fonction composée"
+      ],
+      "keywords": [
+        "continuité",
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [
+          "]1, +\\infty["
+        ],
+        "equations": [
+          "I=\\mathbb{R}",
+          "I=]1"
+        ],
+        "notations": [
+          "cos",
+          "infty",
+          "sin"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "continuité d'une fonction composée",
+        "continuité",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-006",
+      "item_type": "theorem",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Limite d'une fonction composée"
+      ],
+      "keywords": [
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "u",
+          "v"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "circ",
+          "lim"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "limite d'une fonction composée",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-016",
+      "item_type": "activity",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Limite d'une fonction composée"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [
+          "a=0",
+          "a=1"
+        ],
+        "notations": [
+          "cos",
+          "sin",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "limite d'une fonction composée",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-017",
+      "item_type": "activity",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Limite d'une fonction composée"
+      ],
+      "keywords": [
+        "continuité"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "sin"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "limite d'une fonction composée",
+        "continuité"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-018",
+      "item_type": "activity",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Limite d'une fonction composée"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "lim",
+          "sin"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "limite d'une fonction composée"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-007",
+      "item_type": "theorem",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Limite d'une fonction composée"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "u",
+          "v"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "circ",
+          "lim"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "limite d'une fonction composée"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-019",
+      "item_type": "activity",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Limite d'une fonction composée"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "infty",
+          "lim",
+          "sin"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "limite d'une fonction composée"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-020",
+      "item_type": "activity",
+      "topics": [
+        "Continuité et limite d'une fonction composée",
+        "Limite d'une fonction composée"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "infty",
+          "lim",
+          "tan"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "continuité et limite d'une fonction composée",
+        "limite d'une fonction composée"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-021",
+      "item_type": "activity",
+      "topics": [
+        "Limites et ordre"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g",
+          "h"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "leq",
+          "sin"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "identify_or_read"
+      ],
+      "concepts": [
+        "limites et ordre",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-022",
+      "item_type": "activity",
+      "topics": [
+        "Limites et ordre"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "infty",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "limites et ordre",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-008",
+      "item_type": "theorem",
+      "topics": [
+        "Limites et ordre"
+      ],
+      "keywords": [
+        "limite",
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "u",
+          "v"
+        ],
+        "intervals": [],
+        "equations": [
+          "f=\\ell",
+          "u=\\ell",
+          "u=\\lim_{a}",
+          "v=\\ell",
+          "v=\\ell'"
+        ],
+        "notations": [
+          "leq",
+          "lim",
+          "neq"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "limites et ordre",
+        "limites",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-009",
+      "item_type": "theorem",
+      "topics": [
+        "Limites et ordre"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g",
+          "h",
+          "u",
+          "v"
+        ],
+        "intervals": [],
+        "equations": [
+          "g=0",
+          "g=\\ell'-\\ell"
+        ],
+        "notations": [
+          "Rightarrow",
+          "in",
+          "leq",
+          "lim",
+          "neq"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "limites et ordre"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-010",
+      "item_type": "theorem",
+      "topics": [
+        "Limites et ordre"
+      ],
+      "keywords": [
+        "limite",
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "u"
+        ],
+        "intervals": [],
+        "equations": [
+          "f=+\\infty",
+          "f=-\\infty",
+          "u=+\\infty",
+          "u=-\\infty"
+        ],
+        "notations": [
+          "geq",
+          "infty",
+          "leq",
+          "lim",
+          "neq"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "limites et ordre",
+        "limites",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-011",
+      "item_type": "theorem",
+      "topics": [
+        "Limites et ordre"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "u"
+        ],
+        "intervals": [],
+        "equations": [
+          "u=+\\infty"
+        ],
+        "notations": [
+          "Rightarrow",
+          "in",
+          "infty",
+          "lim"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "limites et ordre"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-023",
+      "item_type": "activity",
+      "topics": [
+        "Limites et ordre"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "infty",
+          "lim"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "limites et ordre"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-024",
+      "item_type": "activity",
+      "topics": [
+        "Limites et ordre"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "geq",
+          "in",
+          "lim",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "deduce"
+      ],
+      "concepts": [
+        "limites et ordre"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-025",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[1,4]",
+          "]-1,3[",
+          "]0,2]"
+        ],
+        "equations": [
+          "I=[1",
+          "I=]-1",
+          "I=]0"
+        ],
+        "notations": []
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-012",
+      "item_type": "theorem",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires",
+        "continuité",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "not_populated",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-026",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "g"
+        ],
+        "intervals": [
+          "[-3,5]",
+          "[-6,+\\infty[",
+          "[-6,4]"
+        ],
+        "equations": [],
+        "notations": [
+          "infty"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-013",
+      "item_type": "theorem",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle",
+        "équation",
+        "solution"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[a,b]",
+          "]a,b["
+        ],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires",
+        "continuité",
+        "intervalles",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-027",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [
+        "monotone"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [
+          "[0,4]"
+        ],
+        "equations": [
+          "I=[0",
+          "I=[\\dfrac{\\pi}{6}",
+          "I=\\mathbb{R}_+"
+        ],
+        "notations": [
+          "cos"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "prove"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires",
+        "monotonie"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-rem-001",
+      "item_type": "remark",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [
+        "intervalle",
+        "croissante",
+        "décroissante",
+        "monotone"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires",
+        "intervalles",
+        "monotonie"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-014",
+      "item_type": "theorem",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle",
+        "monotone",
+        "équation",
+        "solution",
+        "valeurs intermédiaires"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[a,b]"
+        ],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires",
+        "continuité",
+        "intervalles",
+        "monotonie",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-028",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [
+        "continuité",
+        "intervalle",
+        "équation",
+        "solution"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "justify",
+        "determine"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires",
+        "continuité",
+        "intervalles",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-029",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [
+        "continuité",
+        "intervalle",
+        "équation",
+        "solution"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[0,1]"
+        ],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "justify",
+        "compute",
+        "determine",
+        "deduce"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires",
+        "continuité",
+        "intervalles",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-015",
+      "item_type": "theorem",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle",
+        "signe"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires",
+        "continuité",
+        "intervalles",
+        "signe d'une fonction"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "not_populated",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-016",
+      "item_type": "theorem",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [
+        "continue",
+        "équation",
+        "solution",
+        "signe"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[\\alpha,\\beta]"
+        ],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires",
+        "continuité",
+        "équations",
+        "signe d'une fonction"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-030",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Théorème des valeurs intermédiaires"
+      ],
+      "keywords": [
+        "signe"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "sin"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "théorème des valeurs intermédiaires",
+        "signe d'une fonction"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-031",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Image d'un intervalle fermé borné par une fonction continue"
+      ],
+      "keywords": [
+        "équation"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[-5,4]"
+        ],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine",
+        "solve_equation"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "image d'un intervalle fermé borné par une fonction continue",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-017",
+      "item_type": "theorem",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Image d'un intervalle fermé borné par une fonction continue"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle",
+        "borné"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [
+          "[a,b]",
+          "[m,M]"
+        ],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "image d'un intervalle fermé borné par une fonction continue",
+        "continuité",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-032",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Image d'un intervalle fermé borné par une fonction continue"
+      ],
+      "keywords": [
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "sin"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine",
+        "deduce"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "image d'un intervalle fermé borné par une fonction continue",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-033",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Image d'un intervalle fermé borné par une fonction continue"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[-10,-1]",
+          "[1,4]"
+        ],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "image d'un intervalle fermé borné par une fonction continue"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-034",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction continue",
+        "Image d'un intervalle fermé borné par une fonction continue"
+      ],
+      "keywords": [
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "sin"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine",
+        "deduce"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction continue",
+        "image d'un intervalle fermé borné par une fonction continue",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-018",
+      "item_type": "theorem",
+      "topics": [
+        "Image d'un intervalle par une fonction strictement monotone"
+      ],
+      "keywords": [
+        "limite",
+        "intervalle",
+        "croissante",
+        "décroissante"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [
+          "[a,b["
+        ],
+        "equations": [],
+        "notations": [
+          "infty"
+        ]
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "image d'un intervalle par une fonction strictement monotone",
+        "limites",
+        "intervalles",
+        "monotonie"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-035",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction strictement monotone"
+      ],
+      "keywords": [
+        "limite",
+        "croissante"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "infty"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction strictement monotone",
+        "limites",
+        "monotonie"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-thm-019",
+      "item_type": "theorem",
+      "topics": [
+        "Image d'un intervalle par une fonction strictement monotone"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle",
+        "monotone"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": null,
+      "reasoning_types": [],
+      "concepts": [
+        "image d'un intervalle par une fonction strictement monotone",
+        "continuité",
+        "intervalles",
+        "monotonie"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "not_populated",
+        "exercise_type": "not_populated",
+        "reasoning_types": "not_populated",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-act-036",
+      "item_type": "activity",
+      "topics": [
+        "Image d'un intervalle par une fonction strictement monotone"
+      ],
+      "keywords": [
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [
+          "]-\\infty, 0]",
+          "]2, +\\infty["
+        ],
+        "equations": [
+          "I=]-\\dfrac{1}{2}",
+          "I=]-\\infty",
+          "I=]2"
+        ],
+        "notations": [
+          "infty",
+          "sqrt",
+          "tan"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction strictement monotone",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-001",
+      "item_type": "exercise",
+      "topics": [
+        "Image d'un intervalle par une fonction strictement monotone",
+        "Problème résolu"
+      ],
+      "keywords": [
+        "continuité",
+        "continue",
+        "intervalle",
+        "borné",
+        "équation",
+        "solution",
+        "signe",
+        "valeurs intermédiaires",
+        "fonction composée",
+        "suite"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g",
+          "h",
+          "u"
+        ],
+        "intervals": [
+          "[0, 1]",
+          "[0,1]",
+          "[f(\\alpha), f(\\beta)]"
+        ],
+        "equations": [
+          "g=f"
+        ],
+        "notations": [
+          "circ",
+          "geq",
+          "in",
+          "leq",
+          "neq",
+          "subset"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "deduce"
+      ],
+      "concepts": [
+        "image d'un intervalle par une fonction strictement monotone",
+        "problème résolu",
+        "continuité",
+        "intervalles",
+        "équations",
+        "signe d'une fonction",
+        "théorème des valeurs intermédiaires",
+        "fonction composée",
+        "suites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-qst-001",
+      "item_type": "exercise",
+      "topics": [
+        "QCM - VRAI - FAUX",
+        "QCM"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g"
+        ],
+        "intervals": [],
+        "equations": [
+          "f=+\\infty"
+        ],
+        "notations": [
+          "infty",
+          "lim",
+          "sin"
+        ]
+      },
+      "exercise_type": "qcm",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "qcm - vrai - faux",
+        "qcm"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-qst-002",
+      "item_type": "exercise",
+      "topics": [
+        "QCM - VRAI - FAUX",
+        "QCM"
+      ],
+      "keywords": [
+        "continue",
+        "décroissante"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[1, 3]",
+          "[2, 5]"
+        ],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": "qcm",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "qcm - vrai - faux",
+        "qcm",
+        "continuité",
+        "monotonie"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-qst-003",
+      "item_type": "exercise",
+      "topics": [
+        "QCM - VRAI - FAUX",
+        "QCM"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle",
+        "équation",
+        "solution"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[-2, 5]"
+        ],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": "qcm",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "qcm - vrai - faux",
+        "qcm",
+        "continuité",
+        "intervalles",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-qst-004",
+      "item_type": "exercise",
+      "topics": [
+        "QCM - VRAI - FAUX",
+        "VRAI - FAUX"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "infty",
+          "lim"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "qcm - vrai - faux",
+        "vrai - faux"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-qst-005",
+      "item_type": "exercise",
+      "topics": [
+        "QCM - VRAI - FAUX",
+        "VRAI - FAUX"
+      ],
+      "keywords": [
+        "limite",
+        "croissante"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "infty"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "qcm - vrai - faux",
+        "vrai - faux",
+        "limites",
+        "monotonie"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-qst-006",
+      "item_type": "exercise",
+      "topics": [
+        "QCM - VRAI - FAUX",
+        "VRAI - FAUX"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "infty"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "qcm - vrai - faux",
+        "vrai - faux",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-qst-007",
+      "item_type": "exercise",
+      "topics": [
+        "QCM - VRAI - FAUX",
+        "VRAI - FAUX"
+      ],
+      "keywords": [
+        "asymptote"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [
+          "x=a"
+        ],
+        "notations": []
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "qcm - vrai - faux",
+        "vrai - faux",
+        "branches infinies"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-qst-008",
+      "item_type": "exercise",
+      "topics": [
+        "QCM - VRAI - FAUX",
+        "VRAI - FAUX"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g",
+          "h"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "infty",
+          "leq",
+          "lim"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "qcm - vrai - faux",
+        "vrai - faux",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-002",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "continuité"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [
+          "x=0"
+        ],
+        "notations": [
+          "neq",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "continuité"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-003",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "continuité"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [
+          "x=2"
+        ],
+        "notations": [
+          "neq"
+        ]
+      },
+      "exercise_type": "unstructured_statement",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "continuité"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-004",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "continuité"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "continuité"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-005",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "continuité"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "determine"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "continuité"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-006",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "infty",
+          "lim",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-007",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "continuité"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "sin",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "continuité"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-008",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "asymptote",
+        "équation",
+        "solution"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [
+          "x=0",
+          "x=2",
+          "y=0"
+        ],
+        "notations": [
+          "infty",
+          "lim"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine",
+        "represent_graphically"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "branches infinies",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-009",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "infty",
+          "sin",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "study_variations"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-010",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "unclassified"
+      ],
+      "concepts": [
+        "exercices et problèmes"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-011",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[0, +\\infty["
+        ],
+        "equations": [],
+        "notations": [
+          "infty",
+          "leq",
+          "sin",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "deduce"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-012",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "asymptote",
+        "équation",
+        "courbe représentative"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [
+          "y=2x"
+        ],
+        "notations": [
+          "infty",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "branches infinies",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-013",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "courbe représentative"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "infty",
+          "lim"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine",
+        "represent_graphically",
+        "interpret"
+      ],
+      "concepts": [
+        "exercices et problèmes"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-014",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "asymptote",
+        "branche infinie",
+        "équation",
+        "courbe représentative"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [
+          "y=x-\\dfrac{1}{2}"
+        ],
+        "notations": [
+          "infty",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "determine",
+        "represent_graphically"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "branches infinies",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-015",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "branche infinie",
+        "intervalle",
+        "courbe représentative"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g",
+          "h"
+        ],
+        "intervals": [
+          "[0,+\\infty["
+        ],
+        "equations": [],
+        "notations": [
+          "infty",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "identify_or_read"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "branches infinies",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-016",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "exercices et problèmes"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-017",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "sin"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "study_variations"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-018",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "infty",
+          "sin",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "study_variations"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-019",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g",
+          "h"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "geq",
+          "infty",
+          "leq",
+          "sin",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "deduce"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-020",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "geq",
+          "leq",
+          "lim",
+          "sin"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "deduce"
+      ],
+      "concepts": [
+        "exercices et problèmes"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-021",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "infty",
+          "leq",
+          "lim",
+          "sin"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "determine",
+        "deduce"
+      ],
+      "concepts": [
+        "exercices et problèmes"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-022",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "infty",
+          "leq"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "deduce"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-023",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "limite"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": [
+          "cos",
+          "infty",
+          "sin",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "study_variations"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "limites"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-024",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "courbe représentative"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g"
+        ],
+        "intervals": [
+          "[0,4]",
+          "]1,2]"
+        ],
+        "equations": [],
+        "notations": [
+          "in",
+          "infty",
+          "leq",
+          "lim"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "determine",
+        "represent_graphically"
+      ],
+      "concepts": [
+        "exercices et problèmes"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-025",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [
+          "]-\\infty, 0]",
+          "]2, +\\infty["
+        ],
+        "equations": [
+          "I=\\left]-\\dfrac{1}{2}",
+          "I=]-\\infty",
+          "I=]2"
+        ],
+        "notations": [
+          "infty",
+          "sqrt",
+          "tan"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-026",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "équation",
+        "solution"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine",
+        "represent_graphically"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-027",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "équation",
+        "solution"
+      ],
+      "mathematical_entities": {
+        "functions": [],
+        "intervals": [],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "not_populated",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-028",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "continuité"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "h"
+        ],
+        "intervals": [
+          "[-6, 2[",
+          "[-6, 4]",
+          "]2, 4]"
+        ],
+        "equations": [],
+        "notations": []
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "determine"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "continuité"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-029",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "continuité",
+        "équation",
+        "solution"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[1, 5]",
+          "]0, 1]",
+          "]0, 5]"
+        ],
+        "equations": [],
+        "notations": [
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "justify",
+        "determine"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "continuité",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-030",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "intervalle",
+        "croissante",
+        "équation",
+        "solution"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[0, 1[",
+          "]1, +\\infty["
+        ],
+        "equations": [],
+        "notations": [
+          "infty",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "determine"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "intervalles",
+        "monotonie",
+        "équations"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-031",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [],
+      "mathematical_entities": {
+        "functions": [
+          "f",
+          "g"
+        ],
+        "intervals": [
+          "[-1, 1]",
+          "[-1,1["
+        ],
+        "equations": [
+          "I=\\{\\mathcal{A}(x)"
+        ],
+        "notations": [
+          "in",
+          "sqrt"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "determine"
+      ],
+      "concepts": [
+        "exercices et problèmes"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "not_populated",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    },
+    {
+      "item_id": "math-4eme-tome1-ch01-exo-032",
+      "item_type": "exercise",
+      "topics": [
+        "Exercices et problèmes"
+      ],
+      "keywords": [
+        "continue",
+        "intervalle"
+      ],
+      "mathematical_entities": {
+        "functions": [
+          "f"
+        ],
+        "intervals": [
+          "[a, b]"
+        ],
+        "equations": [],
+        "notations": [
+          "subset"
+        ]
+      },
+      "exercise_type": "structured_multi_question",
+      "reasoning_types": [
+        "prove",
+        "interpret"
+      ],
+      "concepts": [
+        "exercices et problèmes",
+        "continuité",
+        "intervalles"
+      ],
+      "generation_methods": {
+        "topics": "deterministic",
+        "keywords": "rule_based",
+        "mathematical_entities": "deterministic",
+        "exercise_type": "rule_based",
+        "reasoning_types": "rule_based",
+        "concepts": "rule_based"
+      },
+      "review_status": "NOT_REQUIRED"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+Activité 5
+
+La courbe représentée ci-contre est celle de la fonction
+f:xH—>x*"+x—1.
+
+[/ 1. Donner l’ensemble de définition de f.
+
+2. Justifier la continuité de fsur R.
+
+3. Montrer que l’équation f (x) =0 admet une unique solution œ
+
+z> 10
+dans [0,1]. f
+4. On se propose de trouver un encadrement de plus en plus précis de 3
+à, en divisant à chaque fois l’intervalle contenant œ en deux 4
+
+intervalles de même amplitude.
+(Ce procédé est appelé « méthode de dichotomie »).
+
+a. Calculer f (â) et en déduire que & appartient à l’intervalle [%, 1].
+
+b. Calculer f (%) et en déduire que œ appartient à l’intervalle [%, %].
+
+c. Poursuivre le procédé pour déduire un encadrement de œ d’amplitude 10-!.
+d. Donner un encadrement de œ d’amplitude 102
+I[/ Avec l’ordinateur
+
+Pour réaliser la feuille de calcul ci-contre
+avec le tableur Excel,
+
+/ A | B | € | D | E | F |
+[1f/a — |jb — |(@@+xb/2 |fe) _ |ffb) — |fle+b)2) |
+2j Oj
+
+|_05 L
+[8j _ O5} __ | _ 075 -0375] 1[ 0171875
+
+« dans les cellules j4j . o5| - 075] - 0625| -0375| 0,171875/-0,12085938]
+[s| 0625 075| _ 06875|-0,13085938] _0,171875| 0,01245117
+Al, BI, CI, DI, El et FI taper gmŒm
+
+| 065625 — 046875| _ 0671875|-0,06112671| 0,012451171-0,02482986
+respectivement a, b, (a+b)/2, f(a), [9 | 06796875] __ 0,6875| 068359375| -00063138| 00 00
+
+[10]_06796875| 068359375| 0,68164063| -0,0063138|0,00303739|_-0,001646
+
+f (b) et f((a+b)/2) ; [11] 068164063| 068359375] 0,68261719)_-0,001646] 0,00303739) 0,00069374
+
+[12] 068164063| 068261719] 0,68212891|_0,001646] 0,000693741-0,00047663
+
+0844
+
+. [13| 068212891| 0668261719 0,68 ; 69374] 0,0001
+- dans la cellule A2, taper 0 ; daqs la [14] 0,68212891| 0,68237305 _Bﬂ
+cellule B2, taper 1 (encadrement initial) ;
+ dans la cellule C2, taper
+
+=(A2+B2)/2
+dans la cellule D2, taper
+= PUISSANCE(A2;3)+ A2-1| et recopier vers la droite en E2 et F2 ;
+
+« dans la cellule A3, taper |= SI(F2* E2 > 0;A2;C2)| et dans la cellule B3, taper
+=SI(F2*E2>0;C2;B2)| ;
+
+Déterminer un encadrement de œ d’amplitude 10*.
+
+Théorème
+Soit f une fonction continue sur un intervalle I.
+Si la fonction f ne s’annule en aucun point de I alors elle garde un signe constant sur I.
+
+—Continuité et limites
+
+17
+

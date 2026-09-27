@@ -1,0 +1,47 @@
+{
+  "chapter_id": "math-4eme-tome1-ch01",
+  "algorithm_version": "enrich-v1",
+  "counts": {
+    "items": 100,
+    "unclassified_reasoning_types": 17,
+    "exercise_type_distribution": {
+      "structured_multi_question": 52,
+      "null": 24,
+      "unstructured_statement": 21,
+      "qcm": 3
+    }
+  },
+  "generation_method_counts_per_field": {
+    "topics": {
+      "deterministic": 100
+    },
+    "keywords": {
+      "rule_based": 79,
+      "not_populated": 21
+    },
+    "mathematical_entities": {
+      "deterministic": 93,
+      "not_populated": 7
+    },
+    "exercise_type": {
+      "rule_based": 76,
+      "not_populated": 24
+    },
+    "reasoning_types": {
+      "rule_based": 76,
+      "not_populated": 24
+    },
+    "concepts": {
+      "rule_based": 100
+    }
+  },
+  "passed": true,
+  "total_errors": 0,
+  "checks": {
+    "schema": [],
+    "duplicate_item_ids": [],
+    "no_lost_items": [],
+    "controlled_vocabulary": [],
+    "generation_method_consistency": []
+  }
+}

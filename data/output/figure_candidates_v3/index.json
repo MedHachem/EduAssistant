@@ -1,0 +1,984 @@
+{
+  "source_pdf": "C:\\Users\\ASUS\\Desktop\\EduAssistant\\data\\math-4eme-tome1\\source\\source.pdf",
+  "page_range": [
+    5,
+    27
+  ],
+  "candidates": [
+    {
+      "id": "page_006_candidate_01",
+      "pdf_page": 6,
+      "bbox": [
+        139,
+        2045,
+        2082,
+        2973
+      ],
+      "crop_bbox": [
+        119,
+        2025,
+        2102,
+        2993
+      ],
+      "image": "figure_candidates_v3/page_006/page_006_candidate_01.png",
+      "area_ratio": 0.2217,
+      "needs_review": true,
+      "detection_reason": "4 embedded image fragment(s) clustered, covering 10.9% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_006_candidate_02",
+      "pdf_page": 6,
+      "bbox": [
+        541,
+        457,
+        1004,
+        796
+      ],
+      "crop_bbox": [
+        521,
+        437,
+        1024,
+        816
+      ],
+      "image": "figure_candidates_v3/page_006/page_006_candidate_02.png",
+      "area_ratio": 0.0333,
+      "needs_review": true,
+      "detection_reason": "2 embedded image fragment(s) clustered, covering 3.3% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_008_candidate_01",
+      "pdf_page": 8,
+      "bbox": [
+        139,
+        77,
+        1324,
+        376
+      ],
+      "crop_bbox": [
+        119,
+        57,
+        1344,
+        396
+      ],
+      "image": "figure_candidates_v3/page_008/page_008_candidate_01.png",
+      "area_ratio": 0.0329,
+      "needs_review": true,
+      "detection_reason": "2 embedded image fragment(s) clustered, covering 3.3% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_008_candidate_02",
+      "pdf_page": 8,
+      "bbox": [
+        117,
+        1695,
+        476,
+        2124
+      ],
+      "crop_bbox": [
+        97,
+        1675,
+        496,
+        2144
+      ],
+      "image": "figure_candidates_v3/page_008/page_008_candidate_02.png",
+      "area_ratio": 0.0159,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.6% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_009_candidate_01",
+      "pdf_page": 9,
+      "bbox": [
+        139,
+        82,
+        2085,
+        1016
+      ],
+      "crop_bbox": [
+        119,
+        62,
+        2105,
+        1036
+      ],
+      "image": "figure_candidates_v3/page_009/page_009_candidate_01.png",
+      "area_ratio": 0.2397,
+      "needs_review": true,
+      "detection_reason": "5 embedded image fragment(s) clustered, covering 22.3% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_011_candidate_01",
+      "pdf_page": 11,
+      "bbox": [
+        1440,
+        1733,
+        2043,
+        2375
+      ],
+      "crop_bbox": [
+        1420,
+        1713,
+        2063,
+        2395
+      ],
+      "image": "figure_candidates_v3/page_011/page_011_candidate_01.png",
+      "area_ratio": 0.0501,
+      "needs_review": true,
+      "detection_reason": "2 embedded image fragment(s) clustered, covering 3.1% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_011_candidate_02",
+      "pdf_page": 11,
+      "bbox": [
+        143,
+        1456,
+        1520,
+        1610
+      ],
+      "crop_bbox": [
+        123,
+        1436,
+        1540,
+        1630
+      ],
+      "image": "figure_candidates_v3/page_011/page_011_candidate_02.png",
+      "area_ratio": 0.0143,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.4% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_011_candidate_03",
+      "pdf_page": 11,
+      "bbox": [
+        143,
+        1589,
+        986,
+        1736
+      ],
+      "crop_bbox": [
+        123,
+        1569,
+        1006,
+        1756
+      ],
+      "image": "figure_candidates_v3/page_011/page_011_candidate_03.png",
+      "area_ratio": 0.0069,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 0.7% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_011_candidate_04",
+      "pdf_page": 11,
+      "bbox": [
+        1418,
+        284,
+        2030,
+        878
+      ],
+      "crop_bbox": [
+        1398,
+        264,
+        2050,
+        898
+      ],
+      "image": "figure_candidates_v3/page_011/page_011_candidate_04.png",
+      "area_ratio": 0.0425,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.4% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_012_candidate_01",
+      "pdf_page": 12,
+      "bbox": [
+        426,
+        1996,
+        1053,
+        2124
+      ],
+      "crop_bbox": [
+        406,
+        1976,
+        1073,
+        2144
+      ],
+      "image": "figure_candidates_v3/page_012/page_012_candidate_01.png",
+      "area_ratio": 0.0152,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.5% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_012_candidate_02",
+      "pdf_page": 12,
+      "bbox": [
+        143,
+        448,
+        1212,
+        594
+      ],
+      "crop_bbox": [
+        123,
+        428,
+        1232,
+        614
+      ],
+      "image": "figure_candidates_v3/page_012/page_012_candidate_02.png",
+      "area_ratio": 0.0084,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 0.8% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_013_candidate_01",
+      "pdf_page": 13,
+      "bbox": [
+        1524,
+        422,
+        1994,
+        970
+      ],
+      "crop_bbox": [
+        1504,
+        402,
+        2014,
+        990
+      ],
+      "image": "figure_candidates_v3/page_013/page_013_candidate_01.png",
+      "area_ratio": 0.0385,
+      "needs_review": true,
+      "detection_reason": "3 embedded image fragment(s) clustered, covering 2.3% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_013_candidate_02",
+      "pdf_page": 13,
+      "bbox": [
+        139,
+        1774,
+        756,
+        2020
+      ],
+      "crop_bbox": [
+        119,
+        1754,
+        776,
+        2040
+      ],
+      "image": "figure_candidates_v3/page_013/page_013_candidate_02.png",
+      "area_ratio": 0.0138,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.0% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_013_candidate_03",
+      "pdf_page": 13,
+      "bbox": [
+        1316,
+        2256,
+        2068,
+        2712
+      ],
+      "crop_bbox": [
+        1296,
+        2236,
+        2088,
+        2732
+      ],
+      "image": "figure_candidates_v3/page_013/page_013_candidate_03.png",
+      "area_ratio": 0.03,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 3.0% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_014_candidate_01",
+      "pdf_page": 14,
+      "bbox": [
+        1166,
+        284,
+        2065,
+        656
+      ],
+      "crop_bbox": [
+        1146,
+        264,
+        2085,
+        676
+      ],
+      "image": "figure_candidates_v3/page_014/page_014_candidate_01.png",
+      "area_ratio": 0.0344,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.3% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_015_candidate_01",
+      "pdf_page": 15,
+      "bbox": [
+        281,
+        508,
+        400,
+        748
+      ],
+      "crop_bbox": [
+        261,
+        488,
+        420,
+        768
+      ],
+      "image": "figure_candidates_v3/page_015/page_015_candidate_01.png",
+      "area_ratio": 0.0077,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 0.8% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_015_candidate_02",
+      "pdf_page": 15,
+      "bbox": [
+        139,
+        1948,
+        2066,
+        2753
+      ],
+      "crop_bbox": [
+        119,
+        1928,
+        2086,
+        2773
+      ],
+      "image": "figure_candidates_v3/page_015/page_015_candidate_02.png",
+      "area_ratio": 0.1904,
+      "needs_review": true,
+      "detection_reason": "7 embedded image fragment(s) clustered, covering 17.7% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_015_candidate_03",
+      "pdf_page": 15,
+      "bbox": [
+        212,
+        1458,
+        716,
+        1960
+      ],
+      "crop_bbox": [
+        192,
+        1438,
+        736,
+        1980
+      ],
+      "image": "figure_candidates_v3/page_015/page_015_candidate_03.png",
+      "area_ratio": 0.0196,
+      "needs_review": true,
+      "detection_reason": "2 embedded image fragment(s) clustered, covering 2.0% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_015_candidate_04",
+      "pdf_page": 15,
+      "bbox": [
+        802,
+        1504,
+        1418,
+        1976
+      ],
+      "crop_bbox": [
+        782,
+        1484,
+        1438,
+        1996
+      ],
+      "image": "figure_candidates_v3/page_015/page_015_candidate_04.png",
+      "area_ratio": 0.0262,
+      "needs_review": true,
+      "detection_reason": "2 embedded image fragment(s) clustered, covering 2.6% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_015_candidate_05",
+      "pdf_page": 15,
+      "bbox": [
+        139,
+        1084,
+        1574,
+        1389
+      ],
+      "crop_bbox": [
+        119,
+        1064,
+        1594,
+        1409
+      ],
+      "image": "figure_candidates_v3/page_015/page_015_candidate_05.png",
+      "area_ratio": 0.0352,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.2% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_016_candidate_01",
+      "pdf_page": 16,
+      "bbox": [
+        135,
+        92,
+        2085,
+        1792
+      ],
+      "crop_bbox": [
+        115,
+        72,
+        2105,
+        1812
+      ],
+      "image": "figure_candidates_v3/page_016/page_016_candidate_01.png",
+      "area_ratio": 0.4622,
+      "needs_review": true,
+      "detection_reason": "10 embedded image fragment(s) clustered, covering 40.5% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_017_candidate_01",
+      "pdf_page": 17,
+      "bbox": [
+        139,
+        2524,
+        2082,
+        2972
+      ],
+      "crop_bbox": [
+        119,
+        2504,
+        2102,
+        2992
+      ],
+      "image": "figure_candidates_v3/page_017/page_017_candidate_01.png",
+      "area_ratio": 0.0984,
+      "needs_review": true,
+      "detection_reason": "2 embedded image fragment(s) clustered, covering 5.3% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_017_candidate_02",
+      "pdf_page": 17,
+      "bbox": [
+        1642,
+        256,
+        2001,
+        853
+      ],
+      "crop_bbox": [
+        1622,
+        236,
+        2021,
+        873
+      ],
+      "image": "figure_candidates_v3/page_017/page_017_candidate_02.png",
+      "area_ratio": 0.0273,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.0% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_017_candidate_03",
+      "pdf_page": 17,
+      "bbox": [
+        139,
+        2579,
+        476,
+        2892
+      ],
+      "crop_bbox": [
+        119,
+        2559,
+        496,
+        2912
+      ],
+      "image": "figure_candidates_v3/page_017/page_017_candidate_03.png",
+      "area_ratio": 0.0098,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.0% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_018_candidate_01",
+      "pdf_page": 18,
+      "bbox": [
+        135,
+        1603,
+        2066,
+        2323
+      ],
+      "crop_bbox": [
+        115,
+        1583,
+        2086,
+        2343
+      ],
+      "image": "figure_candidates_v3/page_018/page_018_candidate_01.png",
+      "area_ratio": 0.1827,
+      "needs_review": true,
+      "detection_reason": "2 embedded image fragment(s) clustered, covering 10.1% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_018_candidate_02",
+      "pdf_page": 18,
+      "bbox": [
+        1335,
+        1060,
+        1997,
+        1477
+      ],
+      "crop_bbox": [
+        1315,
+        1040,
+        2017,
+        1497
+      ],
+      "image": "figure_candidates_v3/page_018/page_018_candidate_02.png",
+      "area_ratio": 0.0353,
+      "needs_review": true,
+      "detection_reason": "2 embedded image fragment(s) clustered, covering 2.5% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_018_candidate_03",
+      "pdf_page": 18,
+      "bbox": [
+        139,
+        963,
+        1777,
+        1121
+      ],
+      "crop_bbox": [
+        119,
+        943,
+        1797,
+        1141
+      ],
+      "image": "figure_candidates_v3/page_018/page_018_candidate_03.png",
+      "area_ratio": 0.0195,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.3% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_019_candidate_01",
+      "pdf_page": 19,
+      "bbox": [
+        139,
+        1548,
+        2063,
+        2342
+      ],
+      "crop_bbox": [
+        119,
+        1528,
+        2083,
+        2362
+      ],
+      "image": "figure_candidates_v3/page_019/page_019_candidate_01.png",
+      "area_ratio": 0.1872,
+      "needs_review": true,
+      "detection_reason": "3 embedded image fragment(s) clustered, covering 12.3% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_019_candidate_02",
+      "pdf_page": 19,
+      "bbox": [
+        139,
+        77,
+        1324,
+        344
+      ],
+      "crop_bbox": [
+        119,
+        57,
+        1344,
+        364
+      ],
+      "image": "figure_candidates_v3/page_019/page_019_candidate_02.png",
+      "area_ratio": 0.0282,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 2.8% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_019_candidate_03",
+      "pdf_page": 19,
+      "bbox": [
+        1502,
+        591,
+        1944,
+        1043
+      ],
+      "crop_bbox": [
+        1482,
+        571,
+        1964,
+        1063
+      ],
+      "image": "figure_candidates_v3/page_019/page_019_candidate_03.png",
+      "area_ratio": 0.0254,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 0.6% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_019_candidate_04",
+      "pdf_page": 19,
+      "bbox": [
+        139,
+        1480,
+        1960,
+        1645
+      ],
+      "crop_bbox": [
+        119,
+        1460,
+        1980,
+        1665
+      ],
+      "image": "figure_candidates_v3/page_019/page_019_candidate_04.png",
+      "area_ratio": 0.0254,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.5% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_023_candidate_01",
+      "pdf_page": 23,
+      "bbox": [
+        724,
+        2759,
+        1500,
+        2920
+      ],
+      "crop_bbox": [
+        704,
+        2739,
+        1520,
+        2940
+      ],
+      "image": "figure_candidates_v3/page_023/page_023_candidate_01.png",
+      "area_ratio": 0.007,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 0.7% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_024_candidate_01",
+      "pdf_page": 24,
+      "bbox": [
+        147,
+        572,
+        316,
+        1080
+      ],
+      "crop_bbox": [
+        127,
+        552,
+        336,
+        1100
+      ],
+      "image": "figure_candidates_v3/page_024/page_024_candidate_01.png",
+      "area_ratio": 0.0057,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 0.6% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_024_candidate_02",
+      "pdf_page": 24,
+      "bbox": [
+        1164,
+        938,
+        2038,
+        1627
+      ],
+      "crop_bbox": [
+        1144,
+        918,
+        2058,
+        1647
+      ],
+      "image": "figure_candidates_v3/page_024/page_024_candidate_02.png",
+      "area_ratio": 0.0795,
+      "needs_review": true,
+      "detection_reason": "3 embedded image fragment(s) clustered, covering 7.3% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_025_candidate_01",
+      "pdf_page": 25,
+      "bbox": [
+        1303,
+        476,
+        1948,
+        1034
+      ],
+      "crop_bbox": [
+        1283,
+        456,
+        1968,
+        1054
+      ],
+      "image": "figure_candidates_v3/page_025/page_025_candidate_01.png",
+      "area_ratio": 0.0383,
+      "needs_review": true,
+      "detection_reason": "2 embedded image fragment(s) clustered, covering 2.2% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_027_candidate_01",
+      "pdf_page": 27,
+      "bbox": [
+        692,
+        79,
+        1548,
+        239
+      ],
+      "crop_bbox": [
+        672,
+        59,
+        1568,
+        259
+      ],
+      "image": "figure_candidates_v3/page_027/page_027_candidate_01.png",
+      "area_ratio": 0.0235,
+      "needs_review": true,
+      "detection_reason": "2 embedded image fragment(s) clustered, covering 2.3% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_027_candidate_02",
+      "pdf_page": 27,
+      "bbox": [
+        1364,
+        1184,
+        1836,
+        1512
+      ],
+      "crop_bbox": [
+        1344,
+        1164,
+        1856,
+        1532
+      ],
+      "image": "figure_candidates_v3/page_027/page_027_candidate_02.png",
+      "area_ratio": 0.0097,
+      "needs_review": true,
+      "detection_reason": "1 embedded image fragment(s) clustered, covering 1.0% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_027_candidate_03",
+      "pdf_page": 27,
+      "bbox": [
+        141,
+        1762,
+        997,
+        2093
+      ],
+      "crop_bbox": [
+        121,
+        1742,
+        1017,
+        2113
+      ],
+      "image": "figure_candidates_v3/page_027/page_027_candidate_03.png",
+      "area_ratio": 0.0756,
+      "needs_review": true,
+      "detection_reason": "2 embedded image fragment(s) clustered, covering 1.3% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    },
+    {
+      "id": "page_027_candidate_04",
+      "pdf_page": 27,
+      "bbox": [
+        141,
+        510,
+        983,
+        1038
+      ],
+      "crop_bbox": [
+        121,
+        490,
+        1003,
+        1058
+      ],
+      "image": "figure_candidates_v3/page_027/page_027_candidate_04.png",
+      "area_ratio": 0.0709,
+      "needs_review": true,
+      "detection_reason": "3 embedded image fragment(s) clustered, covering 2.5% of the page",
+      "signals": {
+        "embedded_images": true,
+        "vector_drawings": false,
+        "table": false
+      }
+    }
+  ]
+}

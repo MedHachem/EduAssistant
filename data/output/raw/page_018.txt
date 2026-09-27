@@ -1,0 +1,42 @@
+Cours
+Démonstration
+
+Supposons que f change de signe sur I.
+Il existe alors deux réels œ et B (x <B) de I tels que f(w).f(B)<0
+
+La fonction f étant continue sur [a,B], l’équation f(x)=0 admet au moins une solution
+
+dans [a ; B] . Ce qui contredit l’hypothèse « f ne s’annule en aucun point de I ».
+
+Activité 6
+1. Montrer que la fonction f :x H>1+x+ x2+x*+.+x!0 garde un signe constant sur R.
+
+2. Montrer que la fonction f :x H> 1+sin x + sin” x + sin* x +…+sin!° x garde un signe
+constant sur R.
+
+V. 2 Image d’un intervalle fermé borné par une fonction continue
+
+Activité 1
+On a représenté ci-contre la courbe d’une fonction f
+définie sur [-5,4].
+1. Déterminer f([—5,4]) ,
+2. a. Déterminer le minimum m et le maximum M
+de f sur [-5,4].
+
+Théorème
+M — h
+L’image d’un intervalle fermé borné [a,b] par une | :"
+fonction continue est un intervalle fermé borné [m,M] . ffa)|… l_ \
+Le réel m est le minimum de f sur [a,b]. .'
+Le réel M est le maximum de f sur [a,b]. E
+n
+Activité 2
+Soit f la fonction définie sur R par f (x)=sin" x.
+1. a. Déterminer le minimum et le maximum de f sur [—%,%] .
+b. En déduire f([ —ï,ï]) .
+e m Î1T
+2. Déterminer l’image par f de chacun des intervalles, [ ,—] et [€ Î]
+
+—Continuité et limites
+
+18

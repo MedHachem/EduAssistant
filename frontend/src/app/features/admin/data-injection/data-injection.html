@@ -1,0 +1,47 @@
+<header class="page-header">
+  <h1>Data injection</h1>
+  <p>Upload official documents to the library. Published books appear in the student space as courses.</p>
+</header>
+
+<section class="cards">
+  @for (c of cards(); track c.type.key) {
+    <article class="type-card" [style.--accent]="c.type.accent" [style.--accent-soft]="c.type.accentSoft">
+      <span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path [attr.d]="c.type.icon" /></svg></span>
+      <div class="body">
+        <h2>{{ c.type.label }}</h2>
+        <p>{{ c.type.description }}</p>
+        <span class="counts"><strong>{{ c.total }}</strong> uploaded · <strong>{{ c.published }}</strong> published</span>
+      </div>
+      <a class="btn-accent" [routerLink]="c.type.key">Upload</a>
+    </article>
+  }
+</section>
+
+<section class="card library">
+  <header class="library-head">
+    <h2>Library</h2>
+    <div class="filters">
+      <input type="search" placeholder="Search title, subject, file…" [value]="search()" (input)="search.set($any($event.target).value)" />
+      <select [value]="typeFilter()" (change)="setType($any($event.target).value)" aria-label="Type">
+        <option value="ALL">All types</option>
+        @for (t of types; track t.key) { <option [value]="t.key">{{ t.label }}</option> }
+      </select>
+      <select [value]="statusFilter()" (change)="setStatus($any($event.target).value)" aria-label="Status">
+        <option value="ALL">All statuses</option>
+        <option value="PUBLISHED">Published</option>
+        <option value="DRAFT">Draft</option>
+      </select>
+    </div>
+  </header>
+
+  @if (store.error(); as e) {
+    <p class="error">{{ e }}</p>
+  } @else if (store.loading() && !store.documents().length) {
+    <p class="muted">Loading…</p>
+  } @else {
+    <app-document-table
+      [documents]="filtered()"
+      [emptyText]="store.documents().length ? 'No document matches the filters.' : 'The library is empty. Upload a first document above.'"
+    />
+  }
+</section>

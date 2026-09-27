@@ -1,0 +1,114 @@
+|  Exercicesetproblèmes |
+
+cos(x2 —l)—l
+
+4 f:xH+— en l.
+
+x#_2x"+1
+
+On considère la fonction f définie sur [0, + œ[
+par f(x)=(«]x+2 —Jî)sinx .
+
+1. Montrer que pour tout réel positif x,
+2sin x
+f(x)=—-
+( ) Jx+2+/x
+
+2. Montrer que pour tout réel positif x, |f (x)l < 2
+
+Jx
+3. En déduire la limite de f en +o.
+
+On considère la fonction f définie sur R par
+
+f(x)= x+,{x2 +1 et on désigne par @ sa courbe
+
+représentative dans un repère orthogonal (O,Î,Î) .
+
+1. Montrer que l’axe des abscisses est une asymptote
+à Gen —.
+2. Montrer que la droite d’équation y = 2x est une
+
+asymptote à @ en +0.
+
+3
+Soit la fonction f : x — —
+
+(x-17°
+1.Dé i lim f li f —x—2
+terminer x1_)rn1 («) etx_1£1œ( («)-x )et
+
+interpréter les résultats obtenus.
+2. Etudier les variations de f et tracer sa courbe
+représentative dans un repère orthogonal du plan.
+
+Soit la fonction f : x —> \/x2 -—x+1l
+
+On désigne par Cç la courbe représentative
+
+de f dans un repère orthogonal du plan.
+1. a. Déterminer l’ensemble D£ de
+
+définition de la fonction f.
+b. Montrer que pour tout réel de Dç,
+
+2
+1 3
+f(x)=,{|x-=| +—.
+OS
+2. a. Montrer que la droite D d’équation
+
+y=x —% est une asymptote à la courbe de f en +œ.
+
+b. Etudier la position de la courbe de f par rapport à la
+droite D.
+3. Etudier la nature de la branche infinie de Cç en —œ.
+
+4. Tracer Cr.
+
+On a représenté trois fonctions f, g et h
+
+définies sur l’intervalle [0,+co[ par
+
+f(x)=x"+1, g(x)=Jx et h(x)=x—à.
+
+1. Identifier pour chaque fonction sa courbe
+représentative.
+
+2. Préciser pour chaque courbe la nature de sa branche
+infinie.
+
+Le plan est muni d’un repère orthogonal
+
+(O,Î,Î) . Déterminer la nature des branches infinies
+
+de la courbe de f dans chacun des cas ci-dessous.
+1.f:xH—2x—3Vx-—1.
+
+2. f:xl—>l—\/x+2.
+x
+
+3. f:xl—>x1/x—_l.
+x+1
+
+Dans chacun des cas suivants, à l’aide des
+
+théorèmes de comparaison, étudier les limites
+en 0 de f.
+
+1l f:x#> xsin(£].
+x
+
+2. f:x1—51+x° cos[l].
+x
+3.f:x |—)l+cos(l).
+x x
+
+Dans chacun des cas suivants, à l’aide des
+
+théorèmes de comparaison, étudier les limites en +0
+eten —o de la fonction f .
+
+1. f:xl—)2+cÆ.
+
+_Continuité et limites

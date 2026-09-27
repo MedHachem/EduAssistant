@@ -1,0 +1,126 @@
+VISUAL ELEMENT REVIEW -- ROUND 3 (V3, completeness-refined)
+============================================================
+
+Third human verification round (V3): candidates are the same 39 that reached the review queue in V2, with bboxes further refined for completeness (small labels/axes/curve fragments recovered where V2's trim cut them off). classification_hint is a SOFT TRIAGE HINT, not a verified label -- needs_review is unconditionally true for every candidate here; nothing is auto-excluded.
+
+Total candidates: 39
+  figure    : 14
+  ambiguous : 25
+
+page_006_candidate_01 (page 6) -- ambiguous, confidence=0.4
+  bbox=[139, 2045, 2082, 2973]  grew_in_v3=True
+  image=figure_candidates_v3/page_006/page_006_candidate_01.png
+page_006_candidate_02 (page 6) -- ambiguous, confidence=0.4
+  bbox=[541, 457, 1004, 796]  grew_in_v3=True
+  image=figure_candidates_v3/page_006/page_006_candidate_02.png
+page_008_candidate_01 (page 8) -- ambiguous, confidence=0.4
+  bbox=[139, 77, 1324, 376]  grew_in_v3=True
+  image=figure_candidates_v3/page_008/page_008_candidate_01.png
+page_008_candidate_02 (page 8) -- ambiguous, confidence=0.4
+  bbox=[117, 1695, 476, 2124]  grew_in_v3=True
+  image=figure_candidates_v3/page_008/page_008_candidate_02.png
+page_009_candidate_01 (page 9) -- ambiguous, confidence=0.4
+  bbox=[139, 82, 2085, 1016]  grew_in_v3=True
+  image=figure_candidates_v3/page_009/page_009_candidate_01.png
+page_011_candidate_01 (page 11) -- figure, confidence=0.7
+  bbox=[1440, 1733, 2043, 2375]  grew_in_v3=True
+  image=figure_candidates_v3/page_011/page_011_candidate_01.png
+page_011_candidate_02 (page 11) -- ambiguous, confidence=0.4
+  bbox=[143, 1456, 1520, 1610]  grew_in_v3=True
+  image=figure_candidates_v3/page_011/page_011_candidate_02.png
+page_011_candidate_03 (page 11) -- ambiguous, confidence=0.4
+  bbox=[143, 1589, 986, 1736]  grew_in_v3=True
+  image=figure_candidates_v3/page_011/page_011_candidate_03.png
+page_011_candidate_04 (page 11) -- figure, confidence=0.7
+  bbox=[1418, 284, 2030, 878]  grew_in_v3=True
+  image=figure_candidates_v3/page_011/page_011_candidate_04.png
+page_012_candidate_01 (page 12) -- ambiguous, confidence=0.5
+  bbox=[426, 1996, 1053, 2124]  grew_in_v3=False
+  image=figure_candidates_v3/page_012/page_012_candidate_01.png
+page_012_candidate_02 (page 12) -- ambiguous, confidence=0.4
+  bbox=[143, 448, 1212, 594]  grew_in_v3=True
+  image=figure_candidates_v3/page_012/page_012_candidate_02.png
+page_013_candidate_01 (page 13) -- figure, confidence=0.7
+  bbox=[1524, 422, 1994, 970]  grew_in_v3=True
+  image=figure_candidates_v3/page_013/page_013_candidate_01.png
+page_013_candidate_02 (page 13) -- ambiguous, confidence=0.4
+  bbox=[139, 1774, 756, 2020]  grew_in_v3=True
+  image=figure_candidates_v3/page_013/page_013_candidate_02.png
+page_013_candidate_03 (page 13) -- figure, confidence=0.7
+  bbox=[1316, 2256, 2068, 2712]  grew_in_v3=True
+  image=figure_candidates_v3/page_013/page_013_candidate_03.png
+page_014_candidate_01 (page 14) -- figure, confidence=0.7
+  bbox=[1166, 284, 2065, 656]  grew_in_v3=True
+  image=figure_candidates_v3/page_014/page_014_candidate_01.png
+page_015_candidate_01 (page 15) -- ambiguous, confidence=0.5
+  bbox=[281, 508, 400, 748]  grew_in_v3=False
+  image=figure_candidates_v3/page_015/page_015_candidate_01.png
+page_015_candidate_02 (page 15) -- figure, confidence=0.7
+  bbox=[139, 1948, 2066, 2753]  grew_in_v3=True
+  image=figure_candidates_v3/page_015/page_015_candidate_02.png
+page_015_candidate_03 (page 15) -- figure, confidence=0.7
+  bbox=[212, 1458, 716, 1960]  grew_in_v3=True
+  image=figure_candidates_v3/page_015/page_015_candidate_03.png
+page_015_candidate_04 (page 15) -- figure, confidence=0.7
+  bbox=[802, 1504, 1418, 1976]  grew_in_v3=True
+  image=figure_candidates_v3/page_015/page_015_candidate_04.png
+page_015_candidate_05 (page 15) -- ambiguous, confidence=0.4
+  bbox=[139, 1084, 1574, 1389]  grew_in_v3=True
+  image=figure_candidates_v3/page_015/page_015_candidate_05.png
+page_016_candidate_01 (page 16) -- ambiguous, confidence=0.4
+  bbox=[135, 92, 2085, 1792]  grew_in_v3=True
+  image=figure_candidates_v3/page_016/page_016_candidate_01.png
+page_017_candidate_01 (page 17) -- ambiguous, confidence=0.4
+  bbox=[139, 2524, 2082, 2972]  grew_in_v3=True
+  image=figure_candidates_v3/page_017/page_017_candidate_01.png
+page_017_candidate_02 (page 17) -- figure, confidence=0.7
+  bbox=[1642, 256, 2001, 853]  grew_in_v3=True
+  image=figure_candidates_v3/page_017/page_017_candidate_02.png
+page_017_candidate_03 (page 17) -- ambiguous, confidence=0.4
+  bbox=[139, 2579, 476, 2892]  grew_in_v3=True
+  image=figure_candidates_v3/page_017/page_017_candidate_03.png
+page_018_candidate_01 (page 18) -- ambiguous, confidence=0.4
+  bbox=[135, 1603, 2066, 2323]  grew_in_v3=True
+  image=figure_candidates_v3/page_018/page_018_candidate_01.png
+page_018_candidate_02 (page 18) -- figure, confidence=0.7
+  bbox=[1335, 1060, 1997, 1477]  grew_in_v3=True
+  image=figure_candidates_v3/page_018/page_018_candidate_02.png
+page_018_candidate_03 (page 18) -- ambiguous, confidence=0.4
+  bbox=[139, 963, 1777, 1121]  grew_in_v3=True
+  image=figure_candidates_v3/page_018/page_018_candidate_03.png
+page_019_candidate_01 (page 19) -- ambiguous, confidence=0.4
+  bbox=[139, 1548, 2063, 2342]  grew_in_v3=True
+  image=figure_candidates_v3/page_019/page_019_candidate_01.png
+page_019_candidate_02 (page 19) -- ambiguous, confidence=0.4
+  bbox=[139, 77, 1324, 344]  grew_in_v3=True
+  image=figure_candidates_v3/page_019/page_019_candidate_02.png
+page_019_candidate_03 (page 19) -- figure, confidence=0.7
+  bbox=[1502, 591, 1944, 1043]  grew_in_v3=True
+  image=figure_candidates_v3/page_019/page_019_candidate_03.png
+page_019_candidate_04 (page 19) -- ambiguous, confidence=0.4
+  bbox=[139, 1480, 1960, 1645]  grew_in_v3=True
+  image=figure_candidates_v3/page_019/page_019_candidate_04.png
+page_023_candidate_01 (page 23) -- ambiguous, confidence=0.4
+  bbox=[724, 2759, 1500, 2920]  grew_in_v3=True
+  image=figure_candidates_v3/page_023/page_023_candidate_01.png
+page_024_candidate_01 (page 24) -- ambiguous, confidence=0.4
+  bbox=[147, 572, 316, 1080]  grew_in_v3=True
+  image=figure_candidates_v3/page_024/page_024_candidate_01.png
+page_024_candidate_02 (page 24) -- figure, confidence=0.7
+  bbox=[1164, 938, 2038, 1627]  grew_in_v3=True
+  image=figure_candidates_v3/page_024/page_024_candidate_02.png
+page_025_candidate_01 (page 25) -- figure, confidence=0.7
+  bbox=[1303, 476, 1948, 1034]  grew_in_v3=True
+  image=figure_candidates_v3/page_025/page_025_candidate_01.png
+page_027_candidate_01 (page 27) -- ambiguous, confidence=0.4
+  bbox=[692, 79, 1548, 239]  grew_in_v3=True
+  image=figure_candidates_v3/page_027/page_027_candidate_01.png
+page_027_candidate_02 (page 27) -- figure, confidence=0.7
+  bbox=[1364, 1184, 1836, 1512]  grew_in_v3=True
+  image=figure_candidates_v3/page_027/page_027_candidate_02.png
+page_027_candidate_03 (page 27) -- ambiguous, confidence=0.4
+  bbox=[141, 1762, 997, 2093]  grew_in_v3=True
+  image=figure_candidates_v3/page_027/page_027_candidate_03.png
+page_027_candidate_04 (page 27) -- ambiguous, confidence=0.4
+  bbox=[141, 510, 983, 1038]  grew_in_v3=True
+  image=figure_candidates_v3/page_027/page_027_candidate_04.png

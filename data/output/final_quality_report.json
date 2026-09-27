@@ -1,0 +1,285 @@
+{
+  "generated_at": "2026-09-25T22:27:30.141069+00:00",
+  "total_pages": 23,
+  "pages": [
+    {
+      "pdf_page": 5,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 6,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "pdf_page": 6,
+        "status": "pass",
+        "confidence": 0.94,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 7,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "pdf_page": 7,
+        "status": "pass",
+        "confidence": 0.95,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 8,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 9,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 10,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 11,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 12,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 13,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 14,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 15,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 16,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 17,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 18,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 19,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 20,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 21,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 22,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 23,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "pdf_page": 23,
+        "status": "pass",
+        "confidence": 0.96,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 24,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 25,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 26,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    },
+    {
+      "pdf_page": 27,
+      "layer1": {
+        "status": "ok",
+        "issues": []
+      },
+      "layer2": {
+        "status": "not_validated",
+        "confidence": null,
+        "issues": []
+      }
+    }
+  ]
+}

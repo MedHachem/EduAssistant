@@ -1,0 +1,144 @@
+@let it = item();
+@let ex = it.exercise_details;
+
+<section class="block">
+  <h3>Metadata</h3>
+  <dl class="meta">
+    <dt>ID</dt>
+    <dd><code>{{ it.id }}</code></dd>
+    <dt>Type</dt>
+    <dd>{{ typeLabel(it.type) }}</dd>
+    @if (it.title) {
+      <dt>Title</dt>
+      <dd>{{ it.title }}</dd>
+    }
+    <dt>Document</dt>
+    <dd>{{ kb().document.title }}</dd>
+    <dt>Chapter</dt>
+    <dd>{{ chapter() }}</dd>
+    <dt>Section</dt>
+    <dd>{{ section() ?? '—' }}</dd>
+    <dt>Subsection</dt>
+    <dd>{{ subsection() ?? '—' }}</dd>
+    <dt>PDF pages</dt>
+    <dd>
+      {{ pages() }}
+      @if (it.source.continues_from_previous_page) { <span class="tag">continues from previous page</span> }
+      @if (it.source.continues_on_next_page) { <span class="tag">continues on next page</span> }
+    </dd>
+    <dt>Bloc type</dt>
+    <dd><code>{{ it.source.bloc_type }}</code></dd>
+    <dt>Bloc number</dt>
+    <dd>{{ it.source.bloc_numero ?? '—' }}</dd>
+    <dt>Sources</dt>
+    <dd class="muted">
+      @for (src of it.source.reconstructed_sources; track src) {
+        <code>{{ basename(src) }}</code>{{ $last ? '' : ', ' }}
+      }
+    </dd>
+    <dt>Generated status</dt>
+    <dd>
+      <code>{{ it.validation_status }}</code>
+      @if (review(); as r) {
+        <span class="muted"> → local review: <strong>{{ r.status }}</strong> ({{ r.reviewed_at.slice(0, 16).replace('T', ' ') }})</span>
+      }
+    </dd>
+  </dl>
+  @if (it.uncertainty.has_uncertain_markers || it.uncertainty.has_gap_markers) {
+    <p class="warning">This item contains uncertain or gap markers from reconstruction.</p>
+  }
+</section>
+
+@if (showSource()) {
+  <section class="block">
+    <h3>Source page{{ it.source.pdf_pages.length > 1 ? 's' : '' }}</h3>
+    @for (p of it.source.pdf_pages; track p) {
+      <figure class="page-image">
+        <img [src]="pageImageUrl(p)" [alt]="'PDF page ' + p" loading="lazy" />
+        <figcaption>PDF page {{ p }}</figcaption>
+      </figure>
+    }
+  </section>
+}
+
+<section class="block">
+  <h3>Original content</h3>
+  <div class="content-box">
+    <app-math-text [text]="it.original_content" [raw]="raw()" />
+  </div>
+</section>
+
+@if (ex) {
+  @if (ex.statement) {
+    <section class="block">
+      <h3>Statement</h3>
+      <app-math-text [text]="ex.statement" [raw]="raw()" />
+    </section>
+  }
+
+  @if (ex.questions.length) {
+    <section class="block">
+      <h3>Questions</h3>
+      <app-question-tree [questions]="ex.questions" [raw]="raw()" />
+    </section>
+  }
+
+  @if (ex.qcm_choices?.length) {
+    <section class="block">
+      <h3>Choices</h3>
+      <ul class="choices">
+        @for (c of ex.qcm_choices; track c.label) {
+          <li>
+            <span class="choice-label">{{ c.label }}</span>
+            <app-math-text [text]="c.text" [raw]="raw()" />
+            @if (c.marked_correct_in_source === true) { <span class="tag ok">marked correct in source</span> }
+          </li>
+        }
+      </ul>
+    </section>
+  }
+
+  <section class="block">
+    <h3>Correction</h3>
+    @if (ex.correction?.present_in_source && ex.correction?.content) {
+      <div class="content-box">
+        <app-math-text [text]="ex.correction!.content!" [raw]="raw()" />
+      </div>
+    } @else {
+      <p class="empty">No correction present in source.</p>
+    }
+  </section>
+}
+
+@if (it.proof) {
+  <section class="block">
+    <h3>Proof</h3>
+    <div class="content-box">
+      <app-math-text [text]="it.proof" [raw]="raw()" />
+    </div>
+  </section>
+}
+
+@if (figures().length) {
+  <section class="block">
+    <h3>Figures</h3>
+    <ul class="figures">
+      @for (f of figures(); track f.reconstructed_figure_id) {
+        <li>
+          <div>
+            <code>{{ f.reconstructed_figure_id }}</code>
+            <span class="muted"> · page {{ f.pdf_page }} · {{ f.figure_status_in_source }} in source</span>
+          </div>
+          @if (f.candidate_id === null || f.match_status === 'unresolved') {
+            <div class="empty">Figure reference: unresolved</div>
+          } @else {
+            <div class="muted">Candidate <code>{{ f.candidate_id }}</code> · {{ f.match_status }}</div>
+          }
+          @if (figureImage(f); as src) {
+            <img class="figure-image" [src]="src" [alt]="f.reconstructed_figure_id" loading="lazy" />
+          }
+        </li>
+      }
+    </ul>
+  </section>
+}

@@ -1,0 +1,1708 @@
+{
+  "chapter_id": "math-4eme-tome1-ch01",
+  "algorithm_version": "assoc-v1",
+  "generated_at": "2026-09-26T23:32:03.861682+00:00",
+  "summary": {
+    "total_figures": 19,
+    "auto_match": 0,
+    "review_required": 19,
+    "no_match": 0
+  },
+  "pipeline_status": "ASSOCIATION_REVIEW_REQUIRED",
+  "associations": [
+    {
+      "figure_id": "figure_001",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 9,
+      "candidate_image": "figure_001.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_001-math-4eme-tome1-ch01-act-008",
+      "chosen_item_id": "math-4eme-tome1-ch01-act-008",
+      "relation": "supports",
+      "score": 0.8375,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_001-math-4eme-tome1-ch01-act-008",
+          "item_id": "math-4eme-tome1-ch01-act-008",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_001-math-4eme-tome1-ch01-act-009",
+          "item_id": "math-4eme-tome1-ch01-act-009",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.75
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_002",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 11,
+      "candidate_image": "figure_002.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_002-math-4eme-tome1-ch01-prop-002",
+      "chosen_item_id": "math-4eme-tome1-ch01-prop-002",
+      "relation": "illustrates",
+      "score": 0.8063,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_002-math-4eme-tome1-ch01-prop-002",
+          "item_id": "math-4eme-tome1-ch01-prop-002",
+          "item_type": "property",
+          "relation": "illustrates",
+          "score": 0.8063,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.625
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_002-math-4eme-tome1-ch01-act-013",
+          "item_id": "math-4eme-tome1-ch01-act-013",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.7688,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.875
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_002-math-4eme-tome1-ch01-def-001",
+          "item_id": "math-4eme-tome1-ch01-def-001",
+          "item_type": "definition",
+          "relation": "illustrates",
+          "score": 0.7688,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.875
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_002-math-4eme-tome1-ch01-act-012",
+          "item_id": "math-4eme-tome1-ch01-act-012",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.7438,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.375
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_003",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 11,
+      "candidate_image": "figure_003.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_003-math-4eme-tome1-ch01-act-012",
+      "chosen_item_id": "math-4eme-tome1-ch01-act-012",
+      "relation": "supports",
+      "score": 0.8688,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_003-math-4eme-tome1-ch01-act-012",
+          "item_id": "math-4eme-tome1-ch01-act-012",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8688,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.875
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_003-math-4eme-tome1-ch01-prop-002",
+          "item_id": "math-4eme-tome1-ch01-prop-002",
+          "item_type": "property",
+          "relation": "illustrates",
+          "score": 0.8688,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.875
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_003-math-4eme-tome1-ch01-act-013",
+          "item_id": "math-4eme-tome1-ch01-act-013",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.7063,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.625
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_003-math-4eme-tome1-ch01-def-001",
+          "item_id": "math-4eme-tome1-ch01-def-001",
+          "item_type": "definition",
+          "relation": "illustrates",
+          "score": 0.6438,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.375
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_004",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 13,
+      "candidate_image": "figure_004.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_004-math-4eme-tome1-ch01-act-018",
+      "chosen_item_id": "math-4eme-tome1-ch01-act-018",
+      "relation": "supports",
+      "score": 1.0,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_004-math-4eme-tome1-ch01-act-018",
+          "item_id": "math-4eme-tome1-ch01-act-018",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 1.0,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 1.0
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_004-math-4eme-tome1-ch01-act-017",
+          "item_id": "math-4eme-tome1-ch01-act-017",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.9583,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.8333
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_004-math-4eme-tome1-ch01-thm-007",
+          "item_id": "math-4eme-tome1-ch01-thm-007",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.9583,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.8333
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_004-math-4eme-tome1-ch01-act-019",
+          "item_id": "math-4eme-tome1-ch01-act-019",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.9167,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.6667
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_004-math-4eme-tome1-ch01-act-020",
+          "item_id": "math-4eme-tome1-ch01-act-020",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.875,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.5
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_004-math-4eme-tome1-ch01-act-021",
+          "item_id": "math-4eme-tome1-ch01-act-021",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.5333,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": false,
+            "reading_order_proximity": 0.3333
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_005",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 13,
+      "candidate_image": "figure_005.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_005-math-4eme-tome1-ch01-act-020",
+      "chosen_item_id": "math-4eme-tome1-ch01-act-020",
+      "relation": "supports",
+      "score": 1.0,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_005-math-4eme-tome1-ch01-act-020",
+          "item_id": "math-4eme-tome1-ch01-act-020",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 1.0,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 1.0
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_005-math-4eme-tome1-ch01-act-019",
+          "item_id": "math-4eme-tome1-ch01-act-019",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.9583,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.8333
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_005-math-4eme-tome1-ch01-thm-007",
+          "item_id": "math-4eme-tome1-ch01-thm-007",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.9167,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.6667
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_005-math-4eme-tome1-ch01-act-018",
+          "item_id": "math-4eme-tome1-ch01-act-018",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.875,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.5
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_005-math-4eme-tome1-ch01-act-017",
+          "item_id": "math-4eme-tome1-ch01-act-017",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8333,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.3333
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_005-math-4eme-tome1-ch01-act-021",
+          "item_id": "math-4eme-tome1-ch01-act-021",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.6583,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": false,
+            "reading_order_proximity": 0.8333
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_006",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 14,
+      "candidate_image": "figure_006.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_006-math-4eme-tome1-ch01-thm-009",
+      "chosen_item_id": "math-4eme-tome1-ch01-thm-009",
+      "relation": "illustrates",
+      "score": 0.9,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_006-math-4eme-tome1-ch01-thm-009",
+          "item_id": "math-4eme-tome1-ch01-thm-009",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.9,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 1.0
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_006-math-4eme-tome1-ch01-thm-008",
+          "item_id": "math-4eme-tome1-ch01-thm-008",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.85,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.8
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_006-math-4eme-tome1-ch01-thm-010",
+          "item_id": "math-4eme-tome1-ch01-thm-010",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.85,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.8
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_006-math-4eme-tome1-ch01-act-022",
+          "item_id": "math-4eme-tome1-ch01-act-022",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.6
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_006-math-4eme-tome1-ch01-thm-011",
+          "item_id": "math-4eme-tome1-ch01-thm-011",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.8,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_007",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 15,
+      "candidate_image": "figure_007.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_007-math-4eme-tome1-ch01-act-024",
+      "chosen_item_id": "math-4eme-tome1-ch01-act-024",
+      "relation": "supports",
+      "score": 0.7958,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_007-math-4eme-tome1-ch01-act-024",
+          "item_id": "math-4eme-tome1-ch01-act-024",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.7958,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.5833
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_007-math-4eme-tome1-ch01-act-026",
+          "item_id": "math-4eme-tome1-ch01-act-026",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.7792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_007-math-4eme-tome1-ch01-thm-012",
+          "item_id": "math-4eme-tome1-ch01-thm-012",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.7792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_007-math-4eme-tome1-ch01-act-023",
+          "item_id": "math-4eme-tome1-ch01-act-023",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.7542,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.4167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_007-math-4eme-tome1-ch01-act-025",
+          "item_id": "math-4eme-tome1-ch01-act-025",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.7375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_007-math-4eme-tome1-ch01-thm-011",
+          "item_id": "math-4eme-tome1-ch01-thm-011",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.7125,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_008",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 15,
+      "candidate_image": "figure_008.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_008-math-4eme-tome1-ch01-act-023",
+      "chosen_item_id": "math-4eme-tome1-ch01-act-023",
+      "relation": "supports",
+      "score": 0.8792,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_008-math-4eme-tome1-ch01-act-023",
+          "item_id": "math-4eme-tome1-ch01-act-023",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_008-math-4eme-tome1-ch01-thm-011",
+          "item_id": "math-4eme-tome1-ch01-thm-011",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.8792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_008-math-4eme-tome1-ch01-act-024",
+          "item_id": "math-4eme-tome1-ch01-act-024",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_008-math-4eme-tome1-ch01-act-025",
+          "item_id": "math-4eme-tome1-ch01-act-025",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.6958,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.5833
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_008-math-4eme-tome1-ch01-thm-012",
+          "item_id": "math-4eme-tome1-ch01-thm-012",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.6542,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.4167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_008-math-4eme-tome1-ch01-act-026",
+          "item_id": "math-4eme-tome1-ch01-act-026",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.6125,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_009",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 15,
+      "candidate_image": "figure_009.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_009-math-4eme-tome1-ch01-act-024",
+      "chosen_item_id": "math-4eme-tome1-ch01-act-024",
+      "relation": "supports",
+      "score": 0.8792,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_009-math-4eme-tome1-ch01-act-024",
+          "item_id": "math-4eme-tome1-ch01-act-024",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_009-math-4eme-tome1-ch01-act-023",
+          "item_id": "math-4eme-tome1-ch01-act-023",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_009-math-4eme-tome1-ch01-thm-011",
+          "item_id": "math-4eme-tome1-ch01-thm-011",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.7958,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.5833
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_009-math-4eme-tome1-ch01-act-025",
+          "item_id": "math-4eme-tome1-ch01-act-025",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.7792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_009-math-4eme-tome1-ch01-thm-012",
+          "item_id": "math-4eme-tome1-ch01-thm-012",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.7375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_009-math-4eme-tome1-ch01-act-026",
+          "item_id": "math-4eme-tome1-ch01-act-026",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.6958,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": true,
+            "reading_order_proximity": 0.5833
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_010",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 16,
+      "candidate_image": "figure_010.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_010-math-4eme-tome1-ch01-rem-001",
+      "chosen_item_id": "math-4eme-tome1-ch01-rem-001",
+      "relation": "related_to",
+      "score": 1.0,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_010-math-4eme-tome1-ch01-rem-001",
+          "item_id": "math-4eme-tome1-ch01-rem-001",
+          "item_type": "remark",
+          "relation": "related_to",
+          "score": 1.0,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 1.0
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_010-math-4eme-tome1-ch01-act-027",
+          "item_id": "math-4eme-tome1-ch01-act-027",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.95,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.8
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_010-math-4eme-tome1-ch01-thm-014",
+          "item_id": "math-4eme-tome1-ch01-thm-014",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.95,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.8
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_010-math-4eme-tome1-ch01-act-028",
+          "item_id": "math-4eme-tome1-ch01-act-028",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.9,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.6
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_010-math-4eme-tome1-ch01-thm-013",
+          "item_id": "math-4eme-tome1-ch01-thm-013",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.9,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_011",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 17,
+      "candidate_image": "figure_011.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_011-math-4eme-tome1-ch01-act-029",
+      "chosen_item_id": "math-4eme-tome1-ch01-act-029",
+      "relation": "supports",
+      "score": 0.9375,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_011-math-4eme-tome1-ch01-act-029",
+          "item_id": "math-4eme-tome1-ch01-act-029",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.9375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_011-math-4eme-tome1-ch01-thm-015",
+          "item_id": "math-4eme-tome1-ch01-thm-015",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.9375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.75
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_012",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 18,
+      "candidate_image": "figure_012.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_012-math-4eme-tome1-ch01-act-030",
+      "chosen_item_id": "math-4eme-tome1-ch01-act-030",
+      "relation": "supports",
+      "score": 0.8875,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_012-math-4eme-tome1-ch01-act-030",
+          "item_id": "math-4eme-tome1-ch01-act-030",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8875,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.55
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_012-math-4eme-tome1-ch01-thm-017",
+          "item_id": "math-4eme-tome1-ch01-thm-017",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.8875,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.95
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_012-math-4eme-tome1-ch01-act-032",
+          "item_id": "math-4eme-tome1-ch01-act-032",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8625,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.85
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_012-math-4eme-tome1-ch01-act-031",
+          "item_id": "math-4eme-tome1-ch01-act-031",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_012-math-4eme-tome1-ch01-thm-016",
+          "item_id": "math-4eme-tome1-ch01-thm-016",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.8375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_013",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 18,
+      "candidate_image": "figure_013.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_013-math-4eme-tome1-ch01-act-030",
+      "chosen_item_id": "math-4eme-tome1-ch01-act-030",
+      "relation": "supports",
+      "score": 0.9875,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_013-math-4eme-tome1-ch01-act-030",
+          "item_id": "math-4eme-tome1-ch01-act-030",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.9875,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.95
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_013-math-4eme-tome1-ch01-thm-016",
+          "item_id": "math-4eme-tome1-ch01-thm-016",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.9625,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.85
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_013-math-4eme-tome1-ch01-act-031",
+          "item_id": "math-4eme-tome1-ch01-act-031",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.8375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_013-math-4eme-tome1-ch01-thm-017",
+          "item_id": "math-4eme-tome1-ch01-thm-017",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.7875,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.55
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_013-math-4eme-tome1-ch01-act-032",
+          "item_id": "math-4eme-tome1-ch01-act-032",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.7375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_014",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 19,
+      "candidate_image": "figure_014.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_014-math-4eme-tome1-ch01-act-034",
+      "chosen_item_id": "math-4eme-tome1-ch01-act-034",
+      "relation": "supports",
+      "score": 0.95,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_014-math-4eme-tome1-ch01-act-034",
+          "item_id": "math-4eme-tome1-ch01-act-034",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.95,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.8
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_014-math-4eme-tome1-ch01-act-033",
+          "item_id": "math-4eme-tome1-ch01-act-033",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.9,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": true,
+            "reading_order_proximity": 0.6
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_014-math-4eme-tome1-ch01-thm-018",
+          "item_id": "math-4eme-tome1-ch01-thm-018",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.7,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": false,
+            "reading_order_proximity": 1.0
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_014-math-4eme-tome1-ch01-act-035",
+          "item_id": "math-4eme-tome1-ch01-act-035",
+          "item_type": "activity",
+          "relation": "supports",
+          "score": 0.65,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": false,
+            "reading_order_proximity": 0.8
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_014-math-4eme-tome1-ch01-thm-019",
+          "item_id": "math-4eme-tome1-ch01-thm-019",
+          "item_type": "theorem",
+          "relation": "illustrates",
+          "score": 0.6,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": false,
+            "same_subsection": false,
+            "reading_order_proximity": 0.6
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_015",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 24,
+      "candidate_image": "figure_015.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_015-math-4eme-tome1-ch01-exo-005",
+      "chosen_item_id": "math-4eme-tome1-ch01-exo-005",
+      "relation": "belongs_to_exercise",
+      "score": 0.8844,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_015-math-4eme-tome1-ch01-exo-005",
+          "item_id": "math-4eme-tome1-ch01-exo-005",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8844,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.9375
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_015-math-4eme-tome1-ch01-exo-006",
+          "item_id": "math-4eme-tome1-ch01-exo-006",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8844,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.9375
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_015-math-4eme-tome1-ch01-exo-004",
+          "item_id": "math-4eme-tome1-ch01-exo-004",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8531,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.8125
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_015-math-4eme-tome1-ch01-exo-007",
+          "item_id": "math-4eme-tome1-ch01-exo-007",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8531,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.8125
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_015-math-4eme-tome1-ch01-exo-003",
+          "item_id": "math-4eme-tome1-ch01-exo-003",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8219,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.6875
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_015-math-4eme-tome1-ch01-exo-008",
+          "item_id": "math-4eme-tome1-ch01-exo-008",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8219,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.6875
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_015-math-4eme-tome1-ch01-exo-002",
+          "item_id": "math-4eme-tome1-ch01-exo-002",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7906,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.5625
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_015-math-4eme-tome1-ch01-exo-009",
+          "item_id": "math-4eme-tome1-ch01-exo-009",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7906,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.5625
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_016",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 25,
+      "candidate_image": "figure_016.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_016-math-4eme-tome1-ch01-exo-014",
+      "chosen_item_id": "math-4eme-tome1-ch01-exo-014",
+      "relation": "belongs_to_exercise",
+      "score": 0.9,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_016-math-4eme-tome1-ch01-exo-014",
+          "item_id": "math-4eme-tome1-ch01-exo-014",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.9,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 1.0
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_016-math-4eme-tome1-ch01-exo-013",
+          "item_id": "math-4eme-tome1-ch01-exo-013",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8722,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.8889
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_016-math-4eme-tome1-ch01-exo-015",
+          "item_id": "math-4eme-tome1-ch01-exo-015",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8722,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.8889
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_016-math-4eme-tome1-ch01-exo-012",
+          "item_id": "math-4eme-tome1-ch01-exo-012",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8444,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.7778
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_016-math-4eme-tome1-ch01-exo-016",
+          "item_id": "math-4eme-tome1-ch01-exo-016",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8444,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.7778
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_016-math-4eme-tome1-ch01-exo-011",
+          "item_id": "math-4eme-tome1-ch01-exo-011",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8167,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.6667
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_016-math-4eme-tome1-ch01-exo-017",
+          "item_id": "math-4eme-tome1-ch01-exo-017",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8167,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.6667
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_016-math-4eme-tome1-ch01-exo-010",
+          "item_id": "math-4eme-tome1-ch01-exo-010",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7889,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.5556
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_016-math-4eme-tome1-ch01-exo-018",
+          "item_id": "math-4eme-tome1-ch01-exo-018",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7889,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.5556
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_017",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 27,
+      "candidate_image": "figure_017.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_017-math-4eme-tome1-ch01-exo-029",
+      "chosen_item_id": "math-4eme-tome1-ch01-exo-029",
+      "relation": "belongs_to_exercise",
+      "score": 0.8792,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_017-math-4eme-tome1-ch01-exo-029",
+          "item_id": "math-4eme-tome1-ch01-exo-029",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_017-math-4eme-tome1-ch01-exo-030",
+          "item_id": "math-4eme-tome1-ch01-exo-030",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_017-math-4eme-tome1-ch01-exo-028",
+          "item_id": "math-4eme-tome1-ch01-exo-028",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_017-math-4eme-tome1-ch01-exo-031",
+          "item_id": "math-4eme-tome1-ch01-exo-031",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_017-math-4eme-tome1-ch01-exo-027",
+          "item_id": "math-4eme-tome1-ch01-exo-027",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7958,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.5833
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_017-math-4eme-tome1-ch01-exo-032",
+          "item_id": "math-4eme-tome1-ch01-exo-032",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7958,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.5833
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_018",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 27,
+      "candidate_image": "figure_018.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_018-math-4eme-tome1-ch01-exo-031",
+      "chosen_item_id": "math-4eme-tome1-ch01-exo-031",
+      "relation": "belongs_to_exercise",
+      "score": 0.8792,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_018-math-4eme-tome1-ch01-exo-031",
+          "item_id": "math-4eme-tome1-ch01-exo-031",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_018-math-4eme-tome1-ch01-exo-032",
+          "item_id": "math-4eme-tome1-ch01-exo-032",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_018-math-4eme-tome1-ch01-exo-030",
+          "item_id": "math-4eme-tome1-ch01-exo-030",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_018-math-4eme-tome1-ch01-exo-029",
+          "item_id": "math-4eme-tome1-ch01-exo-029",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7958,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.5833
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_018-math-4eme-tome1-ch01-exo-028",
+          "item_id": "math-4eme-tome1-ch01-exo-028",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7542,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.4167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_018-math-4eme-tome1-ch01-exo-027",
+          "item_id": "math-4eme-tome1-ch01-exo-027",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7125,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.25
+          }
+        }
+      ]
+    },
+    {
+      "figure_id": "figure_019",
+      "chapter_id": "math-4eme-tome1-ch01",
+      "source_page": 27,
+      "candidate_image": "figure_019.png",
+      "decision": "REVIEW_REQUIRED",
+      "review_status": "PENDING",
+      "chosen_association_id": "assoc-math-4eme-tome1-ch01-figure_019-math-4eme-tome1-ch01-exo-027",
+      "chosen_item_id": "math-4eme-tome1-ch01-exo-027",
+      "relation": "belongs_to_exercise",
+      "score": 0.8792,
+      "candidates": [
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_019-math-4eme-tome1-ch01-exo-027",
+          "item_id": "math-4eme-tome1-ch01-exo-027",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_019-math-4eme-tome1-ch01-exo-028",
+          "item_id": "math-4eme-tome1-ch01-exo-028",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8792,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.9167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_019-math-4eme-tome1-ch01-exo-029",
+          "item_id": "math-4eme-tome1-ch01-exo-029",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.8375,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.75
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_019-math-4eme-tome1-ch01-exo-030",
+          "item_id": "math-4eme-tome1-ch01-exo-030",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7958,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.5833
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_019-math-4eme-tome1-ch01-exo-031",
+          "item_id": "math-4eme-tome1-ch01-exo-031",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7542,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.4167
+          }
+        },
+        {
+          "association_id": "assoc-math-4eme-tome1-ch01-figure_019-math-4eme-tome1-ch01-exo-032",
+          "item_id": "math-4eme-tome1-ch01-exo-032",
+          "item_type": "exercise",
+          "relation": "belongs_to_exercise",
+          "score": 0.7125,
+          "signals": {
+            "same_page": true,
+            "neighboring_page": false,
+            "same_section": true,
+            "same_subsection": false,
+            "reading_order_proximity": 0.25
+          }
+        }
+      ]
+    }
+  ]
+}

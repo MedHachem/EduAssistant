@@ -1,0 +1,104 @@
+{
+  "chapter_id": "math-4eme-tome1-ch01",
+  "total_figures": 19,
+  "passed": 19,
+  "failed": 0,
+  "results": [
+    {
+      "figure_id": "figure_001",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_002",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_003",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_004",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_005",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_006",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_007",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_008",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_009",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_010",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_011",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_012",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_013",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_014",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_015",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_016",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_017",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_018",
+      "passed": true,
+      "problems": []
+    },
+    {
+      "figure_id": "figure_019",
+      "passed": true,
+      "problems": []
+    }
+  ],
+  "note": "Automated checks cover presence, resolution, non-blank content, bbox-in-page, and obvious edge-cut heuristics only. Full figure completeness (axes/labels/curves fully preserved, unrelated text fully excluded) is confirmed via human review -- see review.json."
+}

@@ -1,0 +1,249 @@
+[
+  {
+    "figure_id": "figure_001",
+    "candidate_id": "page_009_candidate_01",
+    "source_page": 9,
+    "status": "CORRECTED",
+    "bbox": [
+      1121,
+      385,
+      2065,
+      1016
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_002",
+    "candidate_id": "page_011_candidate_01",
+    "source_page": 11,
+    "status": "VALIDATED",
+    "bbox": [
+      1440,
+      1733,
+      2043,
+      2375
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_003",
+    "candidate_id": "page_011_candidate_04",
+    "source_page": 11,
+    "status": "VALIDATED",
+    "bbox": [
+      1418,
+      284,
+      2030,
+      878
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_004",
+    "candidate_id": "page_013_candidate_01",
+    "source_page": 13,
+    "status": "VALIDATED",
+    "bbox": [
+      1524,
+      422,
+      1994,
+      970
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_005",
+    "candidate_id": "page_013_candidate_03",
+    "source_page": 13,
+    "status": "VALIDATED",
+    "bbox": [
+      1316,
+      2256,
+      2068,
+      2712
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_006",
+    "candidate_id": "page_014_candidate_01",
+    "source_page": 14,
+    "status": "VALIDATED",
+    "bbox": [
+      1166,
+      284,
+      2065,
+      656
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_007",
+    "candidate_id": "page_015_candidate_02",
+    "source_page": 15,
+    "status": "CORRECTED",
+    "bbox": [
+      1141,
+      2209,
+      2024,
+      2750
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_008",
+    "candidate_id": "page_015_candidate_03",
+    "source_page": 15,
+    "status": "VALIDATED",
+    "bbox": [
+      212,
+      1458,
+      716,
+      1960
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_009",
+    "candidate_id": "page_015_candidate_04",
+    "source_page": 15,
+    "status": "VALIDATED",
+    "bbox": [
+      802,
+      1504,
+      1418,
+      1976
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_010",
+    "candidate_id": "page_016_candidate_01",
+    "source_page": 16,
+    "status": "CORRECTED",
+    "bbox": [
+      1353,
+      251,
+      2085,
+      921
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_011",
+    "candidate_id": "page_017_candidate_02",
+    "source_page": 17,
+    "status": "VALIDATED",
+    "bbox": [
+      1642,
+      256,
+      2001,
+      853
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_012",
+    "candidate_id": "page_018_candidate_01",
+    "source_page": 18,
+    "status": "CORRECTED",
+    "bbox": [
+      1509,
+      1676,
+      1996,
+      2143
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_013",
+    "candidate_id": "page_018_candidate_02",
+    "source_page": 18,
+    "status": "VALIDATED",
+    "bbox": [
+      1335,
+      1060,
+      1997,
+      1477
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_014",
+    "candidate_id": "page_019_candidate_03",
+    "source_page": 19,
+    "status": "VALIDATED",
+    "bbox": [
+      1502,
+      591,
+      1944,
+      1043
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_015",
+    "candidate_id": "page_024_candidate_02",
+    "source_page": 24,
+    "status": "VALIDATED",
+    "bbox": [
+      1164,
+      938,
+      2038,
+      1627
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_016",
+    "candidate_id": "page_025_candidate_01",
+    "source_page": 25,
+    "status": "CORRECTED",
+    "bbox": [
+      1303,
+      552,
+      1948,
+      964
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_017",
+    "candidate_id": "page_027_candidate_02",
+    "source_page": 27,
+    "status": "VALIDATED",
+    "bbox": [
+      1364,
+      1184,
+      1836,
+      1512
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_018",
+    "candidate_id": "page_027_candidate_03",
+    "source_page": 27,
+    "status": "VALIDATED",
+    "bbox": [
+      141,
+      1762,
+      997,
+      2093
+    ],
+    "review_status": "PENDING"
+  },
+  {
+    "figure_id": "figure_019",
+    "candidate_id": "page_027_candidate_04",
+    "source_page": 27,
+    "status": "CORRECTED",
+    "bbox": [
+      141,
+      566,
+      983,
+      1038
+    ],
+    "review_status": "PENDING"
+  }
+]

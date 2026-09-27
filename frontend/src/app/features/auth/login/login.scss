@@ -1,0 +1,26 @@
+.login {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+}
+
+.card {
+  width: min(420px, 90vw);
+  text-align: center;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.notice {
+  color: var(--muted);
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}

@@ -1,0 +1,30 @@
+2. Posons S, =g(0)+ g(l) + g(£) +.…+ g(n—_l) , n entier supérieur ou égal à 2.
+n n n
+
+Montrons que pour tout entier n > 2, S, =0.
+Pour tout entier n > 2,
+
+S, =80)+e(})+s[2)++0(2=
+(4 7-6)-(E5)-e)
+
+On en déduit que S, =f(0)-f(1)=0.
+
+3. Montrons que l’équation g(x) = 0 admet une solution dans l’intervalle [0, 1— l] ;
+n
+Supposons que pour tout réel x e[0, l—l] , E(x)=0.
+n
+
+Il résulte de la continuité de g sur l’intervalle [0, 1—l] , que g garde un signe constant
+n
+
+sur [0, 1—l] et par conséquent le réel g(0) + g(l) + g(â] +….+ g(n—_1] est ou bien
+n n n n
+
+strictement positif ou bien strictement négatif ce qui est en contradiction avec le résultat
+
+En conclusion, il existe un à e[0, 1—l] tel que g(œ)=0, c’est à dire f(a +1] =f().
+n n
+
+—Continuité et limites
+
+22

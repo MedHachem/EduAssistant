@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eduassistant.local/schema/knowledge_relations.schema.json",
+  "title": "KnowledgeRelations",
+  "description": "Design proposal, not yet implemented (Phase 9). Directed edges between knowledge items (and, for 'illustrates', a figure and a knowledge item), stored SEPARATELY from the normalized JSON and the enrichment file -- never merged into either. See knowledge_relations.md for full rationale and the deterministic/rule-based/LLM classification of every relation type.",
+  "type": "object",
+
+  "$defs": {
+    "RelationType": {
+      "type": "string",
+      "enum": ["illustrates", "applies_concept"],
+      "description": "v1 is deliberately two types only -- see knowledge_relations.md §1/§8 for why 'shares_concept' and 'prerequisite_of' were considered and NOT included."
+    },
+
+    "NodeKind": {
+      "type": "string",
+      "enum": ["knowledge_item", "figure"]
+    },
+
+    "Confidence": {
+      "type": "string",
+      "enum": ["high", "medium", "low"],
+      "description": "Admin-facing tier only -- mirrors figure_knowledge_association.md's CONFIDENCE_BY_DECISION philosophy. The underlying reading-order distance or association score is in `signals`, never surfaced as a raw number to a non-technical reviewer."
+    },
+
+    "GenerationMethod": {
+      "type": "string",
+      "enum": ["deterministic", "rule_based", "human_confirmed", "llm", "not_populated"],
+      "description": "Same convention as knowledge_enrichment.schema.json's GenerationMethod, plus 'human_confirmed' for a relation whose target was a human review decision (Figure Knowledge Review), not an algorithm output at all."
+    },
+
+    "RelationSignals": {
+      "type": "object",
+      "description": "Explainable, field-specific evidence for one relation -- never hidden inside a single opaque score.",
+      "properties": {
+        "shared_concepts": { "type": "array", "items": { "type": "string" } },
+        "reading_order_distance": { "type": ["integer", "null"], "minimum": 0 },
+        "source_review_status": { "type": ["string", "null"], "description": "For 'illustrates': the Figure Knowledge Review status this relation was derived from (e.g. CONFIRMED, REASSIGNED), or the association decision (AUTO_MATCH) if no human review exists yet." }
+      },
+      "additionalProperties": false
+    },
+
+    "Relation": {
+      "type": "object",
+      "required": [
+        "relation_id", "type", "source_id", "source_kind", "target_id", "target_kind",
+        "confidence", "generation_method", "review_status", "signals"
+      ],
+      "properties": {
+        "relation_id": {
+          "type": "string",
+          "description": "Deterministic: 'rel-<chapter_id>-<type>-<source_id>-<target_id>' -- content-derived, never a counter, so a rerun with unchanged inputs produces the identical id."
+        },
+        "type": { "$ref": "#/$defs/RelationType" },
+        "source_id": { "type": "string" },
+        "source_kind": { "$ref": "#/$defs/NodeKind" },
+        "target_id": { "type": "string" },
+        "target_kind": { "$ref": "#/$defs/NodeKind" },
+        "confidence": { "$ref": "#/$defs/Confidence" },
+        "generation_method": { "$ref": "#/$defs/GenerationMethod" },
+        "review_status": {
+          "type": "string",
+          "enum": ["NOT_REQUIRED", "REVIEW_REQUIRED", "HUMAN_APPROVED", "HUMAN_REJECTED"],
+          "description": "'NOT_REQUIRED' only for a high-confidence deterministic/rule_based relation. A 'human_confirmed' relation is already HUMAN_APPROVED (the human review IS the confirmation). Low-confidence rule_based relations and any future llm-generated relation must be at least REVIEW_REQUIRED -- never silently trusted, same convention as every prior phase."
+        },
+        "signals": { "$ref": "#/$defs/RelationSignals" }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "required": ["schema_version", "algorithm_version", "generated_at", "chapter_id", "relations"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "relations-1.0" },
+    "algorithm_version": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "chapter_id": { "type": "string" },
+    "relations": { "type": "array", "items": { "$ref": "#/$defs/Relation" } }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-09-26T08:20:41.561104+00:00",
+  "reconstructed_dir": "C:\\Users\\ASUS\\Desktop\\EduAssistant\\data\\output\\reconstructed",
+  "total_pages": 23,
+  "pages_ok": 23,
+  "pages_flagged": 0,
+  "global_issues": [],
+  "pages": [
+    {
+      "file": "page_005.md",
+      "pdf_page": 5,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_006.md",
+      "pdf_page": 6,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_007.md",
+      "pdf_page": 7,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_008.md",
+      "pdf_page": 8,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_009.md",
+      "pdf_page": 9,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_010.md",
+      "pdf_page": 10,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_011.md",
+      "pdf_page": 11,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_012.md",
+      "pdf_page": 12,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_013.md",
+      "pdf_page": 13,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_014.md",
+      "pdf_page": 14,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_015.md",
+      "pdf_page": 15,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_016.md",
+      "pdf_page": 16,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_017.md",
+      "pdf_page": 17,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_018.md",
+      "pdf_page": 18,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_019.md",
+      "pdf_page": 19,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_020.md",
+      "pdf_page": 20,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_021.md",
+      "pdf_page": 21,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_022.md",
+      "pdf_page": 22,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_023.md",
+      "pdf_page": 23,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_024.md",
+      "pdf_page": 24,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_025.md",
+      "pdf_page": 25,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_026.md",
+      "pdf_page": 26,
+      "status": "ok",
+      "issues": []
+    },
+    {
+      "file": "page_027.md",
+      "pdf_page": 27,
+      "status": "ok",
+      "issues": []
+    }
+  ]
+}

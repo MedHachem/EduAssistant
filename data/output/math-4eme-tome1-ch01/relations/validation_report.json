@@ -1,0 +1,23 @@
+{
+  "chapter_id": "math-4eme-tome1-ch01",
+  "algorithm_version": "relations-v1",
+  "counts": {
+    "relations": 67,
+    "by_type": {
+      "applies_concept": 67
+    },
+    "by_confidence": {
+      "high": 41,
+      "low": 11,
+      "medium": 15
+    }
+  },
+  "passed": true,
+  "total_errors": 0,
+  "checks": {
+    "schema": [],
+    "duplicate_relation_ids": [],
+    "referential_integrity": [],
+    "consistency": []
+  }
+}

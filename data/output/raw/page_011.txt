@@ -1,0 +1,55 @@
+Activité 4
+
+Le plan est muni d’un repère orthonormé (O,Î,Î) ;
+Soit À la droite d’équation y =1—x.
+
+A tout réel x, on associe le point M de À d’abscisse x
+et on désigne par f la fonction définie par f (x)= OM.
+
+Soit C, la courbe représentative de f dans le repère (O ,Î,î) ;
+
+1. Etudier géométriquement les variations de f , ainsi que ses
+limites en l’infini.
+
+2. a. Expliciter f (x).
+
+; 1 Soit f une fonction définie sur D.
+b. Montrer que la droite D : x = 5 estun — On désigne par C, sa courbe représentative dans un
+
+repère orthogonal.
+
+La droite A :x =a (a € R) est un axe de symétrie
+(2a-x)eD,
+f(2a-x)=f(x).
+
+axe de symétrie de C,.
+c. Montrer que la droite D' d’équation
+2 our C, si pour tout x de D,
+y= J2x —% est une asymptote à la P 5P {
+courbe C, au voisinage de +oo.
+3. Etudier les variations de f et tracer C,.
+
+III. Continuité et limite d’une fonction composée
+IIl.1 Composée de deux fonctions
+Activité 1
+Dans la figure ci-contre C, et C, sont les courbes
+représentatives de deux fonctions f et g définies
+respectivement sur R et R, .
+1. Lire sur le graphique les images par f des
+réels —, O, 1, 2 et 3, ainsi que les images
+par g des réels O, 1, 2, et 3.
+2. Soit les fonctions h : x H— g(f(x)) et k:x#—> f(g(x)).
+a. Déterminer les images par h des réels —1, O, 1, 2 et 3.
+b. Déterminer les images par k des réels O, 1, 2 et 3.
+
+Définition
+Soit u une fonction définie sur un ensemble I et v une fonction définie sur un ensemble J
+tel que u(I) est inclus dans J.
+
+La fonction notée vou, définie sur I par vou(x)=v(u(x)), est appelée fonction
+
+composée de u et v.
+
+—Continuité et limites
+
+11

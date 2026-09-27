@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eduassistant.local/schema/embedding_manifest.schema.json",
+  "title": "EmbeddingManifest",
+  "description": "Design proposal, not yet implemented (Phase 11). Describes manifest.json, the header artifact for one chapter's embedding output (data/output/<chapter_id>/embeddings/<model_id>/manifest.json), plus the shape of one entry in the sibling records.json. See embedding_design.md for full rationale.",
+  "type": "object",
+
+  "$defs": {
+    "EmbeddingModelInfo": {
+      "type": "object",
+      "required": ["name", "revision", "framework", "dimension"],
+      "properties": {
+        "name": { "type": "string", "description": "e.g. 'BAAI/bge-m3' -- the exact model identifier, not a friendly label." },
+        "revision": { "type": "string", "description": "Exact model revision/commit (e.g. a HuggingFace repo commit SHA) -- NOT just a version tag, so the precise weights are reproducible (see embedding_design.md §8)." },
+        "framework": { "type": "string", "description": "e.g. 'sentence-transformers'." },
+        "dimension": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+
+    "EmbeddingRecord": {
+      "type": "object",
+      "description": "One entry in records.json; row i of vectors.npy corresponds to records[i] -- this positional mapping is itself part of the contract (validated, never assumed -- see embedding_design.md §7).",
+      "required": [
+        "embedding_id", "chunk_id", "chapter_id", "row_index", "content_hash",
+        "embedding_model", "model_revision", "embedding_dimension",
+        "normalization_strategy", "created_at", "pipeline_version",
+        "filter_metadata"
+      ],
+      "properties": {
+        "embedding_id": {
+          "type": "string",
+          "description": "Deterministic: 'emb-<chapter_id>-<chunk_id>-<model_name>-<model_revision>' -- content-derived, never a counter, so the SAME chunk under a DIFFERENT model/revision gets a genuinely different id rather than overwriting."
+        },
+        "chunk_id": { "type": "string", "description": "FK to knowledge_chunks.json's own chunk_id -- reused verbatim, never regenerated." },
+        "chapter_id": { "type": "string" },
+        "row_index": { "type": "integer", "minimum": 0, "description": "Index into vectors.npy's first axis." },
+        "content_hash": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$", "description": "sha256 of the EXACT embedding input string (not just chunk.text) -- see embedding_design.md §2/§4 for why the input, not the source text, is hashed." },
+        "embedding_model": { "type": "string" },
+        "model_revision": { "type": "string" },
+        "embedding_dimension": { "type": "integer", "minimum": 1 },
+        "normalization_strategy": { "type": "string", "enum": ["l2", "none"] },
+        "created_at": { "type": "string", "format": "date-time" },
+        "pipeline_version": { "type": "string" },
+        "filter_metadata": {
+          "type": "object",
+          "description": "Denormalized, chunk-level fields a future Vector DB would filter/facet on -- copied from the chunk, never re-derived or invented (see embedding_design.md §10).",
+          "required": ["section_id", "subsection_id", "topics", "concepts", "item_types", "content_role", "pdf_pages", "has_uncertain_content"],
+          "properties": {
+            "section_id": { "type": ["string", "null"] },
+            "subsection_id": { "type": ["string", "null"] },
+            "topics": { "type": "array", "items": { "type": "string" } },
+            "concepts": { "type": "array", "items": { "type": "string" } },
+            "item_types": { "type": "array", "items": { "type": "string" } },
+            "content_role": { "type": "string" },
+            "pdf_pages": { "type": "array", "items": { "type": "integer", "minimum": 1 } },
+            "has_uncertain_content": { "type": "boolean" }
+          },
+          "additionalProperties": false
+        },
+        "status": {
+          "type": "string",
+          "enum": ["active", "stale"],
+          "description": "'stale' when a prior run's chunk_id no longer exists in the current knowledge_chunks.json -- the record and its vector are KEPT (never silently deleted) and flagged, per embedding_design.md §5."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "required": [
+    "schema_version", "pipeline_version", "chapter_id", "generated_at",
+    "embedding_model", "normalization_strategy", "vector_dtype", "vector_count",
+    "source_chunks_file", "source_chunks_hash", "vectors_file", "records_file"
+  ],
+  "properties": {
+    "schema_version": { "type": "string", "const": "embedding-manifest-1.0" },
+    "pipeline_version": { "type": "string" },
+    "chapter_id": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "embedding_model": { "$ref": "#/$defs/EmbeddingModelInfo" },
+    "normalization_strategy": { "type": "string", "enum": ["l2", "none"] },
+    "vector_dtype": { "type": "string", "const": "float32" },
+    "vector_count": { "type": "integer", "minimum": 0 },
+    "source_chunks_file": { "type": "string" },
+    "source_chunks_hash": { "type": "string", "pattern": "^sha256:[0-9a-f]{64}$", "description": "sha256 of the exact knowledge_chunks.json bytes this manifest was generated from." },
+    "vectors_file": { "type": "string" },
+    "records_file": { "type": "string" }
+  },
+  "additionalProperties": false
+}

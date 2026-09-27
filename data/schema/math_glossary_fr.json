@@ -1,0 +1,42 @@
+{
+  "_comment": "Explicit controlled vocabulary for enrich_knowledge.py (Phase 8, v1). Every entry here was confirmed present in the real Chapter 1 normalized content before being added (see knowledge_enrichment.md §0) -- none were guessed. Extend this file (never the enrichment code) when a future chapter introduces vocabulary/verbs not yet covered; an unmatched term simply does not contribute a keyword/concept/reasoning tag, it is never guessed.",
+
+  "keywords": [
+    { "term": "limite", "concept": "limites" },
+    { "term": "continuité", "concept": "continuité" },
+    { "term": "continue", "concept": "continuité" },
+    { "term": "asymptote", "concept": "branches infinies" },
+    { "term": "branche infinie", "concept": "branches infinies" },
+    { "term": "intervalle", "concept": "intervalles" },
+    { "term": "borné", "concept": "intervalles" },
+    { "term": "croissante", "concept": "monotonie" },
+    { "term": "décroissante", "concept": "monotonie" },
+    { "term": "monotone", "concept": "monotonie" },
+    { "term": "équation", "concept": "équations" },
+    { "term": "solution", "concept": "équations" },
+    { "term": "signe", "concept": "signe d'une fonction" },
+    { "term": "valeurs intermédiaires", "concept": "théorème des valeurs intermédiaires" },
+    { "term": "fonction composée", "concept": "fonction composée" },
+    { "term": "suite", "concept": "suites" },
+    { "term": "courbe représentative", "concept": null }
+  ],
+
+  "reasoning_verbs": [
+    { "verb": "montrer", "tag": "prove" },
+    { "verb": "démontrer", "tag": "prove" },
+    { "verb": "vérifier", "tag": "prove" },
+    { "verb": "justifier", "tag": "justify" },
+    { "verb": "calculer", "tag": "compute" },
+    { "verb": "déterminer", "tag": "determine" },
+    { "verb": "étudier", "tag": "study_variations" },
+    { "verb": "tracer", "tag": "represent_graphically" },
+    { "verb": "représenter", "tag": "represent_graphically" },
+    { "verb": "construire", "tag": "represent_graphically" },
+    { "verb": "dresser", "tag": "represent_graphically" },
+    { "verb": "résoudre", "tag": "solve_equation" },
+    { "verb": "déduire", "tag": "deduce" },
+    { "verb": "interpréter", "tag": "interpret" },
+    { "verb": "identifier", "tag": "identify_or_read" },
+    { "verb": "lire", "tag": "identify_or_read" }
+  ]
+}

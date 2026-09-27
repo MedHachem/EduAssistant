@@ -1,0 +1,69 @@
+VISUAL DETECTION V4 -- EVALUATION AGAINST NEW GROUND TRUTH
+============================================================
+
+Total candidates (V3 queue): 39
+Ground truth: {'VALIDATED': 13, 'NEEDS_CORRECTION': 6, 'REJECTED': 20}
+V4 classification counts: {'FIGURE': 17, 'FIGURE_REVIEW': 12, 'NOT_FIGURE': 10}
+Queue size (FIGURE + FIGURE_REVIEW): 29 / 39
+
+--- Recall (the critical metric) ---
+VALIDATED retained       : 13/13
+NEEDS_CORRECTION retained: 6/6
+Overall real-figure recall: 19/19 (100.0%)
+Real figures LOST (must be empty): []
+
+--- Precision ---
+REJECTED still in queue (FIGURE/FIGURE_REVIEW): 10 / 20
+  ids: ['page_006_candidate_01', 'page_008_candidate_01', 'page_008_candidate_02', 'page_017_candidate_01', 'page_017_candidate_03', 'page_019_candidate_01', 'page_019_candidate_02', 'page_023_candidate_01', 'page_024_candidate_01', 'page_027_candidate_01']
+REJECTED confidently excluded (NOT_FIGURE): 10 / 20
+Precision (real figures / queue size): 65.5%
+Precision (FIGURE bucket only): 94.1%
+
+--- Confusion matrix (ground_truth -> V4 classification) ---
+NEEDS_CORRECTION->FIGURE: 3  ['page_015_candidate_02', 'page_025_candidate_01', 'page_027_candidate_04']
+NEEDS_CORRECTION->FIGURE_REVIEW: 3  ['page_009_candidate_01', 'page_016_candidate_01', 'page_018_candidate_01']
+REJECTED->FIGURE: 1  ['page_006_candidate_01']
+REJECTED->FIGURE_REVIEW: 9  ['page_008_candidate_01', 'page_008_candidate_02', 'page_017_candidate_01', 'page_017_candidate_03', 'page_019_candidate_01', 'page_019_candidate_02', 'page_023_candidate_01', 'page_024_candidate_01', 'page_027_candidate_01']
+REJECTED->NOT_FIGURE: 10  ['page_006_candidate_02', 'page_011_candidate_02', 'page_011_candidate_03', 'page_012_candidate_01', 'page_012_candidate_02', 'page_013_candidate_02', 'page_015_candidate_01', 'page_015_candidate_05', 'page_018_candidate_03', 'page_019_candidate_04']
+VALIDATED->FIGURE: 13  ['page_011_candidate_01', 'page_011_candidate_04', 'page_013_candidate_01', 'page_013_candidate_03', 'page_014_candidate_01', 'page_015_candidate_03', 'page_015_candidate_04', 'page_017_candidate_02', 'page_018_candidate_02', 'page_019_candidate_03', 'page_024_candidate_02', 'page_027_candidate_02', 'page_027_candidate_03']
+
+--- Per-candidate detail ---
+NEEDS_CORRECTION   page_009_candidate_01      -> FIGURE_REVIEW  conf=0.40 reasons=['MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+NEEDS_CORRECTION   page_015_candidate_02      -> FIGURE         conf=0.80 reasons=['CLEAN_FIGURE_SIGNATURE']
+NEEDS_CORRECTION   page_016_candidate_01      -> FIGURE_REVIEW  conf=0.40 reasons=['MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+NEEDS_CORRECTION   page_018_candidate_01      -> FIGURE_REVIEW  conf=0.40 reasons=['MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+NEEDS_CORRECTION   page_025_candidate_01      -> FIGURE         conf=0.65 reasons=['SPARSE_GRAPHICAL_COMPONENT_FOUND']
+NEEDS_CORRECTION   page_027_candidate_04      -> FIGURE         conf=0.65 reasons=['SPARSE_GRAPHICAL_COMPONENT_FOUND']
+REJECTED           page_006_candidate_01      -> FIGURE         conf=0.80 reasons=['CLEAN_FIGURE_SIGNATURE']
+REJECTED           page_006_candidate_02      -> NOT_FIGURE     conf=0.75 reasons=['LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE']
+REJECTED           page_008_candidate_01      -> FIGURE_REVIEW  conf=0.40 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+REJECTED           page_008_candidate_02      -> FIGURE_REVIEW  conf=0.40 reasons=['MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+REJECTED           page_011_candidate_02      -> NOT_FIGURE     conf=0.75 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE']
+REJECTED           page_011_candidate_03      -> NOT_FIGURE     conf=0.75 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE']
+REJECTED           page_012_candidate_01      -> NOT_FIGURE     conf=0.75 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE']
+REJECTED           page_012_candidate_02      -> NOT_FIGURE     conf=0.75 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE']
+REJECTED           page_013_candidate_02      -> NOT_FIGURE     conf=0.75 reasons=['LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE']
+REJECTED           page_015_candidate_01      -> NOT_FIGURE     conf=0.75 reasons=['LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE']
+REJECTED           page_015_candidate_05      -> NOT_FIGURE     conf=0.75 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE']
+REJECTED           page_017_candidate_01      -> FIGURE_REVIEW  conf=0.40 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+REJECTED           page_017_candidate_03      -> FIGURE_REVIEW  conf=0.40 reasons=['MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+REJECTED           page_018_candidate_03      -> NOT_FIGURE     conf=0.75 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE']
+REJECTED           page_019_candidate_01      -> FIGURE_REVIEW  conf=0.40 reasons=['MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+REJECTED           page_019_candidate_02      -> FIGURE_REVIEW  conf=0.40 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+REJECTED           page_019_candidate_04      -> NOT_FIGURE     conf=0.75 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'LOW_DOMINANCE_NO_GRAPHICAL_EVIDENCE']
+REJECTED           page_023_candidate_01      -> FIGURE_REVIEW  conf=0.40 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+REJECTED           page_024_candidate_01      -> FIGURE_REVIEW  conf=0.40 reasons=['MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+REJECTED           page_027_candidate_01      -> FIGURE_REVIEW  conf=0.40 reasons=['ASPECT_RATIO_OUTSIDE_FIGURE_RANGE', 'MIXED_SIGNALS_NEEDS_HUMAN_REVIEW']
+VALIDATED          page_011_candidate_01      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_011_candidate_04      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_013_candidate_01      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_013_candidate_03      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_014_candidate_01      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_015_candidate_03      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_015_candidate_04      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_017_candidate_02      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_018_candidate_02      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_019_candidate_03      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_024_candidate_02      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_027_candidate_02      -> FIGURE         conf=0.90 reasons=['CLEAN_FIGURE_SIGNATURE', 'SPARSE_GRAPHICAL_COMPONENT_FOUND']
+VALIDATED          page_027_candidate_03      -> FIGURE         conf=0.65 reasons=['SPARSE_GRAPHICAL_COMPONENT_FOUND']

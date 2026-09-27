@@ -1,0 +1,1507 @@
+{
+  "source_report": "C:\\Users\\ASUS\\Desktop\\EduAssistant\\data\\output\\visual_elements_report_refined.json",
+  "total_candidates": 68,
+  "counts": {
+    "figure": 11,
+    "text_only": 35,
+    "ambiguous": 22
+  },
+  "candidates": [
+    {
+      "id": "page_006_candidate_01",
+      "pdf_page": 6,
+      "bbox": [
+        1232,
+        924,
+        2048,
+        1228
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 40,
+      "largest_component_frac": 0.063,
+      "n_bands": 6,
+      "background_color": [
+        248,
+        200,
+        224
+      ]
+    },
+    {
+      "id": "page_006_candidate_02",
+      "pdf_page": 6,
+      "bbox": [
+        800,
+        1324,
+        2032,
+        1996
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 99,
+      "largest_component_frac": 0.041,
+      "n_bands": 6,
+      "background_color": [
+        184,
+        224,
+        248
+      ]
+    },
+    {
+      "id": "page_006_candidate_03",
+      "pdf_page": 6,
+      "bbox": [
+        160,
+        1260,
+        768,
+        2108
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 53,
+      "largest_component_frac": 0.5992,
+      "n_bands": 1,
+      "background_color": [
+        184,
+        224,
+        248
+      ]
+    },
+    {
+      "id": "page_006_candidate_04",
+      "pdf_page": 6,
+      "bbox": [
+        144,
+        2105,
+        2077,
+        2968
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "7 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 62,
+      "largest_component_frac": 0.7148,
+      "n_bands": 7,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_006_candidate_05",
+      "pdf_page": 6,
+      "bbox": [
+        160,
+        476,
+        944,
+        796
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "4 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 18,
+      "largest_component_frac": 0.1501,
+      "n_bands": 4,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_006_candidate_06",
+      "pdf_page": 6,
+      "bbox": [
+        174,
+        92,
+        1643,
+        437
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 4,
+      "largest_component_frac": 0.8307,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_007_candidate_01",
+      "pdf_page": 7,
+      "bbox": [
+        144,
+        584,
+        2063,
+        955
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 62,
+      "largest_component_frac": 0.6349,
+      "n_bands": 1,
+      "background_color": [
+        184,
+        224,
+        248
+      ]
+    },
+    {
+      "id": "page_007_candidate_02",
+      "pdf_page": 7,
+      "bbox": [
+        1104,
+        2168,
+        2056,
+        2613
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 83,
+      "largest_component_frac": 0.0401,
+      "n_bands": 7,
+      "background_color": [
+        248,
+        200,
+        224
+      ]
+    },
+    {
+      "id": "page_007_candidate_03",
+      "pdf_page": 7,
+      "bbox": [
+        1158,
+        1040,
+        2061,
+        1269
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 40,
+      "largest_component_frac": 0.0865,
+      "n_bands": 4,
+      "background_color": [
+        248,
+        200,
+        224
+      ]
+    },
+    {
+      "id": "page_007_candidate_04",
+      "pdf_page": 7,
+      "bbox": [
+        160,
+        604,
+        416,
+        1052
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "3 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 5,
+      "largest_component_frac": 0.7903,
+      "n_bands": 3,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_007_candidate_05",
+      "pdf_page": 7,
+      "bbox": [
+        1456,
+        320,
+        1873,
+        463
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 8,
+      "largest_component_frac": 0.235,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        200,
+        224
+      ]
+    },
+    {
+      "id": "page_008_candidate_01",
+      "pdf_page": 8,
+      "bbox": [
+        120,
+        1698,
+        2001,
+        2021
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 47,
+      "largest_component_frac": 0.6381,
+      "n_bands": 1,
+      "background_color": [
+        184,
+        224,
+        240
+      ]
+    },
+    {
+      "id": "page_008_candidate_02",
+      "pdf_page": 8,
+      "bbox": [
+        160,
+        92,
+        1264,
+        316
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 6,
+      "largest_component_frac": 0.7266,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_008_candidate_03",
+      "pdf_page": 8,
+      "bbox": [
+        192,
+        476,
+        1440,
+        1148
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "10 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 39,
+      "largest_component_frac": 0.1854,
+      "n_bands": 10,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_008_candidate_04",
+      "pdf_page": 8,
+      "bbox": [
+        1456,
+        476,
+        2048,
+        1148
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 48,
+      "largest_component_frac": 0.7304,
+      "n_bands": 1,
+      "background_color": [
+        184,
+        224,
+        248
+      ]
+    },
+    {
+      "id": "page_008_candidate_05",
+      "pdf_page": 8,
+      "bbox": [
+        128,
+        1708,
+        416,
+        2124
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "3 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 3,
+      "largest_component_frac": 0.7984,
+      "n_bands": 3,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_009_candidate_01",
+      "pdf_page": 9,
+      "bbox": [
+        182,
+        1042,
+        2081,
+        2001
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "9 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 60,
+      "largest_component_frac": 0.4482,
+      "n_bands": 9,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_009_candidate_02",
+      "pdf_page": 9,
+      "bbox": [
+        144,
+        82,
+        2085,
+        1011
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "4 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 333,
+      "largest_component_frac": 0.2127,
+      "n_bands": 4,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_010_candidate_01",
+      "pdf_page": 10,
+      "bbox": [
+        208,
+        1276,
+        2032,
+        2300
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 171,
+      "largest_component_frac": 0.0259,
+      "n_bands": 16,
+      "background_color": [
+        184,
+        224,
+        248
+      ]
+    },
+    {
+      "id": "page_011_candidate_01",
+      "pdf_page": 11,
+      "bbox": [
+        1104,
+        918,
+        2061,
+        1331
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 65,
+      "largest_component_frac": 0.0744,
+      "n_bands": 5,
+      "background_color": [
+        248,
+        200,
+        224
+      ]
+    },
+    {
+      "id": "page_011_candidate_02",
+      "pdf_page": 11,
+      "bbox": [
+        1444,
+        1736,
+        2038,
+        2370
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 156,
+      "largest_component_frac": 0.5558,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_011_candidate_03",
+      "pdf_page": 11,
+      "bbox": [
+        160,
+        1516,
+        1504,
+        1596
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 9,
+      "largest_component_frac": 0.2394,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_011_candidate_04",
+      "pdf_page": 11,
+      "bbox": [
+        160,
+        1612,
+        976,
+        1676
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 6,
+      "largest_component_frac": 0.3439,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_011_candidate_05",
+      "pdf_page": 11,
+      "bbox": [
+        192,
+        2444,
+        2032,
+        2716
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 65,
+      "largest_component_frac": 0.0505,
+      "n_bands": 4,
+      "background_color": [
+        184,
+        224,
+        248
+      ]
+    },
+    {
+      "id": "page_011_candidate_06",
+      "pdf_page": 11,
+      "bbox": [
+        1478,
+        289,
+        2025,
+        874
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "figure",
+      "reason": "one dominant connected graphical shape (95% of ink), no text-line banding",
+      "n_components": 7,
+      "largest_component_frac": 0.9526,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_012_candidate_01",
+      "pdf_page": 12,
+      "bbox": [
+        140,
+        488,
+        2063,
+        901
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 18,
+      "largest_component_frac": 0.8785,
+      "n_bands": 3,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_012_candidate_02",
+      "pdf_page": 12,
+      "bbox": [
+        142,
+        2069,
+        2063,
+        2433
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 82,
+      "largest_component_frac": 0.6258,
+      "n_bands": 1,
+      "background_color": [
+        184,
+        224,
+        240
+      ]
+    },
+    {
+      "id": "page_012_candidate_03",
+      "pdf_page": 12,
+      "bbox": [
+        140,
+        1544,
+        2063,
+        2081
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "6 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 64,
+      "largest_component_frac": 0.4824,
+      "n_bands": 6,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_012_candidate_04",
+      "pdf_page": 12,
+      "bbox": [
+        160,
+        1996,
+        1056,
+        2124
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 9,
+      "largest_component_frac": 0.2099,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_012_candidate_05",
+      "pdf_page": 12,
+      "bbox": [
+        160,
+        508,
+        1152,
+        572
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 7,
+      "largest_component_frac": 0.2785,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_012_candidate_06",
+      "pdf_page": 12,
+      "bbox": [
+        160,
+        604,
+        416,
+        860
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 10,
+      "largest_component_frac": 0.5832,
+      "n_bands": 1,
+      "background_color": [
+        184,
+        224,
+        248
+      ]
+    },
+    {
+      "id": "page_013_candidate_01",
+      "pdf_page": 13,
+      "bbox": [
+        142,
+        962,
+        2063,
+        1217
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "figure",
+      "reason": "one dominant connected graphical shape (87% of ink), no text-line banding",
+      "n_components": 14,
+      "largest_component_frac": 0.8703,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_013_candidate_02",
+      "pdf_page": 13,
+      "bbox": [
+        1451,
+        427,
+        1989,
+        965
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 122,
+      "largest_component_frac": 0.5077,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_013_candidate_03",
+      "pdf_page": 13,
+      "bbox": [
+        144,
+        1834,
+        711,
+        2017
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 7,
+      "largest_component_frac": 0.3108,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_013_candidate_04",
+      "pdf_page": 13,
+      "bbox": [
+        1376,
+        2316,
+        2048,
+        2652
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "figure",
+      "reason": "one dominant connected graphical shape (100% of ink), no text-line banding",
+      "n_components": 1,
+      "largest_component_frac": 1.0,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_014_candidate_01",
+      "pdf_page": 14,
+      "bbox": [
+        140,
+        722,
+        2063,
+        1265
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 125,
+      "largest_component_frac": 0.5626,
+      "n_bands": 1,
+      "background_color": [
+        184,
+        224,
+        248
+      ]
+    },
+    {
+      "id": "page_014_candidate_02",
+      "pdf_page": 14,
+      "bbox": [
+        140,
+        2008,
+        2063,
+        2489
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 105,
+      "largest_component_frac": 0.5955,
+      "n_bands": 1,
+      "background_color": [
+        184,
+        224,
+        240
+      ]
+    },
+    {
+      "id": "page_014_candidate_03",
+      "pdf_page": 14,
+      "bbox": [
+        1216,
+        289,
+        2060,
+        596
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "figure",
+      "reason": "one dominant connected graphical shape (96% of ink), no text-line banding",
+      "n_components": 5,
+      "largest_component_frac": 0.9614,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_015_candidate_01",
+      "pdf_page": 15,
+      "bbox": [
+        160,
+        508,
+        400,
+        748
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "3 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 7,
+      "largest_component_frac": 0.3227,
+      "n_bands": 3,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_015_candidate_02",
+      "pdf_page": 15,
+      "bbox": [
+        140,
+        2008,
+        2063,
+        2753
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "5 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 228,
+      "largest_component_frac": 0.5397,
+      "n_bands": 5,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_015_candidate_03",
+      "pdf_page": 15,
+      "bbox": [
+        272,
+        1516,
+        656,
+        1900
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 69,
+      "largest_component_frac": 0.5918,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_015_candidate_04",
+      "pdf_page": 15,
+      "bbox": [
+        832,
+        1564,
+        1392,
+        1916
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 89,
+      "largest_component_frac": 0.6212,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_015_candidate_05",
+      "pdf_page": 15,
+      "bbox": [
+        140,
+        1144,
+        1571,
+        1329
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 16,
+      "largest_component_frac": 0.1516,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_016_candidate_01",
+      "pdf_page": 16,
+      "bbox": [
+        140,
+        72,
+        2085,
+        1860
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "15 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 193,
+      "largest_component_frac": 0.5503,
+      "n_bands": 15,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_017_candidate_01",
+      "pdf_page": 17,
+      "bbox": [
+        144,
+        2584,
+        2077,
+        2967
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "3 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 12,
+      "largest_component_frac": 0.6574,
+      "n_bands": 3,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_017_candidate_02",
+      "pdf_page": 17,
+      "bbox": [
+        1647,
+        261,
+        1996,
+        849
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "figure",
+      "reason": "one dominant connected graphical shape (100% of ink), no text-line banding",
+      "n_components": 1,
+      "largest_component_frac": 1.0,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_017_candidate_03",
+      "pdf_page": 17,
+      "bbox": [
+        160,
+        2604,
+        416,
+        2892
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 3,
+      "largest_component_frac": 0.6122,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_018_candidate_01",
+      "pdf_page": 18,
+      "bbox": [
+        140,
+        1608,
+        2063,
+        2323
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 27,
+      "largest_component_frac": 0.9423,
+      "n_bands": 4,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_018_candidate_02",
+      "pdf_page": 18,
+      "bbox": [
+        1340,
+        1065,
+        1992,
+        1472
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 107,
+      "largest_component_frac": 0.5806,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_018_candidate_03",
+      "pdf_page": 18,
+      "bbox": [
+        140,
+        968,
+        1717,
+        1061
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 12,
+      "largest_component_frac": 0.1586,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_018_candidate_04",
+      "pdf_page": 18,
+      "bbox": [
+        160,
+        1628,
+        416,
+        2220
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 11,
+      "largest_component_frac": 0.7435,
+      "n_bands": 1,
+      "background_color": [
+        184,
+        224,
+        248
+      ]
+    },
+    {
+      "id": "page_019_candidate_01",
+      "pdf_page": 19,
+      "bbox": [
+        144,
+        1608,
+        2063,
+        2342
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 45,
+      "largest_component_frac": 0.8607,
+      "n_bands": 5,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_019_candidate_02",
+      "pdf_page": 19,
+      "bbox": [
+        140,
+        2376,
+        2063,
+        2641
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "figure",
+      "reason": "one dominant connected graphical shape (96% of ink), no text-line banding",
+      "n_components": 3,
+      "largest_component_frac": 0.9593,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_019_candidate_03",
+      "pdf_page": 19,
+      "bbox": [
+        160,
+        92,
+        1264,
+        284
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "figure",
+      "reason": "one dominant connected graphical shape (88% of ink), no text-line banding",
+      "n_components": 3,
+      "largest_component_frac": 0.8849,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_019_candidate_04",
+      "pdf_page": 19,
+      "bbox": [
+        1506,
+        596,
+        1939,
+        1038
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "figure",
+      "reason": "one dominant connected graphical shape (95% of ink), no text-line banding",
+      "n_components": 4,
+      "largest_component_frac": 0.9471,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_019_candidate_05",
+      "pdf_page": 19,
+      "bbox": [
+        140,
+        1480,
+        1957,
+        1585
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 10,
+      "largest_component_frac": 0.1962,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_020_candidate_01",
+      "pdf_page": 20,
+      "bbox": [
+        146,
+        214,
+        2047,
+        881
+      ],
+      "likely_text_box": true,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "tinted callout-box background (existing signal)",
+      "n_components": 172,
+      "largest_component_frac": 0.7948,
+      "n_bands": 1,
+      "background_color": [
+        184,
+        224,
+        248
+      ]
+    },
+    {
+      "id": "page_023_candidate_01",
+      "pdf_page": 23,
+      "bbox": [
+        784,
+        2780,
+        1440,
+        2860
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 4,
+      "largest_component_frac": 0.5317,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_024_candidate_01",
+      "pdf_page": 24,
+      "bbox": [
+        160,
+        572,
+        256,
+        1020
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "4 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 7,
+      "largest_component_frac": 0.3724,
+      "n_bands": 4,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_024_candidate_02",
+      "pdf_page": 24,
+      "bbox": [
+        1164,
+        938,
+        2037,
+        1623
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "figure",
+      "reason": "one dominant connected graphical shape (98% of ink), no text-line banding",
+      "n_components": 6,
+      "largest_component_frac": 0.9825,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_024_candidate_03",
+      "pdf_page": 24,
+      "bbox": [
+        160,
+        1356,
+        256,
+        1772
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "5 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 9,
+      "largest_component_frac": 0.3514,
+      "n_bands": 5,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_025_candidate_01",
+      "pdf_page": 25,
+      "bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "figure",
+      "reason": "one dominant connected graphical shape (86% of ink), no text-line banding",
+      "n_components": 6,
+      "largest_component_frac": 0.8568,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_025_candidate_02",
+      "pdf_page": 25,
+      "bbox": [
+        1308,
+        536,
+        1893,
+        1029
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 141,
+      "largest_component_frac": 0.539,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_025_candidate_03",
+      "pdf_page": 25,
+      "bbox": [
+        160,
+        1468,
+        272,
+        1932
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "text_only",
+      "reason": "6 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 10,
+      "largest_component_frac": 0.2932,
+      "n_bands": 6,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_027_candidate_01",
+      "pdf_page": 27,
+      "bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "ambiguous",
+      "reason": "signals disagree or are inconclusive -- needs human review",
+      "n_components": 12,
+      "largest_component_frac": 0.8051,
+      "n_bands": 2,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_027_candidate_02",
+      "pdf_page": 27,
+      "bbox": [
+        1424,
+        1244,
+        1776,
+        1452
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": true,
+      "category": "figure",
+      "reason": "one dominant connected graphical shape (96% of ink), no text-line banding",
+      "n_components": 5,
+      "largest_component_frac": 0.9625,
+      "n_bands": 1,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_027_candidate_03",
+      "pdf_page": 27,
+      "bbox": [
+        146,
+        1638,
+        992,
+        2310
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "6 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 121,
+      "largest_component_frac": 0.2072,
+      "n_bands": 6,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    },
+    {
+      "id": "page_027_candidate_04",
+      "pdf_page": 27,
+      "bbox": [
+        146,
+        392,
+        978,
+        1033
+      ],
+      "likely_text_box": false,
+      "refinement_uncertain": false,
+      "category": "text_only",
+      "reason": "5 horizontal text-line bands, no dominant graphical shape",
+      "n_components": 185,
+      "largest_component_frac": 0.3561,
+      "n_bands": 5,
+      "background_color": [
+        248,
+        248,
+        248
+      ]
+    }
+  ]
+}

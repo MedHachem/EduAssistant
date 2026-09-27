@@ -1,0 +1,32 @@
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">EduAssistant <span class="badge">Admin</span></div>
+    <nav>
+      @for (group of nav; track group.title) {
+        <div class="group">
+          @if (group.title) {
+            <span class="group-title">{{ group.title }}</span>
+          }
+          @for (link of group.links; track link.path) {
+            <a [routerLink]="link.path" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: !!link.exact }">{{ link.label }}</a>
+            @if (link.children) {
+              <div class="children">
+                @for (child of link.children; track child.path) {
+                  <a [routerLink]="child.path" routerLinkActive="active">{{ child.label }}</a>
+                }
+              </div>
+            }
+          }
+        </div>
+      }
+    </nav>
+    <div class="user">
+      <span>{{ auth.currentUser()?.name }}</span>
+      <button type="button" class="btn-link" (click)="logout()">Log out</button>
+    </div>
+  </aside>
+
+  <main class="content">
+    <router-outlet />
+  </main>
+</div>

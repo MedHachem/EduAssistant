@@ -1,0 +1,40 @@
+QCM - VRAI - FAUX
+QCM
+Cocher la réponse exacte.
+1. Si limf =+o et g(x)=sin [l)— f (x) alors limg est égale à
++0 x +o
+D +œ, Û n'existe pas. |:] —,
+
+2. Si f est une fonction continue et décroissante sur [2, 5] tel que f ([2, 5]) =[1, 3] alors
+
+[|f(2)=3et f(5)=1. [|f(2)=1etf(5)=3. — []1<f(2)<3.
+
+3. Si f est une fonction continue sur l’intervalle [-2, 5] tel que f (-2) =3 et f(5)=-2 alors
+
+l’équation f(x)=—1
+
+Û n'admet pas de solution Û admet au moins une l:l admet exactement une
+dans [-2, 5]. solution dans [-2, 5]. solution dans [-2, 5].
+VRAI - FAUX
+
+Répondre par vrai ou faux en justifiant la réponse.
+1. Si f est une fonction paire etsi lim f(x)=-0 alors lim f(x)=-œ.
+x—>-—0 x—>-00
+
+2. Toute fonction croissante sur R admet une limite finie en +.
+
+3. Si une fonction admet une limite finie en —c et une limite finie en +o alors elle est
+bornée.
+
+4. Si une fonction f n’est pas définie en a alors nécessairement la droite A :x =a est une
+asymptote verticale à C,.
+
+5. Soit f, g et h trois fonctions définies sur R , telles que pour tout réel x,
+g(x)<f(x)<h(x).
+
+Si lim g(x)=3et lim h(x)=5 alors f admet une limite en +0.
+x—>+—0 x>+0
+
+_Continuité et limites
+
+23

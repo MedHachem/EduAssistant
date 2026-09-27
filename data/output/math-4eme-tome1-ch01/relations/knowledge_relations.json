@@ -1,0 +1,1264 @@
+{
+  "schema_version": "relations-1.0",
+  "algorithm_version": "relations-v1",
+  "generated_at": "2026-09-27T11:24:40.680084+00:00",
+  "chapter_id": "math-4eme-tome1-ch01",
+  "relations": [
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-001-math-4eme-tome1-ch01-thm-001",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-001",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-001",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "rappels",
+          "continuité et limite en un réel",
+          "continuité"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-002-math-4eme-tome1-ch01-thm-001",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-002",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-001",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "rappels",
+          "continuité et limite en un réel"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-003-math-4eme-tome1-ch01-thm-002",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-003",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-002",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "rappels",
+          "continuité et limite en un réel",
+          "continuité"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-004-math-4eme-tome1-ch01-thm-003",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-004",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-003",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "rappels",
+          "continuité et limite en un réel",
+          "continuité",
+          "intervalles"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-005-math-4eme-tome1-ch01-thm-003",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-005",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-003",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "rappels",
+          "continuité et limite en un réel",
+          "limites"
+        ],
+        "reading_order_distance": 2,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-006-math-4eme-tome1-ch01-thm-004",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-006",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-004",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "rappels"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-007-math-4eme-tome1-ch01-thm-004",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-007",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-004",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "rappels",
+          "opérations sur les limites",
+          "limites"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-008-math-4eme-tome1-ch01-prop-001",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-008",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-prop-001",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "branches infinies",
+          "équations"
+        ],
+        "reading_order_distance": 3,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-009-math-4eme-tome1-ch01-prop-001",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-009",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-prop-001",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "branches infinies"
+        ],
+        "reading_order_distance": 2,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-010-math-4eme-tome1-ch01-prop-001",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-010",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-prop-001",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "branches infinies"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-011-math-4eme-tome1-ch01-prop-001",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-011",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-prop-001",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "branches infinies"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-012-math-4eme-tome1-ch01-prop-002",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-012",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-prop-002",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "branches infinies"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-013-math-4eme-tome1-ch01-def-001",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-013",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-def-001",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité et limite d'une fonction composée",
+          "composée de deux fonctions"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-014-math-4eme-tome1-ch01-def-001",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-014",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-def-001",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité et limite d'une fonction composée",
+          "composée de deux fonctions"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-015-math-4eme-tome1-ch01-prop-003",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-015",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-prop-003",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité et limite d'une fonction composée",
+          "continuité d'une fonction composée",
+          "continuité"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-016-math-4eme-tome1-ch01-thm-006",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-016",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-006",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité et limite d'une fonction composée",
+          "limite d'une fonction composée"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-017-math-4eme-tome1-ch01-thm-006",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-017",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-006",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité et limite d'une fonction composée",
+          "limite d'une fonction composée"
+        ],
+        "reading_order_distance": 2,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-018-math-4eme-tome1-ch01-thm-007",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-018",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-007",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité et limite d'une fonction composée",
+          "limite d'une fonction composée"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-019-math-4eme-tome1-ch01-thm-007",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-019",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-007",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité et limite d'une fonction composée",
+          "limite d'une fonction composée"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-020-math-4eme-tome1-ch01-thm-007",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-020",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-007",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité et limite d'une fonction composée",
+          "limite d'une fonction composée"
+        ],
+        "reading_order_distance": 2,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-021-math-4eme-tome1-ch01-thm-008",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-021",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-008",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites et ordre",
+          "limites"
+        ],
+        "reading_order_distance": 2,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-022-math-4eme-tome1-ch01-thm-008",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-022",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-008",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites et ordre",
+          "limites"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-023-math-4eme-tome1-ch01-thm-011",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-023",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-011",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites et ordre"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-024-math-4eme-tome1-ch01-thm-011",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-024",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-011",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites et ordre"
+        ],
+        "reading_order_distance": 2,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-025-math-4eme-tome1-ch01-thm-012",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-025",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-012",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction continue",
+          "théorème des valeurs intermédiaires",
+          "intervalles"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-026-math-4eme-tome1-ch01-thm-012",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-026",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-012",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction continue",
+          "théorème des valeurs intermédiaires"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-027-math-4eme-tome1-ch01-thm-013",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-027",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-013",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction continue",
+          "théorème des valeurs intermédiaires"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-028-math-4eme-tome1-ch01-thm-014",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-028",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-014",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction continue",
+          "théorème des valeurs intermédiaires",
+          "continuité",
+          "intervalles",
+          "équations"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-029-math-4eme-tome1-ch01-thm-015",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-029",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-015",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction continue",
+          "théorème des valeurs intermédiaires",
+          "continuité",
+          "intervalles"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-030-math-4eme-tome1-ch01-thm-016",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-030",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-016",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction continue",
+          "théorème des valeurs intermédiaires",
+          "signe d'une fonction"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-031-math-4eme-tome1-ch01-thm-017",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-031",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-017",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction continue",
+          "image d'un intervalle fermé borné par une fonction continue"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-032-math-4eme-tome1-ch01-thm-017",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-032",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-017",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction continue",
+          "image d'un intervalle fermé borné par une fonction continue",
+          "intervalles"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-033-math-4eme-tome1-ch01-thm-017",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-033",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-017",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction continue",
+          "image d'un intervalle fermé borné par une fonction continue"
+        ],
+        "reading_order_distance": 2,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-034-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-034",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "intervalles"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-035-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-035",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction strictement monotone",
+          "limites",
+          "monotonie"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-act-036-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-act-036",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction strictement monotone",
+          "intervalles"
+        ],
+        "reading_order_distance": 1,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-001-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-001",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "image d'un intervalle par une fonction strictement monotone",
+          "continuité",
+          "intervalles"
+        ],
+        "reading_order_distance": 2,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-qst-002-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-qst-002",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité",
+          "monotonie"
+        ],
+        "reading_order_distance": 4,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-qst-003-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-qst-003",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité",
+          "intervalles"
+        ],
+        "reading_order_distance": 5,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-qst-005-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-qst-005",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "monotonie"
+        ],
+        "reading_order_distance": 7,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-qst-006-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-qst-006",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "high",
+      "generation_method": "rule_based",
+      "review_status": "NOT_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites"
+        ],
+        "reading_order_distance": 10,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-qst-007-math-4eme-tome1-ch01-prop-002",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-qst-007",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-prop-002",
+      "target_kind": "knowledge_item",
+      "confidence": "low",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "branches infinies"
+        ],
+        "reading_order_distance": 50,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-qst-008-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-qst-008",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites"
+        ],
+        "reading_order_distance": 12,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-002-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-002",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité"
+        ],
+        "reading_order_distance": 11,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-003-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-003",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité"
+        ],
+        "reading_order_distance": 12,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-004-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-004",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité"
+        ],
+        "reading_order_distance": 13,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-005-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-005",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité"
+        ],
+        "reading_order_distance": 14,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-006-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-006",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites"
+        ],
+        "reading_order_distance": 17,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-007-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-007",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité"
+        ],
+        "reading_order_distance": 16,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-008-math-4eme-tome1-ch01-thm-016",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-008",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-016",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "équations"
+        ],
+        "reading_order_distance": 26,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-009-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-009",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites"
+        ],
+        "reading_order_distance": 20,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-011-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-011",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites"
+        ],
+        "reading_order_distance": 22,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-012-math-4eme-tome1-ch01-thm-016",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-012",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-016",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "équations"
+        ],
+        "reading_order_distance": 30,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-014-math-4eme-tome1-ch01-thm-016",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-014",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-016",
+      "target_kind": "knowledge_item",
+      "confidence": "low",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "équations"
+        ],
+        "reading_order_distance": 32,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-015-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-015",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "intervalles"
+        ],
+        "reading_order_distance": 24,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-017-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-017",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites"
+        ],
+        "reading_order_distance": 28,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-018-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-018",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites"
+        ],
+        "reading_order_distance": 29,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-019-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-019",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "medium",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites"
+        ],
+        "reading_order_distance": 30,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-022-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-022",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "low",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites"
+        ],
+        "reading_order_distance": 33,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-023-math-4eme-tome1-ch01-thm-018",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-023",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-018",
+      "target_kind": "knowledge_item",
+      "confidence": "low",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "limites"
+        ],
+        "reading_order_distance": 34,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-025-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-025",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "low",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "intervalles"
+        ],
+        "reading_order_distance": 34,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-026-math-4eme-tome1-ch01-thm-016",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-026",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-016",
+      "target_kind": "knowledge_item",
+      "confidence": "low",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "équations"
+        ],
+        "reading_order_distance": 44,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-027-math-4eme-tome1-ch01-thm-016",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-027",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-016",
+      "target_kind": "knowledge_item",
+      "confidence": "low",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "équations"
+        ],
+        "reading_order_distance": 45,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-028-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-028",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "low",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité"
+        ],
+        "reading_order_distance": 37,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-029-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-029",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "low",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité"
+        ],
+        "reading_order_distance": 38,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-030-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-030",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "low",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "intervalles",
+          "monotonie"
+        ],
+        "reading_order_distance": 39,
+        "source_review_status": null
+      }
+    },
+    {
+      "relation_id": "rel-math-4eme-tome1-ch01-applies_concept-math-4eme-tome1-ch01-exo-032-math-4eme-tome1-ch01-thm-019",
+      "type": "applies_concept",
+      "source_id": "math-4eme-tome1-ch01-exo-032",
+      "source_kind": "knowledge_item",
+      "target_id": "math-4eme-tome1-ch01-thm-019",
+      "target_kind": "knowledge_item",
+      "confidence": "low",
+      "generation_method": "rule_based",
+      "review_status": "REVIEW_REQUIRED",
+      "signals": {
+        "shared_concepts": [
+          "continuité",
+          "intervalles"
+        ],
+        "reading_order_distance": 41,
+        "source_review_status": null
+      }
+    }
+  ]
+}

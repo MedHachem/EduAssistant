@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eduassistant.local/schema/knowledge_chunk.schema.json",
+  "title": "KnowledgeChunk",
+  "description": "Design proposal, not yet implemented (Phase 10). A chunk is the unit that a future RAG/semantic-search phase would embed and retrieve -- stored SEPARATELY from normalized knowledge, enrichment, and relations, never merged into any of them. See knowledge_chunking.md for full rationale.",
+  "type": "object",
+
+  "$defs": {
+    "ContentRole": {
+      "type": "string",
+      "enum": ["statement", "correction"],
+      "description": "'correction' is only ever its own separate chunk (never merged with the statement it answers) -- see knowledge_chunking.md §5."
+    },
+
+    "GenerationMethod": {
+      "type": "string",
+      "enum": ["deterministic", "rule_based", "llm", "not_populated"],
+      "description": "Same convention as knowledge_enrichment.schema.json / knowledge_relations.schema.json."
+    },
+
+    "FigureRefSource": {
+      "type": "string",
+      "enum": ["links.figures", "relation:illustrates"],
+      "description": "'links.figures' is the reconstruction's own <figure id=\"...\"> reference (usually not yet resolved to a real final-figure image). 'relation:illustrates' is a resolved edge from knowledge_relations.json, pointing at a real data/output/final_figures/ image -- see knowledge_chunking.md §6."
+    },
+
+    "ChunkFigureRef": {
+      "type": "object",
+      "required": ["source", "confidence"],
+      "properties": {
+        "source": { "$ref": "#/$defs/FigureRefSource" },
+        "reconstructed_figure_id": { "type": ["string", "null"], "description": "From links.figures, if that is the source." },
+        "figure_id": { "type": ["string", "null"], "description": "A real data/output/final_figures/ figure_id, only when source is 'relation:illustrates' (or a future resolution step fills it in for a links.figures entry)." },
+        "confidence": { "type": ["string", "null"], "enum": ["high", "medium", "low", null] }
+      },
+      "additionalProperties": false
+    },
+
+    "Chunk": {
+      "type": "object",
+      "required": [
+        "chunk_id", "chapter_id", "order", "content_role", "part_index", "part_count",
+        "source_item_ids", "item_types", "section_id", "subsection_id", "pdf_pages",
+        "topics", "concepts", "text", "figure_refs", "related_chunk_ids",
+        "has_uncertain_content", "generation_methods", "review_status"
+      ],
+      "properties": {
+        "chunk_id": {
+          "type": "string",
+          "description": "Deterministic: 'chunk-<chapter_id>-<source_item_ids joined by '+'>[-part<N>|-correction]' -- content-derived, never a counter."
+        },
+        "chapter_id": { "type": "string" },
+        "order": { "type": "integer", "minimum": 0, "description": "The minimum normalized `order` among source_item_ids -- preserves global reading position for a chunk covering one or several items." },
+        "content_role": { "$ref": "#/$defs/ContentRole" },
+        "part_index": { "type": ["integer", "null"], "minimum": 0, "description": "0-based position when an oversized item was split into multiple chunks (§4); null otherwise." },
+        "part_count": { "type": ["integer", "null"], "minimum": 2, "description": "Total number of statement parts the source item was split into; null when not split." },
+
+        "source_item_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1,
+          "description": "One entry for a normal item-to-chunk mapping; 2+ ONLY for a confirmed fragmentation-repair merge (§3); never for two independently-authored items sharing nothing but a topic."
+        },
+        "item_types": { "type": "array", "items": { "type": "string" } },
+
+        "section_id": { "type": ["string", "null"] },
+        "section_title": { "type": ["string", "null"] },
+        "subsection_id": { "type": ["string", "null"] },
+        "subsection_title": { "type": ["string", "null"] },
+
+        "pdf_pages": { "type": "array", "items": { "type": "integer", "minimum": 1 }, "description": "Union of every source item's own provenance.pdf_pages, in ascending order." },
+
+        "topics": { "type": "array", "items": { "type": "string" }, "description": "Union of the source item(s)' enrichment `topics`." },
+        "concepts": { "type": "array", "items": { "type": "string" }, "description": "Union of the source item(s)' enrichment `concepts`." },
+
+        "text": {
+          "type": "string",
+          "description": "The deterministically-assembled text a future embedding step would consume. Built ONLY from already-existing normalized fields (content/proof/exercise_details, or the correction content for a 'correction' chunk) -- never rewritten, summarized, or paraphrased."
+        },
+
+        "figure_refs": { "type": "array", "items": { "$ref": "#/$defs/ChunkFigureRef" } },
+        "related_chunk_ids": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Other chunk_ids this one is linked to: its own correction/statement counterpart, and any knowledge_relations.json edge (applies_concept/illustrates) touching one of this chunk's source_item_ids, resolved to the chunk that now contains the target item -- metadata only, never changes chunk boundaries (§7)."
+        },
+
+        "has_uncertain_content": {
+          "type": "boolean",
+          "description": "True if ANY source item's normalized `uncertainty.has_uncertain_markers`/`has_gap_markers` is true -- propagated, never re-derived."
+        },
+
+        "generation_methods": {
+          "type": "object",
+          "required": ["boundaries", "text_assembly", "topics", "concepts", "figure_refs", "related_chunk_ids"],
+          "properties": {
+            "boundaries": { "$ref": "#/$defs/GenerationMethod", "description": "How source_item_ids/part_index were decided (whole-item default, split, or merge)." },
+            "text_assembly": { "$ref": "#/$defs/GenerationMethod" },
+            "topics": { "$ref": "#/$defs/GenerationMethod" },
+            "concepts": { "$ref": "#/$defs/GenerationMethod" },
+            "figure_refs": { "$ref": "#/$defs/GenerationMethod" },
+            "related_chunk_ids": { "$ref": "#/$defs/GenerationMethod" }
+          },
+          "additionalProperties": false
+        },
+        "review_status": {
+          "type": "string",
+          "enum": ["NOT_REQUIRED", "REVIEW_REQUIRED", "HUMAN_APPROVED", "HUMAN_REJECTED"],
+          "description": "Same convention as every prior phase. 'REVIEW_REQUIRED' when this chunk's boundaries came from a merge or a split (a rule_based judgment call, not a plain 1:1 mapping) or when any figure_ref carries confidence 'low'/'medium'."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "required": ["schema_version", "algorithm_version", "generated_at", "chapter_id", "chunks"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "chunking-1.0" },
+    "algorithm_version": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "chapter_id": { "type": "string" },
+    "chunks": { "type": "array", "items": { "$ref": "#/$defs/Chunk" } }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,162 @@
+<div class="page">
+  <header class="page-header">
+    <h1>Figure ↔ Knowledge Association</h1>
+    <p>Chapter 1 — Continuité et limites · link each figure to the course content it belongs to</p>
+  </header>
+
+  @if (loadError(); as e) {
+    <p class="card load-error">{{ e }}</p>
+  } @else if (!file() || !itemsById()) {
+    <p class="muted">Loading figures and knowledge base…</p>
+  } @else {
+    @let s = stats();
+
+    <section class="card dashboard">
+      <div class="stats">
+        <div class="stat"><span class="stat-value">{{ s.total }}</span><span class="stat-label">Total figures</span></div>
+        <div class="stat"><span class="stat-value">{{ s.reviewed }}</span><span class="stat-label">Reviewed</span></div>
+        <div class="stat ok"><span class="stat-value">{{ s.confirmed }}</span><span class="stat-label">Confirmed</span></div>
+        <div class="stat warn"><span class="stat-value">{{ s.reassigned }}</span><span class="stat-label">Reassigned</span></div>
+        <div class="stat ko"><span class="stat-value">{{ s.rejected }}</span><span class="stat-label">Rejected</span></div>
+        <div class="stat pending"><span class="stat-value">{{ s.pending }}</span><span class="stat-label">Pending</span></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress" role="progressbar" [attr.aria-valuenow]="s.reviewed" aria-valuemin="0" [attr.aria-valuemax]="s.total">
+          <div class="progress-bar" [style.width.%]="s.percent"></div>
+        </div>
+        <span class="progress-label">{{ s.reviewed }} / {{ s.total }} reviewed</span>
+        <button type="button" class="btn-link reset" (click)="resetAll()" [disabled]="!s.reviewed">Reset review state</button>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <input
+        type="search"
+        class="search"
+        placeholder="Search figures… (ID or page number)"
+        [value]="search()"
+        (input)="search.set($any($event.target).value)"
+      />
+      <select [value]="statusFilter()" (change)="setStatusFilter($any($event.target).value)" aria-label="Status filter">
+        @for (opt of statusOptions; track opt) {
+          <option [value]="opt">{{ opt === 'ALL' ? 'All statuses' : statusLabels[opt] }}</option>
+        }
+      </select>
+      <select [value]="confidenceFilter()" (change)="setConfidenceFilter($any($event.target).value)" aria-label="Confidence filter">
+        @for (opt of confidenceOptions; track opt) {
+          <option [value]="opt">{{ opt === 'ALL' ? 'All confidence levels' : 'Confidence: ' + opt }}</option>
+        }
+      </select>
+      <span class="muted count">{{ filtered().length }} figure{{ filtered().length === 1 ? '' : 's' }}</span>
+    </section>
+
+    <div class="workspace">
+      <section class="card list-pane">
+        <div class="thumb-list" #list>
+          @for (r of filtered(); track r.figureId) {
+            <button
+              type="button"
+              class="thumb-card"
+              [attr.data-id]="r.figureId"
+              [class.selected]="r.figureId === selectedId()"
+              (click)="select(r.figureId)"
+            >
+              <img [src]="finalFigureImageUrl(r.imagePath)" [alt]="r.figureId" loading="lazy" />
+              <div class="thumb-meta">
+                <code>{{ r.figureId }}</code>
+                <span class="badge" [attr.data-status]="r.reviewStatus">{{ statusLabels[r.reviewStatus] }}</span>
+              </div>
+            </button>
+          } @empty {
+            <p class="empty">No figures match the current filters.</p>
+          }
+        </div>
+      </section>
+
+      <section class="card panel">
+        @if (selected(); as sel) {
+          <header class="panel-header">
+            <div>
+              <div class="panel-kicker">
+                page {{ sel.sourcePage }} · confidence
+                <span class="confidence" [attr.data-level]="sel.confidence">{{ sel.confidence }}</span>
+              </div>
+              <div class="panel-title"><code>{{ sel.figureId }}</code></div>
+            </div>
+            <div class="panel-tools">
+              <span class="badge" [attr.data-status]="sel.reviewStatus">{{ statusLabels[sel.reviewStatus] }}</span>
+              <button type="button" class="btn-toggle" [class.on]="showSource()" (click)="showSource.set(!showSource())">
+                Source page
+              </button>
+            </div>
+          </header>
+
+          <div class="panel-body" #panel>
+            <div class="figure-view">
+              <h3>Figure</h3>
+              <img class="figure-main" [src]="finalFigureImageUrl(sel.imagePath)" [alt]="sel.figureId" />
+            </div>
+
+            <div class="suggestion-view">
+              <h3>Suggested knowledge item</h3>
+              @if (sel.candidates.length === 0) {
+                <p class="empty">No plausible knowledge item was found for this figure.</p>
+              } @else {
+                @for (c of sel.candidates; track c.itemId) {
+                  @if (c.itemId === sel.chosenItemId) {
+                    <article class="item-card chosen">
+                      <div class="item-kicker">{{ c.itemType }} · {{ c.relation }}</div>
+                      <h4>{{ c.title }}</h4>
+                      <p>{{ c.preview }}</p>
+                    </article>
+                  }
+                }
+                @if (!sel.chosenItemId) {
+                  <p class="empty">No automatic suggestion is confident enough -- choose one below, or reject.</p>
+                }
+
+                @if (sel.candidates.length > 1) {
+                  <h3 class="other-heading">Other possible items</h3>
+                  <ul class="other-list">
+                    @for (c of sel.candidates; track c.itemId) {
+                      @if (c.itemId !== sel.chosenItemId) {
+                        <li class="item-card">
+                          <div class="item-kicker">{{ c.itemType }} · {{ c.relation }}</div>
+                          <h4>{{ c.title }}</h4>
+                          <p>{{ c.preview }}</p>
+                          <button type="button" class="btn-link" (click)="chooseAnother(c.itemId)">Choose this instead</button>
+                        </li>
+                      }
+                    }
+                  </ul>
+                }
+              }
+            </div>
+
+            @if (showSource()) {
+              <div class="source-view">
+                <h3>Source page {{ sel.sourcePage }}</h3>
+                <img class="source-image" [src]="pageImageUrl(sel.sourcePage)" [alt]="'PDF page ' + sel.sourcePage" loading="lazy" />
+              </div>
+            }
+          </div>
+
+          <footer class="panel-actions">
+            <button type="button" class="btn-secondary" (click)="previous()" [disabled]="!hasPrev()" title="Previous (K / ↑)">← Previous</button>
+            <span class="spacer"></span>
+            @if (sel.reviewStatus !== 'PENDING') {
+              <button type="button" class="btn-link" (click)="undo()" title="Undo (U)">Undo</button>
+            }
+            <button type="button" class="btn-reject" (click)="reject()" title="Reject (R)">Reject / No related item</button>
+            <button type="button" class="btn-validate" (click)="confirm()" [disabled]="!sel.chosenItemId" title="Validate (V)">Validate</button>
+            <button type="button" class="btn-secondary" (click)="next()" [disabled]="!hasNext()" title="Next (J / ↓)">Next →</button>
+          </footer>
+        } @else {
+          <p class="empty">Select a figure to review.</p>
+        }
+      </section>
+    </div>
+
+    <p class="hint">Shortcuts: <kbd>V</kbd> validate · <kbd>R</kbd> reject · <kbd>U</kbd> undo · <kbd>J</kbd>/<kbd>↓</kbd> next · <kbd>K</kbd>/<kbd>↑</kbd> previous. Review decisions are stored in this browser only (localStorage, separate from figure/knowledge-item review); the generated association file is never modified.</p>
+  }
+</div>

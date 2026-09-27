@@ -1,0 +1,151 @@
+<div class="page">
+  <header class="page-header">
+    <h1>Knowledge Review</h1>
+    @if (kb(); as k) {
+      <p>Chapter {{ k.chapter.number }} — {{ k.chapter.title }} · {{ k.document.title }}</p>
+    }
+  </header>
+
+  @if (loadError(); as e) {
+    <p class="card load-error">{{ e }}</p>
+  } @else if (!kb()) {
+    <p class="muted">Loading knowledge items…</p>
+  } @else {
+    @let s = stats();
+
+    <section class="card dashboard">
+      <div class="stats">
+        <div class="stat"><span class="stat-value">{{ s.total }}</span><span class="stat-label">Total</span></div>
+        <div class="stat"><span class="stat-value">{{ s.reviewed }}</span><span class="stat-label">Reviewed</span></div>
+        <div class="stat ok"><span class="stat-value">{{ s.validated }}</span><span class="stat-label">Validated</span></div>
+        <div class="stat ko"><span class="stat-value">{{ s.rejected }}</span><span class="stat-label">Rejected</span></div>
+        <div class="stat pending"><span class="stat-value">{{ s.remaining }}</span><span class="stat-label">Remaining</span></div>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress" role="progressbar" [attr.aria-valuenow]="s.reviewed" aria-valuemin="0" [attr.aria-valuemax]="s.total">
+          <div class="progress-bar" [style.width.%]="s.percent"></div>
+        </div>
+        <span class="progress-label">{{ s.reviewed }} / {{ s.total }} reviewed</span>
+        <button type="button" class="btn-link reset" (click)="resetAll()" [disabled]="!s.reviewed">Reset review state</button>
+      </div>
+    </section>
+
+    <section class="toolbar">
+      <input
+        type="search"
+        class="search"
+        placeholder="Search knowledge… (ID, title, content, section)"
+        [value]="search()"
+        (input)="search.set($any($event.target).value)"
+      />
+      <select [value]="statusFilter()" (change)="setStatusFilter($any($event.target).value)" aria-label="Status filter">
+        @for (opt of statusOptions; track opt) {
+          <option [value]="opt">{{ opt === 'ALL' ? 'All statuses' : statusLabels[opt] }}</option>
+        }
+      </select>
+      <select [value]="typeFilter()" (change)="typeFilter.set($any($event.target).value)" aria-label="Type filter">
+        <option value="ALL">All types</option>
+        @for (t of typeOptions(); track t.type) {
+          <option [value]="t.type">{{ typeLabel(t.type) }} ({{ t.count }})</option>
+        }
+      </select>
+      <span class="muted count">{{ filtered().length }} item{{ filtered().length === 1 ? '' : 's' }}</span>
+    </section>
+
+    <div class="workspace">
+      <section class="card list-pane">
+        <div class="table-scroll" #list>
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Type</th>
+                <th>Title</th>
+                <th>Section</th>
+                <th>Page</th>
+                <th>Status</th>
+                <th><span class="sr-only">Action</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              @for (r of filtered(); track r.item.id) {
+                <tr
+                  [attr.data-id]="r.item.id"
+                  [class.selected]="r.item.id === selectedId()"
+                  (click)="select(r.item.id)"
+                >
+                  <td class="id" [title]="r.item.id"><code>{{ r.shortId }}</code></td>
+                  <td>{{ r.type }}</td>
+                  <td class="title-cell">
+                    @if (r.title) {
+                      <span class="title">{{ r.title }}</span>
+                    }
+                    <app-math-text class="preview" [text]="r.preview" />
+                  </td>
+                  <td [title]="r.sectionTitle">{{ r.section }}</td>
+                  <td class="nowrap">{{ r.pages }}</td>
+                  <td><span class="badge" [attr.data-status]="r.status">{{ statusLabels[r.status] }}</span></td>
+                  <td>
+                    <button type="button" class="btn-row" (click)="select(r.item.id); $event.stopPropagation()">Review</button>
+                  </td>
+                </tr>
+              } @empty {
+                <tr><td colspan="7" class="empty">No items match the current filters.</td></tr>
+              }
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card panel">
+        @if (selected(); as sel) {
+          <header class="panel-header">
+            <div>
+              <div class="panel-kicker">{{ sel.type }} · p. {{ sel.pages }}</div>
+              <div class="panel-title"><code>{{ sel.item.id }}</code></div>
+            </div>
+            <div class="panel-tools">
+              <span class="badge" [attr.data-status]="sel.status">{{ statusLabels[sel.status] }}</span>
+              <div class="segmented" role="group" aria-label="Content display">
+                <button type="button" [class.on]="!raw()" (click)="raw.set(false)">Rendered</button>
+                <button type="button" [class.on]="raw()" (click)="raw.set(true)">Raw</button>
+              </div>
+              <button type="button" class="btn-toggle" [class.on]="showSource()" (click)="showSource.set(!showSource())">
+                Source page
+              </button>
+            </div>
+          </header>
+
+          <div class="panel-body" #panel>
+            <app-item-detail
+              [item]="sel.item"
+              [kb]="kb()!"
+              [review]="review.state()[sel.item.id]"
+              [raw]="raw()"
+              [showSource]="showSource()"
+            />
+          </div>
+
+          <footer class="panel-actions">
+            <button type="button" class="btn-secondary" (click)="previous()" [disabled]="!hasPrev()" title="Previous (K / ↑)">← Previous</button>
+            <label class="pending-only">
+              <input type="checkbox" [checked]="pendingOnly()" (change)="pendingOnly.set($any($event.target).checked)" />
+              To review only
+            </label>
+            <span class="spacer"></span>
+            @if (sel.status !== 'REVIEW_REQUIRED') {
+              <button type="button" class="btn-link" (click)="undo()" title="Undo (U)">Undo</button>
+            }
+            <button type="button" class="btn-reject" (click)="decide('REJECTED')" title="Reject (R)">Reject</button>
+            <button type="button" class="btn-validate" (click)="decide('VALIDATED')" title="Validate (V)">Validate</button>
+            <button type="button" class="btn-secondary" (click)="next()" [disabled]="!hasNext()" title="Next (J / ↓)">Next →</button>
+          </footer>
+        } @else {
+          <p class="empty">Select an item to review.</p>
+        }
+      </section>
+    </div>
+
+    <p class="hint">Shortcuts: <kbd>V</kbd> validate · <kbd>R</kbd> reject · <kbd>U</kbd> undo · <kbd>J</kbd>/<kbd>↓</kbd> next · <kbd>K</kbd>/<kbd>↑</kbd> previous. Review decisions are stored in this browser only (localStorage); the generated JSON is never modified.</p>
+  }
+</div>

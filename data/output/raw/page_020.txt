@@ -1,0 +1,41 @@
+Exemples
+
+1=[a,b] f(1)=[r(e).f(6)] e(1) =[r(6).r(a)]
+I=[a,b[(acR,beR) f(1)=[f(a).limf[ f(1)=]limf,f(a)]
+I=[a,+o[(aeR) f(1)=[f(a )hmf[ f(1)= ]11mf f(a)]
+I=Ja,b[(aeR,beR) f(I)=]hmf hmf[ f(1)= ]hr_nf,lgnf[
+
+Activité 2
+Déterminer l’image de l’intervalle I par la fonction f dans chacun des cas ci-dessous.
+
+1.f:xl—>x—+l,l=]2, +oo.
+x —2
+2.f:x1H—> Vx2—2x ,I=]—oo, O].
+
+3.f:xl—)tan(xn),l=]—%, 0f.
+
+Problème résolu
+I. 1. Soit la fonction f définie sur l’intervalle [0,1] par f(x)= 16x* (1 —x)2 ,
+
+a. Vérifier que pour tout x e [0,1], f(x) < f (%) ,
+b. Montrer que f([0, 1]) =[0, 1].
+2. Soit un entier n > 2 . Montrer que l’équation f (x + l) = f(x) admet au moins une
+n
+
+solution dans l’intervalle [0, 1—l] .
+n
+
+II. Le but de cette partie est de montrer que si f est une fonction continue sur l’intervalle
+[0, 1] telle que f(0)=F(1) et f([0, 1]) =[0, 1], alors pour tout entier n > 2, l’équation
+
+f (x + l) = f(x) admet au moins une solution dans l’intervalle [0, 1—l] .
+n n
+Soit g la fonction définie sur [0, 1—l] par g(x)=f(x)- f(x + l) ,
+n n
+
+1. Montrer que g est continue sur [0, l—l] .
+n
+
+—Continuité et limites
+
+20

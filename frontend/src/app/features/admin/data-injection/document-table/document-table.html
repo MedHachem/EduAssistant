@@ -1,0 +1,62 @@
+@if (error(); as e) {
+  <p class="alert error">{{ e }}</p>
+}
+
+@if (documents().length) {
+  <table>
+    <thead>
+      <tr>
+        @if (showType()) { <th class="w-type">Type</th> }
+        <th>Title</th>
+        <th class="w-meta">Subject · Level</th>
+        <th class="w-file">File</th>
+        <th class="w-date">Uploaded</th>
+        <th class="w-status">Status</th>
+        <th class="w-actions"><span class="sr-only">Actions</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (d of documents(); track d.id) {
+        @let t = typeOf(d.type);
+        <tr [class.busy]="busy() === d.id">
+          @if (showType()) {
+            <td>
+              <a class="type" [routerLink]="['/admin/data-injection', d.type]" [style.color]="t?.accent">{{ t?.label }}</a>
+            </td>
+          }
+          <td>
+            <div class="title">
+              <span class="ellipsis" [title]="d.title">{{ d.title }}</span>
+              @if (d.hasCorrection) { <span class="tag">+ correction</span> }
+            </div>
+          </td>
+          <td class="muted"><span class="ellipsis">{{ d.subject }}@if (d.level) { · {{ level(d.level) }} }</span></td>
+          <td class="muted">
+            <span class="ellipsis" [title]="d.fileName">{{ d.fileName }}</span>
+            <span class="small">{{ size(d.fileSize) }}@if (d.pageCount) { · {{ d.pageCount }} p. }</span>
+          </td>
+          <td class="muted nowrap">{{ d.uploadedAt | date: 'dd/MM/yyyy HH:mm' }}</td>
+          <td>
+            <span class="status" [attr.data-status]="d.status">{{ d.status === 'PUBLISHED' ? 'Published' : 'Draft' }}</span>
+          </td>
+          <td>
+            <div class="actions">
+            <button type="button" class="act" (click)="open(d)" title="Open PDF">Open</button>
+            @if (d.hasCorrection) {
+              <button type="button" class="act" (click)="open(d, 'correction')" title="Open correction">Correction</button>
+            }
+            <button type="button" class="act" (click)="toggleStatus(d)" [disabled]="busy() === d.id">
+              {{ d.status === 'PUBLISHED' ? 'Unpublish' : 'Publish' }}
+            </button>
+            <button type="button" class="act danger" (click)="remove(d)" [disabled]="busy() === d.id" aria-label="Delete" title="Delete">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 13H7zm3-3h6l1 2H8z" /></svg>
+            </button>
+            </div>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+} @else {
+  <p class="empty">{{ emptyText() }}</p>
+}
