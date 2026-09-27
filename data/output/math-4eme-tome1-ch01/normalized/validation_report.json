@@ -1,0 +1,23 @@
+{
+  "chapter_id": "math-4eme-tome1-ch01",
+  "algorithm_version": "normalize-v1",
+  "counts": {
+    "sections": 8,
+    "subsections": 12,
+    "items": 100
+  },
+  "passed": true,
+  "total_errors": 0,
+  "checks": {
+    "schema": [],
+    "duplicate_ids": [],
+    "hierarchy": [],
+    "section_ordering": [],
+    "subsection_ordering": [],
+    "item_ordering": [],
+    "page_references": [],
+    "source_references": [],
+    "latex_balance": [],
+    "no_lost_items": []
+  }
+}

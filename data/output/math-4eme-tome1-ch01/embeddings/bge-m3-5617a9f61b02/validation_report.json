@@ -1,0 +1,25 @@
+{
+  "chapter_id": "math-4eme-tome1-ch01",
+  "pipeline_version": "embed-v1",
+  "counts": {
+    "records": 102,
+    "active": 102,
+    "stale": 0,
+    "vectors": 102,
+    "dimension": 1024
+  },
+  "passed": true,
+  "total_errors": 0,
+  "checks": {
+    "manifest_schema": [],
+    "record_schema": [],
+    "count_and_shape": [],
+    "numerical": [],
+    "duplicate_ids": [],
+    "row_index": [],
+    "chunk_coverage": [],
+    "content_hash": [],
+    "manifest_consistency": [],
+    "source_chunks_hash": []
+  }
+}

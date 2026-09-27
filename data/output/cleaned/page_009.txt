@@ -1,0 +1,54 @@
+Il. Branches infinies
+
+Activité 1
+La courbe ci-contre est la représentation
+graphique d’une fonction f définie sur
+|-o,-1[ U]1,+œ[ . Les droites d’équations
+x=—l, x=1,y=0et y=—x-—3 sont
+des asymptotes à cette courbe.
+Déterminer lim f(x), lim f(x)+x+3
+x—>—00 X—>
+
+lim f(x), lim f(x) et lim f(x).
+
+m f(0), Jim F(s) t Jim,f(x)
+
+Soit f une fonction et C; sa courbe représentative dans un repère orthogonal.
+On dit que C; admet une branche infinie dès que l’une des coordonnées d’un point de C;
+
+tend vers l’infini.
+Nous avons résumé dans le tableau ci-dessous la nature de certaines branches infinies vues
+
+en 3° année.
+
+lim f(x)=+œ ou lim F(x)=-0. La droite D :x =a est
+= —00.
+
+asymptote à C.
+
+x>at x>at
+lim f(x)=+œ ou lim f (x)
+
+x>a x>a
+lim f(x)=Lou lim f(x)=L. La droite D:y=L est
+sd 0 asymptote à C,.
+i ; La droite D: y = ax + b est
+lim (f(x)-(ax+b))=0ou lim (f(x)-(ax+b))=0.
+Activité 2
+
+Soit f la fonction définie sur R par f (x)= Vx}+x+1.
+On désigne par C, la courbe représentative de f dans un repère orthonormé.
+
+1. a. Déterminer lim f (x)
+x—>_+0
+
+b. Montrer que pour tout réel strictement positif x, f (x)=x /1 44 % ;
+x x
+
+f
+c. En déduire lim Æ
+x>+o X
+
+—Continuité et limites
+
+9

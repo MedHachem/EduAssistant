@@ -1,0 +1,60 @@
+Chapitre 1
+
+Continuité et limites
+
+|. Rappels
+
+Dans ce paragraphe nous rappelons les principaux théorèmes vus en troisième année.
+
+1.1 Continuité et limite en un réel
+
+Activité 1
+Dans chacun des cas suivants déterminer l’ensemble de définition de la fonction f et justifier
+la continuité de f en tout réel de son ensemble de définition.
+
+. 2 _ _ e Toute fonction polynôme est continue en
+L'f:xh>1-x+x". 4.f:xl—)'5xÆ. tout réel. 700
+2 f:xHx- L | x+3 * Toute fonction rationnelle est continue en
+x—1l x241 tout réel de son ensemble de définition.
+sinx +1 S f:xH> ‘ e Les fonctions x H> cosx et x — sinx
+3.f:xH 24 cosx x-—1l sont continues en tout réel.
+Théorème
+
+Soit f et g deux fonctions définies sur un intervalle ouvert I et a un réel de I.
+
+e Si f est continue en a, alors les fonctions af (a = ]R) ,|f | et f" (n eN ') sont continues
+
+ena.
+
+. . . 1 1 .
+» Si f est continue en a et f (a) #0, alors les fonctions ; et — (n eN ') sont continues
+
+ena.
+e Si f et g sont continues en a, alors f+g et fxg sont continues en a.
+
+- Si f et g sont continues en a et g(a) # 0, alors — est continue en a.
+ë
+
+» Si f est positive sur I et f est continue en a, alors la fonction J£ est continue en a.
+Activité 2
+2x* —4x+2
+
+PE
+1. Vérifier que pour tout réel x #1, f (x)=2|x-1|.
+2. En déduire limf(x).
+
+x>l
+
+Théorème
+
+Soit f une fonction définie sur un intervalle ouvert I, sauf peut-être en un réel a de I.
+S’il existe une fonction g définie sur I, continue en a et telle que g(x)=f(x) pour
+
+Soit la fonction f : x —
+
+tout x #a, alors lim f(x)=g(a).
+x—>a
+
+—Continuité et limites
+
+6

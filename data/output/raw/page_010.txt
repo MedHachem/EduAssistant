@@ -1,0 +1,62 @@
+1+l
+
+x
+
+2. a. Montrer que pour tout réel strictement positif x, f (x)-—x = _
+,1 +-+2+1
+x x
+
+b.Endéduire lim f(x)—x. Interpréter graphiquement le résultat.
+x—>+0
+
+f
+3. Calculer lim f(x), lim ( et lim f(x)+x. Interpréter graphiquement le résultat.
+x
+
+x—>-—0 x>-o X —-—
+
+Soit f une fonction telle que f (x) tend vers l’infini, lorsque x tend vers l’infini. On désigne
+
+parC, sa courbe représentative dans un repère orthogonal (O ,Î,Î) . Alors la branche infinie
+
+de C, dépend de la limite de 69 , lorsque x tend vers l’infini.
+x
+
+Nous donnons dans le tableau ci-dessous un procédé de détermination de la branche infinie
+de C, dans le casoù lim f(x)=+o. Les autres cas se déterminent de façon analogue.
+x—>+0
+.1 F(&) 1. , 08
+*Si lim est infinie, alors C, admet une branche parabolique de direction
+x>+o X
+
+(O, -j) au voisinage de +.
+
+f -
+*Si lim (x) =0, alors C, admet une branche parabolique de direction(0, i) au
+x>+o X
+
+voisinage de +o.
+
+. . Î(
+*Si lim Q =a (a E ]R‘) alors deux cas peuvent se présenter selon
+x>+o X
+
+lim (f(x)-ax).
+m (E()-ax)
+«Si lim (f(x) _ ax) =b(beR) alors la droite d’équation y = ax +b est une
+x—>+00
+asymptote oblique à la courbe C; au voisinage de +œ.
+«Si lim (f (x) - ax) est infinie alors la droite d’équation y =ax est une direction
+x—>+0
+asymptotique à la courbe C, au voisinage de +œ.
+Activité 3
+Soit f la fonction définie sur [—1,+ c[ par f(x)=2x+Vx+1 et C; la courbe de f dans un
+repère orthonormé (O ,Î,Î) .
+1. Etudier les variations de f.
+2. Déterminer la nature de la branche infinie de C, au voisinage de +œ.
+
+3. Tracer C;.
+
+—Continuité et limites
+
+10

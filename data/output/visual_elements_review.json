@@ -1,0 +1,2119 @@
+{
+  "note": "classification_hint is a SOFT TRIAGE HINT, not a verified label. See evaluate_visual_elements.py's docstring for known failure modes. needs_review is unconditionally true for every candidate regardless of hint; nothing here is ever auto-excluded.",
+  "total_candidates": 68,
+  "counts_by_hint": {
+    "figure": 11,
+    "text_only": 35,
+    "ambiguous": 22
+  },
+  "candidates": [
+    {
+      "candidate_id": "page_006_candidate_01",
+      "pdf_page": 6,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": true,
+      "seed_bbox": [
+        1232,
+        924,
+        2048,
+        1228
+      ],
+      "refined_bbox": [
+        1232,
+        924,
+        2048,
+        1228
+      ],
+      "bbox": [
+        1232,
+        924,
+        2048,
+        1228
+      ],
+      "image_path": "figure_candidates_refined/page_006/page_006_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_006_candidate_02",
+      "pdf_page": 6,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": true,
+      "seed_bbox": [
+        800,
+        1324,
+        2032,
+        1996
+      ],
+      "refined_bbox": [
+        800,
+        1324,
+        2032,
+        1996
+      ],
+      "bbox": [
+        800,
+        1324,
+        2032,
+        1996
+      ],
+      "image_path": "figure_candidates_refined/page_006/page_006_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_006_candidate_03",
+      "pdf_page": 6,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": true,
+      "seed_bbox": [
+        160,
+        1260,
+        768,
+        2108
+      ],
+      "refined_bbox": [
+        160,
+        1260,
+        768,
+        2108
+      ],
+      "bbox": [
+        160,
+        1260,
+        768,
+        2108
+      ],
+      "image_path": "figure_candidates_refined/page_006/page_006_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_006_candidate_04",
+      "pdf_page": 6,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "7 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        2460,
+        2064,
+        2892
+      ],
+      "refined_bbox": [
+        144,
+        2105,
+        2077,
+        2968
+      ],
+      "bbox": [
+        144,
+        2105,
+        2077,
+        2968
+      ],
+      "image_path": "figure_candidates_refined/page_006/page_006_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_006_candidate_05",
+      "pdf_page": 6,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "4 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        476,
+        944,
+        796
+      ],
+      "refined_bbox": [
+        160,
+        476,
+        944,
+        796
+      ],
+      "bbox": [
+        160,
+        476,
+        944,
+        796
+      ],
+      "image_path": "figure_candidates_refined/page_006/page_006_candidate_05.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_006_candidate_06",
+      "pdf_page": 6,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        192,
+        108,
+        1632,
+        428
+      ],
+      "refined_bbox": [
+        174,
+        92,
+        1643,
+        437
+      ],
+      "bbox": [
+        174,
+        92,
+        1643,
+        437
+      ],
+      "image_path": "figure_candidates_refined/page_006/page_006_candidate_06.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_007_candidate_01",
+      "pdf_page": 7,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": true,
+      "seed_bbox": [
+        416,
+        652,
+        2032,
+        924
+      ],
+      "refined_bbox": [
+        144,
+        584,
+        2063,
+        955
+      ],
+      "bbox": [
+        144,
+        584,
+        2063,
+        955
+      ],
+      "image_path": "figure_candidates_refined/page_007/page_007_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_007_candidate_02",
+      "pdf_page": 7,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": true,
+      "seed_bbox": [
+        1136,
+        2188,
+        2032,
+        2588
+      ],
+      "refined_bbox": [
+        1104,
+        2168,
+        2056,
+        2613
+      ],
+      "bbox": [
+        1104,
+        2168,
+        2056,
+        2613
+      ],
+      "image_path": "figure_candidates_refined/page_007/page_007_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_007_candidate_03",
+      "pdf_page": 7,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": true,
+      "seed_bbox": [
+        1168,
+        1052,
+        2048,
+        1260
+      ],
+      "refined_bbox": [
+        1158,
+        1040,
+        2061,
+        1269
+      ],
+      "bbox": [
+        1158,
+        1040,
+        2061,
+        1269
+      ],
+      "image_path": "figure_candidates_refined/page_007/page_007_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_007_candidate_04",
+      "pdf_page": 7,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "3 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        604,
+        416,
+        1052
+      ],
+      "refined_bbox": [
+        160,
+        604,
+        416,
+        1052
+      ],
+      "bbox": [
+        160,
+        604,
+        416,
+        1052
+      ],
+      "image_path": "figure_candidates_refined/page_007/page_007_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_007_candidate_05",
+      "pdf_page": 7,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": true,
+      "seed_bbox": [
+        1472,
+        332,
+        1856,
+        444
+      ],
+      "refined_bbox": [
+        1456,
+        320,
+        1873,
+        463
+      ],
+      "bbox": [
+        1456,
+        320,
+        1873,
+        463
+      ],
+      "image_path": "figure_candidates_refined/page_007/page_007_candidate_05.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_008_candidate_01",
+      "pdf_page": 8,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": true,
+      "seed_bbox": [
+        416,
+        1772,
+        1968,
+        1996
+      ],
+      "refined_bbox": [
+        120,
+        1698,
+        2001,
+        2021
+      ],
+      "bbox": [
+        120,
+        1698,
+        2001,
+        2021
+      ],
+      "image_path": "figure_candidates_refined/page_008/page_008_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_008_candidate_02",
+      "pdf_page": 8,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.3,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        92,
+        1264,
+        316
+      ],
+      "refined_bbox": [
+        160,
+        92,
+        1264,
+        316
+      ],
+      "bbox": [
+        160,
+        92,
+        1264,
+        316
+      ],
+      "image_path": "figure_candidates_refined/page_008/page_008_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_008_candidate_03",
+      "pdf_page": 8,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "10 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        192,
+        476,
+        1440,
+        1148
+      ],
+      "refined_bbox": [
+        192,
+        476,
+        1440,
+        1148
+      ],
+      "bbox": [
+        192,
+        476,
+        1440,
+        1148
+      ],
+      "image_path": "figure_candidates_refined/page_008/page_008_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_008_candidate_04",
+      "pdf_page": 8,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": true,
+      "seed_bbox": [
+        1456,
+        476,
+        2048,
+        1148
+      ],
+      "refined_bbox": [
+        1456,
+        476,
+        2048,
+        1148
+      ],
+      "bbox": [
+        1456,
+        476,
+        2048,
+        1148
+      ],
+      "image_path": "figure_candidates_refined/page_008/page_008_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_008_candidate_05",
+      "pdf_page": 8,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "3 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        128,
+        1708,
+        416,
+        2124
+      ],
+      "refined_bbox": [
+        128,
+        1708,
+        416,
+        2124
+      ],
+      "bbox": [
+        128,
+        1708,
+        416,
+        2124
+      ],
+      "image_path": "figure_candidates_refined/page_008/page_008_candidate_05.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_009_candidate_01",
+      "pdf_page": 9,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "9 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        192,
+        1388,
+        2064,
+        1980
+      ],
+      "refined_bbox": [
+        182,
+        1042,
+        2081,
+        2001
+      ],
+      "bbox": [
+        182,
+        1042,
+        2081,
+        2001
+      ],
+      "image_path": "figure_candidates_refined/page_009/page_009_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_009_candidate_02",
+      "pdf_page": 9,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "4 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        92,
+        2032,
+        988
+      ],
+      "refined_bbox": [
+        144,
+        82,
+        2085,
+        1011
+      ],
+      "bbox": [
+        144,
+        82,
+        2085,
+        1011
+      ],
+      "image_path": "figure_candidates_refined/page_009/page_009_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_010_candidate_01",
+      "pdf_page": 10,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": true,
+      "seed_bbox": [
+        208,
+        1276,
+        2032,
+        2300
+      ],
+      "refined_bbox": [
+        208,
+        1276,
+        2032,
+        2300
+      ],
+      "bbox": [
+        208,
+        1276,
+        2032,
+        2300
+      ],
+      "image_path": "figure_candidates_refined/page_010/page_010_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_011_candidate_01",
+      "pdf_page": 11,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": true,
+      "seed_bbox": [
+        1136,
+        940,
+        2032,
+        1308
+      ],
+      "refined_bbox": [
+        1104,
+        918,
+        2061,
+        1331
+      ],
+      "bbox": [
+        1104,
+        918,
+        2061,
+        1331
+      ],
+      "image_path": "figure_candidates_refined/page_011/page_011_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_011_candidate_02",
+      "pdf_page": 11,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1568,
+        1756,
+        2000,
+        2300
+      ],
+      "refined_bbox": [
+        1444,
+        1736,
+        2038,
+        2370
+      ],
+      "bbox": [
+        1444,
+        1736,
+        2038,
+        2370
+      ],
+      "image_path": "figure_candidates_refined/page_011/page_011_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_011_candidate_03",
+      "pdf_page": 11,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.3,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1516,
+        1504,
+        1596
+      ],
+      "refined_bbox": [
+        160,
+        1516,
+        1504,
+        1596
+      ],
+      "bbox": [
+        160,
+        1516,
+        1504,
+        1596
+      ],
+      "image_path": "figure_candidates_refined/page_011/page_011_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_011_candidate_04",
+      "pdf_page": 11,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.3,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1612,
+        976,
+        1676
+      ],
+      "refined_bbox": [
+        160,
+        1612,
+        976,
+        1676
+      ],
+      "bbox": [
+        160,
+        1612,
+        976,
+        1676
+      ],
+      "image_path": "figure_candidates_refined/page_011/page_011_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_011_candidate_05",
+      "pdf_page": 11,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": true,
+      "seed_bbox": [
+        192,
+        2444,
+        2032,
+        2716
+      ],
+      "refined_bbox": [
+        192,
+        2444,
+        2032,
+        2716
+      ],
+      "bbox": [
+        192,
+        2444,
+        2032,
+        2716
+      ],
+      "image_path": "figure_candidates_refined/page_011/page_011_candidate_05.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_011_candidate_06",
+      "pdf_page": 11,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "one dominant connected graphical shape (95% of ink), no text-line banding",
+      "confidence": 0.8,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1680,
+        492,
+        2000,
+        812
+      ],
+      "refined_bbox": [
+        1478,
+        289,
+        2025,
+        874
+      ],
+      "bbox": [
+        1478,
+        289,
+        2025,
+        874
+      ],
+      "image_path": "figure_candidates_refined/page_011/page_011_candidate_06.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_012_candidate_01",
+      "pdf_page": 12,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        416,
+        652,
+        2032,
+        860
+      ],
+      "refined_bbox": [
+        140,
+        488,
+        2063,
+        901
+      ],
+      "bbox": [
+        140,
+        488,
+        2063,
+        901
+      ],
+      "image_path": "figure_candidates_refined/page_012/page_012_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_012_candidate_02",
+      "pdf_page": 12,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": true,
+      "seed_bbox": [
+        208,
+        2140,
+        2032,
+        2412
+      ],
+      "refined_bbox": [
+        142,
+        2069,
+        2063,
+        2433
+      ],
+      "bbox": [
+        142,
+        2069,
+        2063,
+        2433
+      ],
+      "image_path": "figure_candidates_refined/page_012/page_012_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_012_candidate_03",
+      "pdf_page": 12,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "6 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1564,
+        2048,
+        1788
+      ],
+      "refined_bbox": [
+        140,
+        1544,
+        2063,
+        2081
+      ],
+      "bbox": [
+        140,
+        1544,
+        2063,
+        2081
+      ],
+      "image_path": "figure_candidates_refined/page_012/page_012_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_012_candidate_04",
+      "pdf_page": 12,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.3,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1996,
+        1056,
+        2124
+      ],
+      "refined_bbox": [
+        160,
+        1996,
+        1056,
+        2124
+      ],
+      "bbox": [
+        160,
+        1996,
+        1056,
+        2124
+      ],
+      "image_path": "figure_candidates_refined/page_012/page_012_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_012_candidate_05",
+      "pdf_page": 12,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.3,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        508,
+        1152,
+        572
+      ],
+      "refined_bbox": [
+        160,
+        508,
+        1152,
+        572
+      ],
+      "bbox": [
+        160,
+        508,
+        1152,
+        572
+      ],
+      "image_path": "figure_candidates_refined/page_012/page_012_candidate_05.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_012_candidate_06",
+      "pdf_page": 12,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": true,
+      "seed_bbox": [
+        160,
+        604,
+        416,
+        860
+      ],
+      "refined_bbox": [
+        160,
+        604,
+        416,
+        860
+      ],
+      "bbox": [
+        160,
+        604,
+        416,
+        860
+      ],
+      "image_path": "figure_candidates_refined/page_012/page_012_candidate_06.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_013_candidate_01",
+      "pdf_page": 13,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "one dominant connected graphical shape (87% of ink), no text-line banding",
+      "confidence": 0.8,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        972,
+        2048,
+        1148
+      ],
+      "refined_bbox": [
+        142,
+        962,
+        2063,
+        1217
+      ],
+      "bbox": [
+        142,
+        962,
+        2063,
+        1217
+      ],
+      "image_path": "figure_candidates_refined/page_013/page_013_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_013_candidate_02",
+      "pdf_page": 13,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1552,
+        476,
+        1920,
+        956
+      ],
+      "refined_bbox": [
+        1451,
+        427,
+        1989,
+        965
+      ],
+      "bbox": [
+        1451,
+        427,
+        1989,
+        965
+      ],
+      "image_path": "figure_candidates_refined/page_013/page_013_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_013_candidate_03",
+      "pdf_page": 13,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1852,
+        704,
+        1996
+      ],
+      "refined_bbox": [
+        144,
+        1834,
+        711,
+        2017
+      ],
+      "bbox": [
+        144,
+        1834,
+        711,
+        2017
+      ],
+      "image_path": "figure_candidates_refined/page_013/page_013_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_013_candidate_04",
+      "pdf_page": 13,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "one dominant connected graphical shape (100% of ink), no text-line banding",
+      "confidence": 0.6,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1376,
+        2316,
+        2048,
+        2652
+      ],
+      "refined_bbox": [
+        1376,
+        2316,
+        2048,
+        2652
+      ],
+      "bbox": [
+        1376,
+        2316,
+        2048,
+        2652
+      ],
+      "image_path": "figure_candidates_refined/page_013/page_013_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_014_candidate_01",
+      "pdf_page": 14,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": true,
+      "seed_bbox": [
+        160,
+        732,
+        2032,
+        1244
+      ],
+      "refined_bbox": [
+        140,
+        722,
+        2063,
+        1265
+      ],
+      "bbox": [
+        140,
+        722,
+        2063,
+        1265
+      ],
+      "image_path": "figure_candidates_refined/page_014/page_014_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_014_candidate_02",
+      "pdf_page": 14,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": true,
+      "seed_bbox": [
+        208,
+        2092,
+        2032,
+        2460
+      ],
+      "refined_bbox": [
+        140,
+        2008,
+        2063,
+        2489
+      ],
+      "bbox": [
+        140,
+        2008,
+        2063,
+        2489
+      ],
+      "image_path": "figure_candidates_refined/page_014/page_014_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_014_candidate_03",
+      "pdf_page": 14,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "one dominant connected graphical shape (96% of ink), no text-line banding",
+      "confidence": 0.8,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1232,
+        412,
+        2000,
+        540
+      ],
+      "refined_bbox": [
+        1216,
+        289,
+        2060,
+        596
+      ],
+      "bbox": [
+        1216,
+        289,
+        2060,
+        596
+      ],
+      "image_path": "figure_candidates_refined/page_014/page_014_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_015_candidate_01",
+      "pdf_page": 15,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "3 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        508,
+        400,
+        748
+      ],
+      "refined_bbox": [
+        160,
+        508,
+        400,
+        748
+      ],
+      "bbox": [
+        160,
+        508,
+        400,
+        748
+      ],
+      "image_path": "figure_candidates_refined/page_015/page_015_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_015_candidate_02",
+      "pdf_page": 15,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "5 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        2028,
+        2048,
+        2732
+      ],
+      "refined_bbox": [
+        140,
+        2008,
+        2063,
+        2753
+      ],
+      "bbox": [
+        140,
+        2008,
+        2063,
+        2753
+      ],
+      "image_path": "figure_candidates_refined/page_015/page_015_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_015_candidate_03",
+      "pdf_page": 15,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.3,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        272,
+        1516,
+        656,
+        1900
+      ],
+      "refined_bbox": [
+        272,
+        1516,
+        656,
+        1900
+      ],
+      "bbox": [
+        272,
+        1516,
+        656,
+        1900
+      ],
+      "image_path": "figure_candidates_refined/page_015/page_015_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_015_candidate_04",
+      "pdf_page": 15,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.3,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        832,
+        1564,
+        1392,
+        1916
+      ],
+      "refined_bbox": [
+        832,
+        1564,
+        1392,
+        1916
+      ],
+      "bbox": [
+        832,
+        1564,
+        1392,
+        1916
+      ],
+      "image_path": "figure_candidates_refined/page_015/page_015_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_015_candidate_05",
+      "pdf_page": 15,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1164,
+        1552,
+        1228
+      ],
+      "refined_bbox": [
+        140,
+        1144,
+        1571,
+        1329
+      ],
+      "bbox": [
+        140,
+        1144,
+        1571,
+        1329
+      ],
+      "image_path": "figure_candidates_refined/page_015/page_015_candidate_05.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_016_candidate_01",
+      "pdf_page": 16,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "15 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        92,
+        2064,
+        1692
+      ],
+      "refined_bbox": [
+        140,
+        72,
+        2085,
+        1860
+      ],
+      "bbox": [
+        140,
+        72,
+        2085,
+        1860
+      ],
+      "image_path": "figure_candidates_refined/page_016/page_016_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_017_candidate_01",
+      "pdf_page": 17,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "3 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        416,
+        2652,
+        2064,
+        2892
+      ],
+      "refined_bbox": [
+        144,
+        2584,
+        2077,
+        2967
+      ],
+      "bbox": [
+        144,
+        2584,
+        2077,
+        2967
+      ],
+      "image_path": "figure_candidates_refined/page_017/page_017_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_017_candidate_02",
+      "pdf_page": 17,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "one dominant connected graphical shape (100% of ink), no text-line banding",
+      "confidence": 0.8,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1744,
+        380,
+        1920,
+        796
+      ],
+      "refined_bbox": [
+        1647,
+        261,
+        1996,
+        849
+      ],
+      "bbox": [
+        1647,
+        261,
+        1996,
+        849
+      ],
+      "image_path": "figure_candidates_refined/page_017/page_017_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_017_candidate_03",
+      "pdf_page": 17,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.3,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        2604,
+        416,
+        2892
+      ],
+      "refined_bbox": [
+        160,
+        2604,
+        416,
+        2892
+      ],
+      "bbox": [
+        160,
+        2604,
+        416,
+        2892
+      ],
+      "image_path": "figure_candidates_refined/page_017/page_017_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_018_candidate_01",
+      "pdf_page": 18,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        416,
+        1676,
+        2048,
+        2140
+      ],
+      "refined_bbox": [
+        140,
+        1608,
+        2063,
+        2323
+      ],
+      "bbox": [
+        140,
+        1608,
+        2063,
+        2323
+      ],
+      "image_path": "figure_candidates_refined/page_018/page_018_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_018_candidate_02",
+      "pdf_page": 18,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1392,
+        1100,
+        1952,
+        1436
+      ],
+      "refined_bbox": [
+        1340,
+        1065,
+        1992,
+        1472
+      ],
+      "bbox": [
+        1340,
+        1065,
+        1992,
+        1472
+      ],
+      "image_path": "figure_candidates_refined/page_018/page_018_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_018_candidate_03",
+      "pdf_page": 18,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        988,
+        1696,
+        1052
+      ],
+      "refined_bbox": [
+        140,
+        968,
+        1717,
+        1061
+      ],
+      "bbox": [
+        140,
+        968,
+        1717,
+        1061
+      ],
+      "image_path": "figure_candidates_refined/page_018/page_018_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_018_candidate_04",
+      "pdf_page": 18,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": true,
+      "seed_bbox": [
+        160,
+        1628,
+        416,
+        2220
+      ],
+      "refined_bbox": [
+        160,
+        1628,
+        416,
+        2220
+      ],
+      "bbox": [
+        160,
+        1628,
+        416,
+        2220
+      ],
+      "image_path": "figure_candidates_refined/page_018/page_018_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_019_candidate_01",
+      "pdf_page": 19,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1676,
+        2032,
+        2172
+      ],
+      "refined_bbox": [
+        144,
+        1608,
+        2063,
+        2342
+      ],
+      "bbox": [
+        144,
+        1608,
+        2063,
+        2342
+      ],
+      "image_path": "figure_candidates_refined/page_019/page_019_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_019_candidate_02",
+      "pdf_page": 19,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "one dominant connected graphical shape (96% of ink), no text-line banding",
+      "confidence": 0.8,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        208,
+        2460,
+        2032,
+        2620
+      ],
+      "refined_bbox": [
+        140,
+        2376,
+        2063,
+        2641
+      ],
+      "bbox": [
+        140,
+        2376,
+        2063,
+        2641
+      ],
+      "image_path": "figure_candidates_refined/page_019/page_019_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_019_candidate_03",
+      "pdf_page": 19,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "one dominant connected graphical shape (88% of ink), no text-line banding",
+      "confidence": 0.6,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        92,
+        1264,
+        284
+      ],
+      "refined_bbox": [
+        160,
+        92,
+        1264,
+        284
+      ],
+      "bbox": [
+        160,
+        92,
+        1264,
+        284
+      ],
+      "image_path": "figure_candidates_refined/page_019/page_019_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_019_candidate_04",
+      "pdf_page": 19,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "one dominant connected graphical shape (95% of ink), no text-line banding",
+      "confidence": 0.8,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1664,
+        700,
+        1904,
+        876
+      ],
+      "refined_bbox": [
+        1506,
+        596,
+        1939,
+        1038
+      ],
+      "bbox": [
+        1506,
+        596,
+        1939,
+        1038
+      ],
+      "image_path": "figure_candidates_refined/page_019/page_019_candidate_04.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_019_candidate_05",
+      "pdf_page": 19,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1500,
+        1936,
+        1564
+      ],
+      "refined_bbox": [
+        140,
+        1480,
+        1957,
+        1585
+      ],
+      "bbox": [
+        140,
+        1480,
+        1957,
+        1585
+      ],
+      "image_path": "figure_candidates_refined/page_019/page_019_candidate_05.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_020_candidate_01",
+      "pdf_page": 20,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "tinted callout-box background (existing signal)",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": true,
+      "seed_bbox": [
+        192,
+        316,
+        2032,
+        860
+      ],
+      "refined_bbox": [
+        146,
+        214,
+        2047,
+        881
+      ],
+      "bbox": [
+        146,
+        214,
+        2047,
+        881
+      ],
+      "image_path": "figure_candidates_refined/page_020/page_020_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_023_candidate_01",
+      "pdf_page": 23,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.3,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        784,
+        2780,
+        1440,
+        2860
+      ],
+      "refined_bbox": [
+        784,
+        2780,
+        1440,
+        2860
+      ],
+      "bbox": [
+        784,
+        2780,
+        1440,
+        2860
+      ],
+      "image_path": "figure_candidates_refined/page_023/page_023_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_024_candidate_01",
+      "pdf_page": 24,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "4 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        572,
+        256,
+        1020
+      ],
+      "refined_bbox": [
+        160,
+        572,
+        256,
+        1020
+      ],
+      "bbox": [
+        160,
+        572,
+        256,
+        1020
+      ],
+      "image_path": "figure_candidates_refined/page_024/page_024_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_024_candidate_02",
+      "pdf_page": 24,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "one dominant connected graphical shape (98% of ink), no text-line banding",
+      "confidence": 0.8,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1184,
+        956,
+        2016,
+        1612
+      ],
+      "refined_bbox": [
+        1164,
+        938,
+        2037,
+        1623
+      ],
+      "bbox": [
+        1164,
+        938,
+        2037,
+        1623
+      ],
+      "image_path": "figure_candidates_refined/page_024/page_024_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_024_candidate_03",
+      "pdf_page": 24,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "5 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1356,
+        256,
+        1772
+      ],
+      "refined_bbox": [
+        160,
+        1356,
+        256,
+        1772
+      ],
+      "bbox": [
+        160,
+        1356,
+        256,
+        1772
+      ],
+      "image_path": "figure_candidates_refined/page_024/page_024_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_025_candidate_01",
+      "pdf_page": 25,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "one dominant connected graphical shape (86% of ink), no text-line banding",
+      "confidence": 0.6,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "refined_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "image_path": "figure_candidates_refined/page_025/page_025_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_025_candidate_02",
+      "pdf_page": 25,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.5,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1440,
+        556,
+        1872,
+        940
+      ],
+      "refined_bbox": [
+        1308,
+        536,
+        1893,
+        1029
+      ],
+      "bbox": [
+        1308,
+        536,
+        1893,
+        1029
+      ],
+      "image_path": "figure_candidates_refined/page_025/page_025_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_025_candidate_03",
+      "pdf_page": 25,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "6 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.0,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        160,
+        1468,
+        272,
+        1932
+      ],
+      "refined_bbox": [
+        160,
+        1468,
+        272,
+        1932
+      ],
+      "bbox": [
+        160,
+        1468,
+        272,
+        1932
+      ],
+      "image_path": "figure_candidates_refined/page_025/page_025_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_027_candidate_01",
+      "pdf_page": 27,
+      "type": "candidate",
+      "classification_hint": "ambiguous",
+      "hint_meaning": "Classifier signals disagreed or were inconclusive. Needs a closer look; this is the safe default, not a failure.",
+      "hint_explanation": "signals disagree or are inconclusive -- needs human review",
+      "confidence": 0.3,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "refined_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "image_path": "figure_candidates_refined/page_027/page_027_candidate_01.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_027_candidate_02",
+      "pdf_page": 27,
+      "type": "candidate",
+      "classification_hint": "figure",
+      "hint_meaning": "Likely a graphical figure (curve/diagram/geometry). NOT confirmed -- verify against the image.",
+      "hint_explanation": "one dominant connected graphical shape (96% of ink), no text-line banding",
+      "confidence": 0.6,
+      "refinement_uncertain": true,
+      "likely_text_box": false,
+      "seed_bbox": [
+        1424,
+        1244,
+        1776,
+        1452
+      ],
+      "refined_bbox": [
+        1424,
+        1244,
+        1776,
+        1452
+      ],
+      "bbox": [
+        1424,
+        1244,
+        1776,
+        1452
+      ],
+      "image_path": "figure_candidates_refined/page_027/page_027_candidate_02.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_027_candidate_03",
+      "pdf_page": 27,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "6 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        416,
+        1756,
+        736,
+        2060
+      ],
+      "refined_bbox": [
+        146,
+        1638,
+        992,
+        2310
+      ],
+      "bbox": [
+        146,
+        1638,
+        992,
+        2310
+      ],
+      "image_path": "figure_candidates_refined/page_027/page_027_candidate_03.png",
+      "needs_review": true
+    },
+    {
+      "candidate_id": "page_027_candidate_04",
+      "pdf_page": 27,
+      "type": "candidate",
+      "classification_hint": "text_only",
+      "hint_meaning": "Likely plain text or a tinted callout box. NOT guaranteed -- known to also catch genuine tables.",
+      "hint_explanation": "5 horizontal text-line bands, no dominant graphical shape",
+      "confidence": 0.2,
+      "refinement_uncertain": false,
+      "likely_text_box": false,
+      "seed_bbox": [
+        336,
+        604,
+        896,
+        940
+      ],
+      "refined_bbox": [
+        146,
+        392,
+        978,
+        1033
+      ],
+      "bbox": [
+        146,
+        392,
+        978,
+        1033
+      ],
+      "image_path": "figure_candidates_refined/page_027/page_027_candidate_04.png",
+      "needs_review": true
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+PyMuPDF>=1.24
+pytesseract>=0.3.10
+Pillow>=10.0
+numpy>=1.26
+scipy>=1.11
+jsonschema>=4.20
+sentence-transformers>=3.0
+torch>=2.0

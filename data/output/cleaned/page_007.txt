@@ -1,0 +1,58 @@
+Cours
+Activité 3
+x?+sinx lim 2E —1
+
+Soit f la fonction définie sur R” par f (x)= x>0 x
+
+x
+Montrer que f est prolongeable par continuité en 0 et déterminer son prolongement.
+
+Théorème
+Soit f une fonction définie sur un intervalle ouvert I, sauf en un réel a de I.
+Si la fonction f admet une limite finie / lorsque x tend vers a, alors la fonction g définie
+
+f(x) six#a, ;
+surIpar g(x)= est continue en a.
+
+L six=a.
+Activité 4
+Soit f la fonction définie par Une fonction f définie sur un intervalle ouvert I
+2 est continue en un réel a de I, si et seulement si,
+—4(x2+x-2) . lim f(x)= lim f(x)=f(a).
+î six<l, x>_a x_at
+2
+=4 x‘—1 .
+f(x) six>1,
+Jx —1
+0 six=l.
+
+1. Calculer }1_1;111 f(x)et )}1_æf(x)
+
+2. La fonction f est-elle continue en 1 ?
+
+Activité 5
+
+x+1l
+Soit la fonction f : x — u
+x+1l
+
+La fonction f admet-elle une limite en —1 ?
+
+1.2 Continuité sur un intervalle
+
+Activité e Une fonction est continue sur un intervalle
+ouvert J si elle est continue en tout réel de I.
+
+Soit f la fonction définie sur [0,x] par ; _ _
+e Une fonction est continue sur un intervalle [a,b]
+
+f(x)=l_cÆ si XG]0,TE], si elle est continue sur Ja, b , à droite en a et à
+gauche en b.
+f (0) =0. De façon analogue, on définit la continuité de f sur
+
+; les intervalles [a,b[, |a,b], [a,+œ[ et ]-œ,a].
+Montrer que f est continue sur [0, n] ,
+
+—Continuité et limites
+
+7

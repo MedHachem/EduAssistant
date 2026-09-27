@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eduassistant.local/schema/knowledge_enrichment.schema.json",
+  "title": "KnowledgeEnrichment",
+  "description": "Design proposal, not yet implemented (Phase 8). One record per normalized item (see normalized_knowledge.schema.json), keyed by item_id, stored SEPARATELY from the normalized JSON -- never merged in. See knowledge_enrichment.md for full rationale and the deterministic/rule-based/LLM classification of every field.",
+  "type": "object",
+
+  "$defs": {
+    "GenerationMethod": {
+      "type": "string",
+      "enum": ["deterministic", "rule_based", "llm", "not_populated"],
+      "description": "How THIS SPECIFIC field's value was produced -- see knowledge_enrichment.md's classification. 'not_populated' means the field was deliberately left empty (e.g. no glossary/regex match), not that it failed."
+    },
+
+    "ReasoningType": {
+      "type": "string",
+      "description": "Controlled vocabulary, extended only via explicit rule additions in enrich_knowledge_deterministic.py's verb glossary -- never free text.",
+      "enum": [
+        "prove", "justify", "compute", "determine", "study_variations",
+        "represent_graphically", "solve_equation", "deduce",
+        "interpret", "identify_or_read", "unclassified"
+      ]
+    },
+
+    "ExerciseType": {
+      "type": ["string", "null"],
+      "enum": ["qcm", "structured_multi_question", "unstructured_statement", null],
+      "description": "null when the item's type is not activity/exercise/example (theorem/property/definition/remark are never exercise-shaped)."
+    },
+
+    "MathematicalEntities": {
+      "type": "object",
+      "description": "Regex-extracted LaTeX constructs -- literal substrings of `content`, never interpreted. Empty arrays are the honest default.",
+      "properties": {
+        "functions": { "type": "array", "items": { "type": "string" }, "description": "e.g. 'f', 'g', 'v \\circ u' -- single/short identifiers immediately followed by '(' in the LaTeX source." },
+        "intervals": { "type": "array", "items": { "type": "string" }, "description": "e.g. ']-\\infty,-1[', '[0,1]'." },
+        "equations": { "type": "array", "items": { "type": "string" }, "description": "e.g. 'x=-1', 'y=-x-3' -- short 'symbol=expression' patterns." },
+        "notations": { "type": "array", "items": { "type": "string" }, "description": "Specific LaTeX macros present, e.g. '\\lim', '\\sqrt', '\\int', '\\circ'." }
+      },
+      "additionalProperties": false
+    },
+
+    "EnrichmentRecord": {
+      "type": "object",
+      "description": "One record per normalized item, keyed by item_id.",
+      "required": [
+        "item_id", "item_type", "topics", "keywords", "mathematical_entities",
+        "exercise_type", "reasoning_types", "concepts", "generation_methods",
+        "review_status"
+      ],
+      "properties": {
+        "item_id": { "type": "string", "description": "FK to a normalized item's own id -- reused verbatim, never regenerated." },
+        "item_type": { "type": "string", "description": "Denormalized copy of the normalized item's `type`, for readability only -- the normalized JSON remains authoritative." },
+
+        "topics": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Controlled vocabulary = the chapter's own section/subsection titles (deterministic; see field-by-field rationale). May later gain additional canonical topic labels from an LLM pass for coarse-bucket items (Phase B) -- tracked via generation_methods.topics, never silently."
+        },
+        "keywords": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Controlled-glossary substring matches against `content` (see knowledge_enrichment.md's glossary proposal) -- not free-text extraction."
+        },
+        "mathematical_entities": { "$ref": "#/$defs/MathematicalEntities" },
+        "exercise_type": { "$ref": "#/$defs/ExerciseType" },
+        "reasoning_types": { "type": "array", "items": { "$ref": "#/$defs/ReasoningType" } },
+        "concepts": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Rule-based bootstrap: deduplicated union of (a) the item's own topics and (b) canonical concept labels mapped from keyword glossary hits. Intended to eventually populate the EXISTING (currently always-empty) Concept registry in knowledge_item.schema.json -- see knowledge_enrichment.md #6."
+        },
+
+        "generation_methods": {
+          "type": "object",
+          "description": "One GenerationMethod per populated field above -- makes every value's provenance explicit and auditable.",
+          "required": ["topics", "keywords", "mathematical_entities", "exercise_type", "reasoning_types", "concepts"],
+          "properties": {
+            "topics": { "$ref": "#/$defs/GenerationMethod" },
+            "keywords": { "$ref": "#/$defs/GenerationMethod" },
+            "mathematical_entities": { "$ref": "#/$defs/GenerationMethod" },
+            "exercise_type": { "$ref": "#/$defs/GenerationMethod" },
+            "reasoning_types": { "$ref": "#/$defs/GenerationMethod" },
+            "concepts": { "$ref": "#/$defs/GenerationMethod" }
+          },
+          "additionalProperties": false
+        },
+
+        "review_status": {
+          "type": "string",
+          "enum": ["NOT_REQUIRED", "REVIEW_REQUIRED", "HUMAN_APPROVED", "HUMAN_REJECTED"],
+          "description": "'NOT_REQUIRED' only when every generation_methods value is deterministic/rule_based/not_populated. Any field produced by 'llm' forces at least REVIEW_REQUIRED -- mirrors the project's existing validation_status/review conventions (knowledge_item.schema.json, figure review, association review); never silently trusted."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "required": ["schema_version", "algorithm_version", "generated_at", "chapter_id", "items"],
+  "properties": {
+    "schema_version": { "type": "string", "const": "enrichment-1.0" },
+    "algorithm_version": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "chapter_id": { "type": "string" },
+    "items": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/EnrichmentRecord" },
+      "description": "One EnrichmentRecord per normalized item -- see knowledge_enrichment.md."
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,50 @@
+Soit la fonction f définie sur R° par f(x)=x 48
+x
+
+Activité 3
+
+Déterminer f ([1,4]), f ([-10,-1]).
+
+Activité 4
+Sur la figure ci-contre, @ est le cercle trigonométrique de
+
+J
+
+centre O et (O—I,O_M) = x[2n] avec x appartenant à ]O,%[ .
+
+On désigne par A(x) et ®(x) l’aire et le périmètre du
+rectangle OPMQ.
+
+1. Soit f et g les fonctions définies sur [O,%] par
+f(x)=sinxcosx et g(x)=2(sinx+cosx).
+
+Déterminer l’image de l’intervalle [O,%] par chacune des fonctions f et g.
+
+2. En déduire les valeurs maximales respectives de A(x) et de P(x).
+
+VI. Image d’un intervalle par une fonction strictement monotone
+
+Théorème (admis)
+
+Soit f une fonction définie sur un intervalle de type [a, b[ ( b fini ou infini).
+
+e Si la fonction f est croissante et majorée alors f possède une limite finie en b.
+
+e Si la fonction f est croissante et non majorée alors f tend vers +œ en b.
+
+e Si la fonction f est décroissante et minorée alors f possède une limite finie en b.
+e Si la fonction f est décroissante et non minorée alors f tend vers —o en b.
+
+Activité 1
+
+Soit f une fonction définie et croissante sur R, telle que pour tout entier naturel n,
+f(n)=n+1. Etudier la limite de f en +o.
+
+Théorème (admis)
+
+L’image d’un intervalle I par une fonction continue et strictement monotone sur I est un
+intervalle de même nature.
+
+—Continuité et limites
+
+19

@@ -1,0 +1,300 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eduassistant.local/schema/knowledge_item.schema.json",
+  "title": "KnowledgeItem",
+  "description": "Design proposal, not yet implemented by any converter. One record represents one Definition/Theorem/Property/Formula/Method/Example/Activity/Exercise/Remark extracted from validated, reconstructed textbook content. See knowledge_schema.md for full rationale, entity relationships, and known open questions.",
+  "type": "object",
+
+  "$defs": {
+    "ItemType": {
+      "type": "string",
+      "enum": ["definition", "theorem", "property", "formula", "method", "example", "activity", "exercise", "remark"]
+    },
+
+    "ValidationStatus": {
+      "type": "string",
+      "description": "New items MUST be REVIEW_REQUIRED (rule #7). Other values are reserved for future human/automated review steps, never set by the initial converter.",
+      "enum": ["REVIEW_REQUIRED", "HUMAN_APPROVED", "HUMAN_REJECTED", "NEEDS_CORRECTION"]
+    },
+
+    "SourceRef": {
+      "type": "object",
+      "description": "Provenance back to the validated reconstructed text. Every knowledge item must preserve this.",
+      "required": ["document_id", "pdf_pages", "reconstructed_sources", "bloc_type"],
+      "properties": {
+        "document_id": { "type": "string" },
+        "pdf_pages": {
+          "type": "array",
+          "description": "Full page span (e.g. [20, 21] for an exercise continuing across pages), 1-indexed, matching the PDF viewer.",
+          "items": { "type": "integer", "minimum": 1 },
+          "minItems": 1
+        },
+        "reconstructed_sources": {
+          "type": "array",
+          "description": "Path(s) to the reconstructed Markdown file(s) this item was extracted from, one per page in pdf_pages.",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "bloc_type": {
+          "type": "string",
+          "description": "The original <bloc type=\"...\"> value from the reconstructed Markdown (e.g. 'theoreme', 'exercice', 'question')."
+        },
+        "bloc_numero": { "type": ["string", "null"] },
+        "continues_from_previous_page": { "type": "boolean", "default": false },
+        "continues_on_next_page": { "type": "boolean", "default": false }
+      },
+      "additionalProperties": false
+    },
+
+    "FigureRef": {
+      "type": "object",
+      "description": "A reference to an existing figure candidate/page -- never an embedded image or a re-derived description (rule #9).",
+      "required": ["pdf_page", "match_status"],
+      "properties": {
+        "pdf_page": { "type": "integer", "minimum": 1 },
+        "reconstructed_figure_id": {
+          "type": ["string", "null"],
+          "description": "The <figure id=\"...\"> value from the reconstructed Markdown, if any."
+        },
+        "candidate_id": {
+          "type": ["string", "null"],
+          "description": "The candidate_id from visual_elements_review.json, if matched."
+        },
+        "figure_status_in_source": {
+          "type": ["string", "null"],
+          "enum": ["described", "reference_only", "requires_verification", null]
+        },
+        "match_status": {
+          "type": "string",
+          "description": "Whether reconstructed_figure_id and candidate_id have actually been confirmed to refer to the same figure.",
+          "enum": ["unresolved", "manual", "automated"]
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Links": {
+      "type": "object",
+      "description": "Relationships to other knowledge items and figures. Empty arrays are the honest default -- never populate a link the source doesn't explicitly support (rule #5).",
+      "properties": {
+        "definitions": { "type": "array", "items": { "type": "string" } },
+        "theorems": { "type": "array", "items": { "type": "string" } },
+        "properties": { "type": "array", "items": { "type": "string" } },
+        "formulas": { "type": "array", "items": { "type": "string" } },
+        "methods": { "type": "array", "items": { "type": "string" } },
+        "exercises": { "type": "array", "items": { "type": "string" } },
+        "figures": { "type": "array", "items": { "$ref": "#/$defs/FigureRef" } }
+      },
+      "additionalProperties": false
+    },
+
+    "SubQuestion": {
+      "type": "object",
+      "required": ["label", "text", "sub_questions"],
+      "properties": {
+        "label": { "type": "string", "description": "e.g. '1', 'a', 'i'" },
+        "text": {
+          "type": ["string", "null"],
+          "description": "Null when this question has no text of its own and exists only to group sub_questions (e.g. a bare '1.' immediately followed by 'a./b./c.')."
+        },
+        "sub_questions": { "type": "array", "items": { "$ref": "#/$defs/SubQuestion" } }
+      },
+      "additionalProperties": false
+    },
+
+    "Correction": {
+      "type": "object",
+      "required": ["present_in_source"],
+      "properties": {
+        "present_in_source": { "type": "boolean" },
+        "content": {
+          "type": ["string", "null"],
+          "description": "Verbatim solution text if present_in_source is true, else null. Never invented (rule #3)."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "QcmChoice": {
+      "type": "object",
+      "required": ["label", "text"],
+      "properties": {
+        "label": { "type": "string" },
+        "text": { "type": "string" },
+        "marked_correct_in_source": {
+          "type": ["boolean", "null"],
+          "description": "true/false only if the source itself marks the answer; null if undetermined -- never guessed."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "ExerciseDetails": {
+      "type": "object",
+      "description": "Present only when type is exercise/activity/example and the source has this structure.",
+      "properties": {
+        "statement": { "type": ["string", "null"] },
+        "questions": { "type": "array", "items": { "$ref": "#/$defs/SubQuestion" } },
+        "correction": { "$ref": "#/$defs/Correction" },
+        "qcm_choices": { "type": ["array", "null"], "items": { "$ref": "#/$defs/QcmChoice" } }
+      },
+      "additionalProperties": false
+    },
+
+    "ExtractedFrom": {
+      "type": "object",
+      "description": "Required when type is formula/method AND the item was carved out of a parent item's content rather than having its own source bloc (no dedicated tag exists for these two types in this chapter -- see knowledge_schema.md finding #4).",
+      "required": ["item_id"],
+      "properties": {
+        "item_id": { "type": "string" },
+        "note": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+
+    "UncertaintyInfo": {
+      "type": "object",
+      "description": "Carried forward from the reconstruction's own <uncertain>/<gap> markers -- never dropped.",
+      "properties": {
+        "has_uncertain_markers": { "type": "boolean" },
+        "has_gap_markers": { "type": "boolean" },
+        "uncertain_spans": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "reason": { "type": "string" },
+              "text": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "ValidationEvent": {
+      "type": "object",
+      "required": ["status", "at"],
+      "properties": {
+        "status": { "$ref": "#/$defs/ValidationStatus" },
+        "at": { "type": "string", "format": "date-time" },
+        "reviewer": { "type": ["string", "null"] },
+        "notes": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+
+    "Document": {
+      "type": "object",
+      "required": ["id", "title", "subject", "level", "country", "source_pdf"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "subject": { "type": "string" },
+        "level": { "type": "string", "description": "e.g. '4ème année secondaire'" },
+        "country": { "type": "string", "default": "Tunisia" },
+        "source_pdf": { "type": "string" },
+        "total_pages": { "type": ["integer", "null"] }
+      },
+      "additionalProperties": false
+    },
+
+    "Chapter": {
+      "type": "object",
+      "required": ["id", "document_id", "number", "title", "pdf_page_start", "pdf_page_end"],
+      "properties": {
+        "id": { "type": "string" },
+        "document_id": { "type": "string" },
+        "number": { "type": "integer" },
+        "title": { "type": "string" },
+        "pdf_page_start": { "type": "integer" },
+        "pdf_page_end": { "type": "integer" }
+      },
+      "additionalProperties": false
+    },
+
+    "Section": {
+      "type": "object",
+      "required": ["id", "chapter_id", "label", "title", "pdf_page_start", "pdf_page_end"],
+      "properties": {
+        "id": { "type": "string" },
+        "chapter_id": { "type": "string" },
+        "label": { "type": "string", "description": "e.g. 'III'" },
+        "title": { "type": "string" },
+        "pdf_page_start": { "type": "integer" },
+        "pdf_page_end": { "type": "integer" }
+      },
+      "additionalProperties": false
+    },
+
+    "Subsection": {
+      "type": "object",
+      "required": ["id", "section_id", "label", "title", "pdf_page_start", "pdf_page_end"],
+      "properties": {
+        "id": { "type": "string" },
+        "section_id": { "type": "string" },
+        "label": { "type": "string", "description": "e.g. 'III.2'" },
+        "title": { "type": "string" },
+        "pdf_page_start": { "type": "integer" },
+        "pdf_page_end": { "type": "integer" }
+      },
+      "additionalProperties": false
+    },
+
+    "Concept": {
+      "type": "object",
+      "required": ["id", "label"],
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "aliases": { "type": "array", "items": { "type": "string" } },
+        "first_seen_item_id": {
+          "type": ["string", "null"],
+          "description": "Traceability: which knowledge item this concept was first extracted from."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "required": [
+    "id", "type", "document_id", "chapter_id", "source", "original_content",
+    "concepts", "links", "validation_status", "validation_history", "schema_version"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "type": { "$ref": "#/$defs/ItemType" },
+    "document_id": { "type": "string" },
+    "chapter_id": { "type": "string" },
+    "section_id": { "type": ["string", "null"] },
+    "subsection_id": { "type": ["string", "null"] },
+    "title": {
+      "type": ["string", "null"],
+      "description": "Only if the source itself has a short label (e.g. 'Théorème (admis)'). Never invented."
+    },
+    "source": { "$ref": "#/$defs/SourceRef" },
+    "original_content": {
+      "type": "string",
+      "description": "Verbatim reconstructed Markdown/LaTeX body of this item, unmodified. The ground truth for this record."
+    },
+    "proof": {
+      "type": ["string", "null"],
+      "description": "Verbatim untagged proof text immediately following a theorem in the source, if present (see knowledge_schema.md finding #1). Only meaningful for type=theorem/property."
+    },
+    "concepts": { "type": "array", "items": { "type": "string" } },
+    "links": { "$ref": "#/$defs/Links" },
+    "exercise_details": {
+      "oneOf": [{ "$ref": "#/$defs/ExerciseDetails" }, { "type": "null" }]
+    },
+    "extracted_from": {
+      "oneOf": [{ "$ref": "#/$defs/ExtractedFrom" }, { "type": "null" }]
+    },
+    "uncertainty": { "$ref": "#/$defs/UncertaintyInfo" },
+    "validation_status": { "$ref": "#/$defs/ValidationStatus" },
+    "validation_history": { "type": "array", "items": { "$ref": "#/$defs/ValidationEvent" } },
+    "created_at": { "type": "string", "format": "date-time" },
+    "schema_version": { "type": "string", "const": "1.0" }
+  },
+  "additionalProperties": false
+}

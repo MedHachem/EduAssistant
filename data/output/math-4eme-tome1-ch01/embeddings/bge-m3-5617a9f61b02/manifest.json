@@ -1,0 +1,19 @@
+{
+  "schema_version": "embedding-manifest-1.0",
+  "pipeline_version": "embed-v1",
+  "chapter_id": "math-4eme-tome1-ch01",
+  "generated_at": "2026-09-27T17:08:36.342750+00:00",
+  "embedding_model": {
+    "name": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "framework": "sentence-transformers",
+    "dimension": 1024
+  },
+  "normalization_strategy": "l2",
+  "vector_dtype": "float32",
+  "vector_count": 102,
+  "source_chunks_file": "C:\\Users\\ASUS\\Desktop\\EduAssistant\\data\\output\\math-4eme-tome1-ch01\\chunks\\knowledge_chunks.json",
+  "source_chunks_hash": "sha256:c78e47b878d8e57c1bece2868a1f9e265622eabcb60a84cd82b92663eb9df2a6",
+  "vectors_file": "vectors.npy",
+  "records_file": "records.json"
+}

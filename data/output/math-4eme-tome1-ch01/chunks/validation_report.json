@@ -1,0 +1,35 @@
+{
+  "chapter_id": "math-4eme-tome1-ch01",
+  "algorithm_version": "chunk-v1",
+  "counts": {
+    "total_chunks": 102,
+    "by_content_role": {
+      "statement": 101,
+      "correction": 1
+    },
+    "by_review_status": {
+      "NOT_REQUIRED": 98,
+      "REVIEW_REQUIRED": 4
+    },
+    "whole_item_chunks": 97,
+    "merge_chunks": 1,
+    "split_chunks": 3,
+    "figure_refs_total": 22,
+    "chunks_with_related_chunk_ids": 90
+  },
+  "passed": true,
+  "total_errors": 0,
+  "checks": {
+    "schema": [],
+    "duplicate_chunk_ids": [],
+    "stable_ids": [],
+    "item_coverage": [],
+    "section_references": [],
+    "page_references": [],
+    "related_chunk_ids": [],
+    "figure_references": [],
+    "statement_correction_consistency": [],
+    "split_consistency": [],
+    "ordering": []
+  }
+}

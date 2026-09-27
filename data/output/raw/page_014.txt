@@ -1,0 +1,57 @@
+Activité 2
+
+Dans la figure ci-contre on a représenté les Cç
+
+A , A 5
+fonctions f et g définies par f (x) = J—x +cos x C—gl—4\
+et g(x)=/-x—1
+
+1. Etudier la position relative de C; et C,..
+
+2. Que peut-on conjecturer sur la limite de f (x) lorsque x tend vers — ?
+
+Théorème
+
+Soit f, u et v trois fonctions définies sur un intervalle I sauf peut-être en un réel a de I.
+Soit deux réels / et /'.
+
+- Si u(x)<v(x) pour tout x #a et si limu = @ et limv = #" alors L</'.
+a a
+
+« Si u(x)<f(x)<v(x) pour tout x #a et si limu =limv =Z alors limf =2.
+a a a
+
+Les résultats énoncés ci-dessus restent valables lorsque l’on considère des limites à
+l’infini, à droite en a ou à gauche en a.
+
+Démonstration
+- Posons g(x)=v(x)-u(x) pour tout x #a.
+D’après l’hypothèse faite sur les fonctions u et v, la fonction g est positive et limg = £'—d.
+a
+On en déduit que £</".
+- Posons h(x)=f(x)-u(x) et g(x)=v(x)-u(x) pour tout x #a.
+D’après l’hypothèse faite sur les fonctions f, u et v, O<h (x) < g(x) pour tout x #a et
+limg = 0. On en déduit que pour tout B > 0, il existe œ > 0 tel que
+a
+xelet 0<|x-a|<a > h(x)<g(x)<B.
+Le théorème en découle.
+Théorème
+Soit f et u deux fonctions définies sur un intervalle I sauf peut-être en un réel a de I.
+« Si f(x)>u(x) pour tout x #a et si limu =+o, alors limf = +oœ.
+a a
+
+« Si f(x)<u(x) pour tout x #a et si limu = —, alors limf = —œ.
+a a
+
+Ces résultats restent valables lorsque l’on considère des limites à l’infini, à droite en a ou
+à gauche en a.
+
+Démonstration
+ Soit un réel A > 0. L’égalité limu = +o implique l’existence d’un réel & > 0 tel que
+a
+
+xelet 0<|x-a|<a > u(x)>A.
+
+—Continuité et limites
+
+14

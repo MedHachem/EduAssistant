@@ -1,0 +1,73 @@
+VISUAL DETECTION V3 -- COMPLETENESS EVALUATION
+===============================================
+
+19 real figures (13 VALIDATED + 6 NEEDS_CORRECTION, from evaluate_v2_against_ground_truth.py's ground truth) -- completeness for each was checked by directly opening the actual V3 crop against the source page image in this session, not inferred from bbox deltas alone.
+
+Real figures (13 validated + 6 needs_correction): 19
+Completeness counts: {'COMPLETE': 18, 'INCOMPLETE': 1, 'UNCERTAIN': 0}
+
+All 39 queue candidates -- bboxes grown by V3: 37 / 39
+Area growth ratio (V3/V2) -- min=1.0 max=2.458 mean=1.418
+
+--- Regression-guarded cases (verified NOT to have reabsorbed excluded text) ---
+These 2 NEEDS_CORRECTION figures were where an EARLIER version of this stage's search window (V1's full pre_trim_bbox, unbounded) reabsorbed the exercise-statement paragraph V2 had correctly excluded. Fixed by capping each edge's individual growth (figure_completeness_v3.EDGE_STRIP_SAFE_PX) -- both are verified, in the FINAL code, to keep the paragraph text out while still being classified COMPLETE for the figure itself.
+Candidates: ['page_027_candidate_03', 'page_027_candidate_04']
+
+--- Per-figure completeness ---
+page_009_candidate_02 (page 9): COMPLETE
+  v2_bbox=[144, 82, 2085, 1011] v3_bbox=[139, 82, 2085, 1016] grew=True
+  NEEDS_CORRECTION case (side-by-side text+graph layout V2 could not cleanly split); the graph itself (2 vertical asymptotes, full curve) is fully visible -- verified. Oversized bbox (adjacent intro text) is the separate, already-documented V2 limitation.
+page_011_candidate_02 (page 11): COMPLETE
+  v2_bbox=[1517, 1736, 1997, 2370] v3_bbox=[1440, 1733, 2043, 2375] grew=True
+  Cf/Cg curves; V3 recovered the '-3' x-axis label and 'Cf' curve tag cut off by V2 -- verified against the source page image.
+page_011_candidate_06 (page 11): COMPLETE
+  v2_bbox=[1478, 289, 2025, 874] v3_bbox=[1418, 284, 2030, 878] grew=True
+  Delta line / f(x) curve / point M; already complete in V2, V3's minor growth is cosmetic margin only -- verified.
+page_013_candidate_02 (page 13): INCOMPLETE
+  v2_bbox=[1524, 427, 1921, 965] v3_bbox=[1524, 422, 1994, 970] grew=True
+  Cubic curve; the '-3' x-axis tick is still missing -- it sits ~123px outside the V2 bbox, beyond this stage's EDGE_STRIP_SAFE_PX=110 safety cap (chosen because Chapter 1's real paragraph-reabsorption cases needed a near-identical 123-129px). Documented, known limitation, not silently claimed fixed.
+page_013_candidate_04 (page 13): COMPLETE
+  v2_bbox=[1376, 2316, 2048, 2652] v3_bbox=[1316, 2256, 2068, 2712] grew=True
+  C1/C2/C3 comparison curves with tick label '1'; V3 recovered it plus a two-word theorem-text fragment ('(x)<=h(x).') at the very top edge -- verified: fragment is a single short line, not a paragraph, and the figure itself is fully intact.
+page_014_candidate_03 (page 14): COMPLETE
+  v2_bbox=[1216, 289, 2060, 596] v3_bbox=[1166, 284, 2065, 656] grew=True
+  Cf/Cg curves with -15..-5 axis labels; verified complete, no cut edges.
+page_015_candidate_02 (page 15): COMPLETE
+  v2_bbox=[140, 2008, 2063, 2753] v3_bbox=[139, 1948, 2066, 2753] grew=True
+  NEEDS_CORRECTION case (oversized crop unchanged by V2's trim, V3 doesn't reclassify) -- the graph itself (Activite 2 function g) is fully visible; bbox tightness is the separate, already-documented V2 limitation.
+page_015_candidate_03 (page 15): COMPLETE
+  v2_bbox=[272, 1516, 656, 1900] v3_bbox=[212, 1458, 716, 1960] grew=True
+  Cubic-like curve; V3 recovered the 'I = ]-1,3[' interval label at the bottom -- verified, no unrelated text pulled in.
+page_015_candidate_04 (page 15): COMPLETE
+  v2_bbox=[832, 1564, 1392, 1916] v3_bbox=[802, 1504, 1418, 1976] grew=True
+  Curve approaching an asymptote; V3 recovered the 'I = [1,4]' interval label -- verified.
+page_016_candidate_01 (page 16): COMPLETE
+  v2_bbox=[140, 92, 2085, 1792] v3_bbox=[135, 92, 2085, 1792] grew=True
+  NEEDS_CORRECTION case (V2's trim only partially shrank this one). The IVT graph itself (f(a),f(b),k,x0,x1,x2,b) is fully visible -- verified. Bbox still includes multiple surrounding theorem/activity blocks, a separate, already-documented limitation.
+page_017_candidate_02 (page 17): COMPLETE
+  v2_bbox=[1647, 261, 1996, 849] v3_bbox=[1642, 256, 2001, 853] grew=True
+  Cubic curve through the origin; verified complete, minor V3 margin growth only.
+page_018_candidate_01 (page 18): COMPLETE
+  v2_bbox=[140, 1608, 2063, 2323] v3_bbox=[135, 1603, 2066, 2323] grew=True
+  NEEDS_CORRECTION case; the sin^2(x) graph (M, f(a), f(b), m, alpha, beta) is fully visible -- verified. Oversized bbox (adjacent theorem text) is the separate, already-documented V2 limitation.
+page_018_candidate_02 (page 18): COMPLETE
+  v2_bbox=[1340, 1075, 1992, 1433] v3_bbox=[1335, 1060, 1997, 1477] grew=True
+  Sine-like curve -5..4; verified complete.
+page_019_candidate_04 (page 19): COMPLETE
+  v2_bbox=[1506, 596, 1939, 1038] v3_bbox=[1502, 591, 1944, 1043] grew=True
+  Circle with Q/M/O/P/I/J labels; verified complete.
+page_024_candidate_02 (page 24): COMPLETE
+  v2_bbox=[1164, 938, 2037, 1623] v3_bbox=[1164, 938, 2038, 1627] grew=True
+  Graph, unchanged by V3 (ratio 1.01) -- already complete, verified in the V2 task.
+page_025_candidate_02 (page 25): COMPLETE
+  v2_bbox=[1345, 552, 1846, 964] v3_bbox=[1303, 476, 1948, 1034] grew=True
+  C1/C2/C3 curves; V3 recovered the '(C1)' curve tag and the bottom axis-number row cut off by V2 -- the original motivating example for this whole V3 stage, verified fixed.
+page_027_candidate_02 (page 27): COMPLETE
+  v2_bbox=[1424, 1244, 1776, 1452] v3_bbox=[1364, 1184, 1836, 1512] grew=True
+  Cf/Cg curves with A/B point labels; V3 recovered the '-1/2' fraction tick label cut off by V2 -- verified.
+page_027_candidate_03 (page 27): COMPLETE
+  v2_bbox=[178, 1762, 948, 2093] v3_bbox=[141, 1762, 997, 2093] grew=True
+  NEEDS_CORRECTION case; graph of f(x)=2sqrt(x)+1/x-3 fully visible -- verified. V3 correctly did NOT reabsorb the exercise-statement text above/below (regression-tested explicitly, see this evaluation's v2_vs_v3 section).
+page_027_candidate_04 (page 27): COMPLETE
+  v2_bbox=[146, 510, 978, 1017] v3_bbox=[141, 510, 983, 1038] grew=True
+  NEEDS_CORRECTION case; graph of f on [-6,4]\{2} (Cb) fully visible -- verified. V3 correctly did NOT reabsorb the exercise-statement text above.

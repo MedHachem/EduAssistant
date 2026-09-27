@@ -1,0 +1,231 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eduassistant.local/schema/normalized_knowledge.schema.json",
+  "title": "NormalizedKnowledge",
+  "description": "Output of normalize_knowledge.py (Phase 7): a cleaned, consistent, machine-readable view of a chapter's KnowledgeItem JSON (see knowledge_item.schema.json), with reconstruction-specific inline markup separated out and explicit ordering/provenance. Never a replacement for the source knowledge JSON, which remains the provenance of record -- see knowledge_normalization.md.",
+  "type": "object",
+
+  "$defs": {
+    "ItemType": {
+      "type": "string",
+      "enum": ["definition", "theorem", "property", "formula", "method", "example", "activity", "exercise", "remark"]
+    },
+
+    "FigureRef": {
+      "type": "object",
+      "description": "Copied verbatim from the source item's links.figures -- see knowledge_item.schema.json's FigureRef. This is the reconstruction's OWN <figure id=\"...\"> reference, never the separately-generated figure<->knowledge association (data/output/<chapter_id>/associations/figure_knowledge.json), which normalization does not touch or merge in.",
+      "required": ["pdf_page", "match_status"],
+      "properties": {
+        "pdf_page": { "type": "integer", "minimum": 1 },
+        "reconstructed_figure_id": { "type": ["string", "null"] },
+        "candidate_id": { "type": ["string", "null"] },
+        "figure_status_in_source": { "type": ["string", "null"] },
+        "match_status": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+
+    "Links": {
+      "type": "object",
+      "properties": {
+        "definitions": { "type": "array", "items": { "type": "string" } },
+        "theorems": { "type": "array", "items": { "type": "string" } },
+        "properties": { "type": "array", "items": { "type": "string" } },
+        "formulas": { "type": "array", "items": { "type": "string" } },
+        "methods": { "type": "array", "items": { "type": "string" } },
+        "exercises": { "type": "array", "items": { "type": "string" } },
+        "figures": { "type": "array", "items": { "$ref": "#/$defs/FigureRef" } }
+      },
+      "additionalProperties": false
+    },
+
+    "SubQuestion": {
+      "type": "object",
+      "required": ["label", "text", "sub_questions"],
+      "properties": {
+        "label": { "type": "string" },
+        "text": { "type": ["string", "null"] },
+        "sub_questions": { "type": "array", "items": { "$ref": "#/$defs/SubQuestion" } }
+      },
+      "additionalProperties": false
+    },
+
+    "Correction": {
+      "type": "object",
+      "required": ["present_in_source"],
+      "properties": {
+        "present_in_source": { "type": "boolean" },
+        "content": { "type": ["string", "null"] }
+      },
+      "additionalProperties": false
+    },
+
+    "QcmChoice": {
+      "type": "object",
+      "required": ["label", "text"],
+      "properties": {
+        "label": { "type": "string" },
+        "text": { "type": "string" },
+        "marked_correct_in_source": { "type": ["boolean", "null"] }
+      },
+      "additionalProperties": false
+    },
+
+    "ExerciseDetails": {
+      "type": "object",
+      "properties": {
+        "statement": { "type": ["string", "null"] },
+        "questions": { "type": "array", "items": { "$ref": "#/$defs/SubQuestion" } },
+        "correction": { "$ref": "#/$defs/Correction" },
+        "qcm_choices": { "type": ["array", "null"], "items": { "$ref": "#/$defs/QcmChoice" } }
+      },
+      "additionalProperties": false
+    },
+
+    "UncertaintyInfo": {
+      "type": "object",
+      "description": "Copied verbatim from the source item -- never re-derived or invented here.",
+      "properties": {
+        "has_uncertain_markers": { "type": "boolean" },
+        "has_gap_markers": { "type": "boolean" },
+        "uncertain_spans": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": { "reason": { "type": "string" }, "text": { "type": "string" } },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Provenance": {
+      "type": "object",
+      "description": "Traces this normalized item back to its exact source item and reconstructed origin. original_content is the FULL, untouched verbatim text (including any inline <figure>/<uncertain>/<gap> markup) -- the single field that can always reconstruct exactly what the source converter produced.",
+      "required": ["source_item_id", "document_id", "pdf_pages", "reconstructed_sources", "bloc_type", "original_content"],
+      "properties": {
+        "source_item_id": { "type": "string" },
+        "document_id": { "type": "string" },
+        "pdf_pages": { "type": "array", "items": { "type": "integer", "minimum": 1 }, "minItems": 1 },
+        "reconstructed_sources": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "bloc_type": { "type": "string" },
+        "bloc_numero": { "type": ["string", "null"] },
+        "continues_from_previous_page": { "type": "boolean" },
+        "continues_on_next_page": { "type": "boolean" },
+        "original_content": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+
+    "NormalizedItem": {
+      "type": "object",
+      "required": [
+        "id", "type", "order", "chapter_id", "document_id", "content",
+        "links", "uncertainty", "provenance"
+      ],
+      "properties": {
+        "id": { "type": "string", "description": "Reused verbatim from the source KnowledgeItem's own id -- already stable/deterministic, never regenerated." },
+        "type": { "$ref": "#/$defs/ItemType" },
+        "order": { "type": "integer", "minimum": 0, "description": "0-based position in the source items[] array -- an explicit, sortable record of original reading order, independent of array position." },
+        "chapter_id": { "type": "string" },
+        "document_id": { "type": "string" },
+        "section_id": { "type": ["string", "null"] },
+        "subsection_id": { "type": ["string", "null"] },
+        "title": { "type": ["string", "null"], "description": "Copied verbatim from source -- only set when the source itself has an explicit short label." },
+        "display_label": {
+          "type": ["string", "null"],
+          "description": "Mechanically derived as '<Type label> <bloc_numero>' (e.g. 'Activite 4') ONLY when the source has a bloc_numero; a recombination of two already-present source fields, never an invented one. Null when bloc_numero is absent."
+        },
+        "content": {
+          "type": "string",
+          "description": "provenance.original_content with inline <figure>/<uncertain>/<gap> markup removed (the referenced data is not lost -- see links.figures and uncertainty) and reconstruction-artifact whitespace collapsed. LaTeX/Markdown inside is otherwise untouched."
+        },
+        "proof": { "type": ["string", "null"] },
+        "links": { "$ref": "#/$defs/Links" },
+        "exercise_details": { "oneOf": [{ "$ref": "#/$defs/ExerciseDetails" }, { "type": "null" }] },
+        "uncertainty": { "$ref": "#/$defs/UncertaintyInfo" },
+        "provenance": { "$ref": "#/$defs/Provenance" }
+      },
+      "additionalProperties": false
+    },
+
+    "Section": {
+      "type": "object",
+      "required": ["id", "chapter_id", "label", "title", "pdf_page_start", "pdf_page_end", "order", "irregularities"],
+      "properties": {
+        "id": { "type": "string" },
+        "chapter_id": { "type": "string" },
+        "label": { "type": "string" },
+        "title": { "type": "string" },
+        "pdf_page_start": { "type": "integer" },
+        "pdf_page_end": { "type": "integer" },
+        "order": { "type": "integer", "minimum": 0 },
+        "irregularities": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Deterministically-detected structural anomalies preserved as explicit notes rather than silently corrected -- see knowledge_normalization.md."
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "Subsection": {
+      "type": "object",
+      "required": ["id", "section_id", "label", "title", "pdf_page_start", "pdf_page_end", "order", "irregularities"],
+      "properties": {
+        "id": { "type": "string" },
+        "section_id": { "type": "string" },
+        "label": { "type": "string" },
+        "title": { "type": "string" },
+        "pdf_page_start": { "type": "integer" },
+        "pdf_page_end": { "type": "integer" },
+        "order": { "type": "integer", "minimum": 0 },
+        "irregularities": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Deterministically-detected structural anomalies preserved as explicit notes rather than silently corrected (e.g. a subsection numbered '1.2' among roman-numeral siblings '<Section>.N') -- see knowledge_normalization.md."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "required": ["schema_version", "algorithm_version", "generated_at", "document", "chapter", "sections", "subsections", "items"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "algorithm_version": { "type": "string" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "document": {
+      "type": "object",
+      "required": ["id"],
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "subject": { "type": "string" },
+        "level": { "type": "string" },
+        "country": { "type": "string" },
+        "source_pdf": { "type": "string" },
+        "total_pages": { "type": ["integer", "null"] }
+      },
+      "additionalProperties": false
+    },
+    "chapter": {
+      "type": "object",
+      "required": ["id", "document_id", "number", "title", "pdf_page_start", "pdf_page_end"],
+      "properties": {
+        "id": { "type": "string" },
+        "document_id": { "type": "string" },
+        "number": { "type": "integer" },
+        "title": { "type": "string" },
+        "pdf_page_start": { "type": "integer" },
+        "pdf_page_end": { "type": "integer" }
+      },
+      "additionalProperties": false
+    },
+    "sections": { "type": "array", "items": { "$ref": "#/$defs/Section" } },
+    "subsections": { "type": "array", "items": { "$ref": "#/$defs/Subsection" } },
+    "items": { "type": "array", "items": { "$ref": "#/$defs/NormalizedItem" } }
+  },
+  "additionalProperties": false
+}

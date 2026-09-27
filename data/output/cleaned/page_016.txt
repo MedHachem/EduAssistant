@@ -1,0 +1,56 @@
+Théorème des valeurs intermédiaires (Rappel)
+Soit f une fonction continue sur un intervalle I.
+Soit a et b deux réels de I tels que a<b.
+
+Pour tout réel k compris entre f (a) et f (b) l’équation
+f(x)=k possède au moins une solution dans
+l’intervalle [a,b].
+
+En particulier, si f(a).f(b)<0 alors l’équation
+
+f (x) = 0 admet au moins une solution dans ]a,b[ .
+
+Activité 3
+Montrer que les fonctions ci-dessous sont Une fonction f est strictement croissante sur un
+strictement monotones sur I. intervalle I si pour tous réels a et b de I tels que
+a<b, f(a)<f(b).
+x 2 ° I=R, ; Une fonction f est strictement décroissante sur
+1+x un intervalle I si pour tous réels a et b de I tels
+T 7
+XI—)COSZX,I=[—,—] ; que a<b,f(a)>f(b).
+63 Une fonction est strictement monotone sur un
+20 1- intervalle I, si elle est strictement croissante
+xh (1 + x) 1= [0’4] ; sur I ou strictement décroissante sur I.
+Théorème
+
+Soit f une fonction continue et strictement monotone sur un intervalle I.
+Soit a et b deux réels de I tels quea < b. Alors pour tout réel k compris entre
+
+f (a) et f(b) l’équation f(x)=k admet une unique solution dans [a,b].
+
+Démonstration
+Elle découle des valeurs intermédiaires et de la stricte monotonie de f.
+
+Activité 4
+Le graphique ci-contre représente la fonction
+f:xH2x-—cosx
+
+1. Justifier la continuité de fsur R.
+
+2. a. Etudier les variations de f sur[O,%] .
+
+b. Montrer que l’équation f (x) —2 admet une
+
+O
+pA
+3
+
+solution unique œ dans [0,%].
+; T T 7 ; ;
+3. a. Lequel des intervalles ]O,z[ et ]î’î[ contient la solution & ?
+
+b. Déterminer un encadrement de œ d’amplitude %
+
+—Continuité et limites
+
+16

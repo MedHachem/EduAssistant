@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eduassistant.local/schema/vector_db_payload.schema.json",
+  "title": "VectorDbRow",
+  "description": "Design proposal, not yet implemented (Phase 12). Describes the logical shape of one row in a future Vector DB table (e.g. Postgres/pgvector's 'embeddings_<dimension>' table -- see vector_db_design.md §5). This is the payload stored ALONGSIDE the vector, not the vector itself (see 'embedding' below for how the vector is referenced). Every non-vector field here is either reused verbatim from embedding_manifest.schema.json's EmbeddingRecord or is a plain SQL filter/status column -- nothing invented beyond what vector_db_design.md §6 justifies.",
+  "type": "object",
+
+  "$defs": {
+    "FilterMetadata": {
+      "type": "object",
+      "description": "Reused verbatim from embedding_manifest.schema.json's EmbeddingRecord.filter_metadata -- never re-derived, never extended with fields that don't already exist on the source chunk (see vector_db_design.md §6.B).",
+      "required": ["section_id", "subsection_id", "topics", "concepts", "item_types", "content_role", "pdf_pages", "has_uncertain_content"],
+      "properties": {
+        "section_id": { "type": ["string", "null"] },
+        "subsection_id": { "type": ["string", "null"] },
+        "topics": { "type": "array", "items": { "type": "string" } },
+        "concepts": { "type": "array", "items": { "type": "string" } },
+        "item_types": { "type": "array", "items": { "type": "string" } },
+        "content_role": { "type": "string", "enum": ["statement", "correction"] },
+        "pdf_pages": { "type": "array", "items": { "type": "integer", "minimum": 1 } },
+        "has_uncertain_content": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+
+    "RowStatus": {
+      "type": "string",
+      "enum": ["active", "stale"],
+      "description": "'stale' when the source chunk_id no longer exists in the current knowledge_chunks.json at the time of the last import -- the row is KEPT (never deleted), matching embedding_manifest.schema.json's own EmbeddingRecord.status convention one layer up (see vector_db_design.md §7)."
+    },
+
+    "VectorDbRow": {
+      "type": "object",
+      "description": "One row of a dimension-specific table (e.g. embeddings_1024 -- see vector_db_design.md §5 for why the table split is by DIMENSION, not by chapter or model name). row.embedding's length must equal that table's fixed dimension.",
+      "required": [
+        "embedding_id", "chunk_id", "chapter_id", "embedding_model", "model_revision",
+        "content_hash", "pipeline_version", "normalization_strategy", "status",
+        "filter_metadata", "created_at", "imported_at", "embedding"
+      ],
+      "properties": {
+        "embedding_id": {
+          "type": "string",
+          "description": "Primary key. Reused verbatim from embedding_manifest.schema.json's EmbeddingRecord.embedding_id -- never regenerated or reformatted at import time."
+        },
+        "chunk_id": {
+          "type": "string",
+          "description": "FK to knowledge_chunks.json's own chunk_id. The Vector DB is NOT the authoritative source of chunk content -- callers resolve chunk_id back to that file for the actual text/figure_refs/related_chunk_ids (see vector_db_design.md §6.C)."
+        },
+        "chapter_id": { "type": "string" },
+        "embedding_model": { "type": "string", "description": "e.g. 'BAAI/bge-m3' -- reused verbatim from the manifest, never a friendly label." },
+        "model_revision": { "type": "string", "description": "Exact model revision/commit -- reused verbatim from the manifest." },
+        "content_hash": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$",
+          "description": "Reused verbatim from the embedding record -- the identity/drift-detection key for synchronization (INSERT ... ON CONFLICT ... DO UPDATE WHERE content_hash IS DISTINCT FROM ...). Never compared via vector floating-point equality (see vector_db_design.md §7)."
+        },
+        "pipeline_version": { "type": "string" },
+        "normalization_strategy": { "type": "string", "enum": ["l2", "none"] },
+        "status": { "$ref": "#/$defs/RowStatus" },
+        "filter_metadata": { "$ref": "#/$defs/FilterMetadata" },
+        "created_at": { "type": "string", "format": "date-time", "description": "From the embedding record -- when the vector was originally computed." },
+        "imported_at": { "type": "string", "format": "date-time", "description": "When this row was last inserted/updated in the Vector DB -- distinct from created_at, used to audit synchronization runs (see vector_db_design.md §12)." },
+        "embedding": {
+          "type": "array",
+          "items": { "type": "number" },
+          "description": "The stored vector itself (e.g. Postgres 'vector(1024)'). Length is fixed per table/dimension -- a row belongs in exactly one dimension-specific table, never split across tables (see vector_db_design.md §8)."
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "$ref": "#/$defs/VectorDbRow"
+}

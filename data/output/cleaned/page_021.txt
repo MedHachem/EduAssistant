@@ -1,0 +1,53 @@
+2. Montrer que g(0)+ g(l) - g(£) +…+g(—n_ 1) =0.
+n n n
+3. En déduire qu’il existe œ e[0, 1—l] tel que f(a + l) =f(0).
+n n
+Solution
+
+L1.a. f(x)=16(x(1-x))", x e[0, 1].
+
+On considère la fonction f, définie sur [0, 1] par f, (x)=x(1-x).
+
+Comme la fonction f, atteint son maximum sur [0, 1] en î , on en déduit que
+
+£(x) ng], x e[o, 1].
+b. La fonction f est continue sur le fermé borné [0,1] , il existe deux réels œ et B tels que
+
+f ([0, 1])=[f(«), f(B)1-
+
+f () est le minimum de f sur [0, 1] et f (B) est le maximum de f sur [0, 1].
+
+Pour tout x e[0, 1], 0$f(x)$f{%) et f(0)=0, f(%)=l.
+
+On en déduit que f([0, 1])=[0, 1].
+
+2. Considérons la fonction h définie sur l’intervalle [0O, 1 —l] par h(x) =f (x) —f (x + l) ;
+n n
+
+[( ; A ,( 1
+La fonction h est une fonction polynôme donc elle est continue sur [0, 1-—] et
+n
+
+1
+h(0).h|1-+— |<0.
+On en déduit, d’après le théorème des valeurs intermédiaires que l’équation h(x) =0
+
+admet au moins une solution sur [0, 1—l] .
+n
+I[. 1. On peut écrire g=f — f ou, où u est la fonction définie sur [0, 1—l] par u(x)=x+ ! ;
+n n
+
+La fonction u est continue sur [0, 1—l] et u(x)e [l, 11c [0, 1|.
+n n
+
+D’autre part, la fonction f est continue sur [0, 1].
+
+Il en résulte d’après la continuité d’une fonction composée sur un intervalle que f ou
+
+; 1 ; ; ; 1
+est continue sur [0, 1——] et par suite la fonction g est continue sur [0, 1-—].
+n n
+
+—Continuité et limites
+
+21

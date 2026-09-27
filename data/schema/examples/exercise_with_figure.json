@@ -1,0 +1,64 @@
+{
+  "id": "math-4eme-tome1-ch01-ex-018",
+  "type": "exercise",
+  "document_id": "math-4eme-tome1",
+  "chapter_id": "math-4eme-tome1-ch01",
+  "section_id": "math-4eme-tome1-ch01-sec-exercices",
+  "subsection_id": null,
+  "title": null,
+  "source": {
+    "document_id": "math-4eme-tome1",
+    "pdf_pages": [24],
+    "reconstructed_sources": ["data/output/reconstructed/page_024.md"],
+    "bloc_type": "exercice",
+    "bloc_numero": "7",
+    "continues_from_previous_page": false,
+    "continues_on_next_page": false
+  },
+  "original_content": "La courbe ci-dessous est la représentation graphique d'une fonction f définie sur $\\mathbb{R}\\setminus\\{0,2\\}$. La droite $\\Delta$ et les droites d'équations respectives $x=0$, $x=2$ et $y=0$ sont des asymptotes à la courbe C.\n\n1. Déterminer graphiquement,\n\n$\\lim\\limits_{-\\infty} f$, $\\lim\\limits_{0^-} f$, $\\lim\\limits_{0^+} f$, $\\lim\\limits_{2^-} f$, $\\lim\\limits_{2^+} f$, $\\lim\\limits_{+\\infty} f$, $\\lim\\limits_{x \\to +\\infty}\\dfrac{f(x)}{x}$ et $\\lim\\limits_{x \\to +\\infty} f(x)+x-2$.\n\n2. Dresser le tableau de variation de f.\n\n3. Déterminer suivant les valeurs de m, le nombre de solutions de l'équation $f(x)=m$.",
+  "proof": null,
+  "concepts": [
+    "math-4eme-tome1-ch01-concept-asymptotes",
+    "math-4eme-tome1-ch01-concept-tableau-de-variation"
+  ],
+  "links": {
+    "definitions": [],
+    "theorems": [],
+    "properties": [],
+    "formulas": [],
+    "methods": [],
+    "exercises": [],
+    "figures": [
+      {
+        "pdf_page": 24,
+        "reconstructed_figure_id": "fig-ex7",
+        "candidate_id": "page_024_candidate_02",
+        "figure_status_in_source": "described",
+        "match_status": "manual"
+      }
+    ]
+  },
+  "exercise_details": {
+    "statement": "La courbe ci-dessous est la représentation graphique d'une fonction f définie sur $\\mathbb{R}\\setminus\\{0,2\\}$. La droite $\\Delta$ et les droites d'équations respectives $x=0$, $x=2$ et $y=0$ sont des asymptotes à la courbe C.",
+    "questions": [
+      { "label": "1", "text": "Déterminer graphiquement, $\\lim\\limits_{-\\infty} f$, $\\lim\\limits_{0^-} f$, $\\lim\\limits_{0^+} f$, $\\lim\\limits_{2^-} f$, $\\lim\\limits_{2^+} f$, $\\lim\\limits_{+\\infty} f$, $\\lim\\limits_{x \\to +\\infty}\\dfrac{f(x)}{x}$ et $\\lim\\limits_{x \\to +\\infty} f(x)+x-2$." },
+      { "label": "2", "text": "Dresser le tableau de variation de f." },
+      { "label": "3", "text": "Déterminer suivant les valeurs de m, le nombre de solutions de l'équation $f(x)=m$." }
+    ],
+    "correction": {
+      "present_in_source": false,
+      "content": null
+    },
+    "qcm_choices": null
+  },
+  "extracted_from": null,
+  "uncertainty": {
+    "has_uncertain_markers": false,
+    "has_gap_markers": false,
+    "uncertain_spans": []
+  },
+  "validation_status": "REVIEW_REQUIRED",
+  "validation_history": [],
+  "created_at": "2026-09-26T00:00:00Z",
+  "schema_version": "1.0"
+}

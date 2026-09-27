@@ -1,0 +1,34 @@
+VISUAL DETECTION V2 -- CHAPTER 1 EVALUATION
+============================================
+
+Built by direct visual inspection of all 68 real Chapter 1 crops in this session (browser review-state export was not available); 13 VALIDATED is used (not the human summary's 14) because 13+49+6=68 balances and 14+49+6=69 does not.
+
+Total candidates            : 68
+Ground truth (VALIDATED/REJECTED/NEEDS_CORRECTION): {'VALIDATED': 13, 'REJECTED': 49, 'NEEDS_CORRECTION': 6}
+
+V1 classification counts (evaluate_visual_elements.py hints): {'figure': 11, 'text_only': 35, 'ambiguous': 22}
+V2 classification counts (classify_visual_elements_v2.py)   : {'TEXT_BLOCK': 22, 'AMBIGUOUS': 25, 'DECORATIVE': 5, 'TABLE': 2, 'FIGURE': 14}
+V2 candidates entering the human review queue (FIGURE+AMBIGUOUS): 39 / 68
+
+--- Figure detection (against the 13 confirmed VALIDATED figures) ---
+TP (validated, correctly FIGURE)      : 13
+FN (validated, lost entirely)         : 0
+FN (validated, only reaches queue as AMBIGUOUS): 0
+FP (rejected candidate leaking into queue as FIGURE/AMBIGUOUS): 20
+Precision (TP / queue size)           : 33.3%
+Recall (TP / 13 validated)             : 100.0%
+Recall incl. needs_correction (TP+NC_in_queue / 19 real figures): 100.0%
+
+--- NEEDS_CORRECTION (6 real figures with an oversized V1 crop) ---
+Reaching the review queue : 6 / 6
+Lost entirely             : 0 / 6
+
+--- Bbox quality ---
+NEEDS_CORRECTION bboxes tightened by V2 trimming : 3 / 6
+NEEDS_CORRECTION bboxes unchanged (known limitation, documented): 3 / 6
+
+--- V1's 4 confident false positives (hinted 'figure', ground truth REJECTED) ---
+No longer a confident FIGURE in V2  : ['page_013_candidate_01', 'page_019_candidate_02', 'page_019_candidate_03', 'page_025_candidate_01']
+  - fully excluded from the queue   : ['page_013_candidate_01', 'page_019_candidate_02', 'page_025_candidate_01']
+  - downgraded to AMBIGUOUS (still reviewed, just not confidently wrong): ['page_019_candidate_03']
+Still a confident FIGURE in V2 (none expected): []

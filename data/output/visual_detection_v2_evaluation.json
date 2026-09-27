@@ -1,0 +1,2505 @@
+{
+  "ground_truth_note": "Built by direct visual inspection of all 68 real Chapter 1 crops in this session (browser review-state export was not available); 13 VALIDATED is used (not the human summary's 14) because 13+49+6=68 balances and 14+49+6=69 does not.",
+  "total_candidates": 68,
+  "ground_truth_counts": {
+    "VALIDATED": 13,
+    "REJECTED": 49,
+    "NEEDS_CORRECTION": 6
+  },
+  "v1_classification_counts": {
+    "figure": 11,
+    "text_only": 35,
+    "ambiguous": 22
+  },
+  "v2_classification_counts": {
+    "TEXT_BLOCK": 22,
+    "AMBIGUOUS": 25,
+    "DECORATIVE": 5,
+    "TABLE": 2,
+    "FIGURE": 14
+  },
+  "v2_queue_count": 39,
+  "figure_detection": {
+    "TP_validated_correctly_kept_as_figure": 13,
+    "FN_validated_lost_entirely": 0,
+    "FN_validated_only_reaches_queue_as_ambiguous": 0,
+    "FP_rejected_leaking_into_queue": 20,
+    "precision": 0.3333,
+    "recall_validated_only": 1.0,
+    "recall_including_needs_correction": 1.0
+  },
+  "needs_correction": {
+    "total": 6,
+    "reaching_queue": 6,
+    "lost_entirely": 0
+  },
+  "bbox_quality": {
+    "needs_correction_bboxes_tightened": 3,
+    "needs_correction_bboxes_unchanged": 3
+  },
+  "v1_false_positives_no_longer_confident_figure": [
+    "page_013_candidate_01",
+    "page_019_candidate_02",
+    "page_019_candidate_03",
+    "page_025_candidate_01"
+  ],
+  "v1_false_positives_fully_excluded_from_queue": [
+    "page_013_candidate_01",
+    "page_019_candidate_02",
+    "page_025_candidate_01"
+  ],
+  "v1_false_positives_downgraded_to_ambiguous": [
+    "page_019_candidate_03"
+  ],
+  "v1_false_positives_still_confident_figure": [],
+  "candidates": [
+    {
+      "candidate_id": "page_006_candidate_01",
+      "pdf_page": 6,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        1232,
+        924,
+        2048,
+        1228
+      ],
+      "v1_bbox": [
+        1232,
+        924,
+        2048,
+        1228
+      ],
+      "v2_pre_trim_bbox": [
+        1232,
+        924,
+        2048,
+        1228
+      ],
+      "v2_bbox": [
+        1232,
+        960,
+        2048,
+        1218
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_006_candidate_02",
+      "pdf_page": 6,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        800,
+        1324,
+        2032,
+        1996
+      ],
+      "v1_bbox": [
+        800,
+        1324,
+        2032,
+        1996
+      ],
+      "v2_pre_trim_bbox": [
+        800,
+        1324,
+        2032,
+        1996
+      ],
+      "v2_bbox": [
+        800,
+        1324,
+        2032,
+        1996
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_006_candidate_03",
+      "pdf_page": 6,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        160,
+        1260,
+        768,
+        2108
+      ],
+      "v1_bbox": [
+        160,
+        1260,
+        768,
+        2108
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        1260,
+        768,
+        2108
+      ],
+      "v2_bbox": [
+        160,
+        1260,
+        768,
+        2108
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_006_candidate_04",
+      "pdf_page": 6,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        2460,
+        2064,
+        2892
+      ],
+      "v1_bbox": [
+        144,
+        2105,
+        2077,
+        2968
+      ],
+      "v2_pre_trim_bbox": [
+        144,
+        2105,
+        2077,
+        2968
+      ],
+      "v2_bbox": [
+        144,
+        2105,
+        2077,
+        2968
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_006_candidate_05",
+      "pdf_page": 6,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        476,
+        944,
+        796
+      ],
+      "v1_bbox": [
+        160,
+        476,
+        944,
+        796
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        476,
+        944,
+        796
+      ],
+      "v2_bbox": [
+        541,
+        476,
+        933,
+        796
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_006_candidate_06",
+      "pdf_page": 6,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "DECORATIVE",
+      "v2_reason": "wide solid-fill shape (ink_coverage=0.42, dominant_fraction=0.83, aspect_ratio=4.3) -- banner/pill/heading, not a figure",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        192,
+        108,
+        1632,
+        428
+      ],
+      "v1_bbox": [
+        174,
+        92,
+        1643,
+        437
+      ],
+      "v2_pre_trim_bbox": [
+        174,
+        92,
+        1643,
+        437
+      ],
+      "v2_bbox": [
+        174,
+        92,
+        1643,
+        437
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_007_candidate_01",
+      "pdf_page": 7,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        416,
+        652,
+        2032,
+        924
+      ],
+      "v1_bbox": [
+        144,
+        584,
+        2063,
+        955
+      ],
+      "v2_pre_trim_bbox": [
+        144,
+        584,
+        2063,
+        955
+      ],
+      "v2_bbox": [
+        144,
+        584,
+        2063,
+        955
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_007_candidate_02",
+      "pdf_page": 7,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        1136,
+        2188,
+        2032,
+        2588
+      ],
+      "v1_bbox": [
+        1104,
+        2168,
+        2056,
+        2613
+      ],
+      "v2_pre_trim_bbox": [
+        1104,
+        2168,
+        2056,
+        2613
+      ],
+      "v2_bbox": [
+        1104,
+        2168,
+        2056,
+        2613
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_007_candidate_03",
+      "pdf_page": 7,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        1168,
+        1052,
+        2048,
+        1260
+      ],
+      "v1_bbox": [
+        1158,
+        1040,
+        2061,
+        1269
+      ],
+      "v2_pre_trim_bbox": [
+        1158,
+        1040,
+        2061,
+        1269
+      ],
+      "v2_bbox": [
+        1574,
+        1040,
+        2006,
+        1269
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_007_candidate_04",
+      "pdf_page": 7,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TABLE",
+      "v2_reason": "regular ruled grid (169 horizontal / 14 vertical ruling lines)",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        160,
+        604,
+        416,
+        1052
+      ],
+      "v1_bbox": [
+        160,
+        604,
+        416,
+        1052
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        604,
+        416,
+        1052
+      ],
+      "v2_bbox": [
+        160,
+        604,
+        416,
+        1052
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_007_candidate_05",
+      "pdf_page": 7,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        1472,
+        332,
+        1856,
+        444
+      ],
+      "v1_bbox": [
+        1456,
+        320,
+        1873,
+        463
+      ],
+      "v2_pre_trim_bbox": [
+        1456,
+        320,
+        1873,
+        463
+      ],
+      "v2_bbox": [
+        1456,
+        320,
+        1873,
+        463
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_008_candidate_01",
+      "pdf_page": 8,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        416,
+        1772,
+        1968,
+        1996
+      ],
+      "v1_bbox": [
+        120,
+        1698,
+        2001,
+        2021
+      ],
+      "v2_pre_trim_bbox": [
+        120,
+        1698,
+        2001,
+        2021
+      ],
+      "v2_bbox": [
+        120,
+        1698,
+        2001,
+        2021
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_008_candidate_02",
+      "pdf_page": 8,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.3,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        92,
+        1264,
+        316
+      ],
+      "v1_bbox": [
+        160,
+        92,
+        1264,
+        316
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        92,
+        1264,
+        316
+      ],
+      "v2_bbox": [
+        160,
+        92,
+        1264,
+        316
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_008_candidate_03",
+      "pdf_page": 8,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "TABLE",
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "7 text-line bands, no dominant graphical stroke",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        192,
+        476,
+        1440,
+        1148
+      ],
+      "v1_bbox": [
+        192,
+        476,
+        1440,
+        1148
+      ],
+      "v2_pre_trim_bbox": [
+        192,
+        476,
+        1440,
+        1148
+      ],
+      "v2_bbox": [
+        822,
+        476,
+        1440,
+        1148
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_008_candidate_04",
+      "pdf_page": 8,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "TABLE",
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        1456,
+        476,
+        2048,
+        1148
+      ],
+      "v1_bbox": [
+        1456,
+        476,
+        2048,
+        1148
+      ],
+      "v2_pre_trim_bbox": [
+        1456,
+        476,
+        2048,
+        1148
+      ],
+      "v2_bbox": [
+        1456,
+        476,
+        2048,
+        1148
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_008_candidate_05",
+      "pdf_page": 8,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        128,
+        1708,
+        416,
+        2124
+      ],
+      "v1_bbox": [
+        128,
+        1708,
+        416,
+        2124
+      ],
+      "v2_pre_trim_bbox": [
+        128,
+        1708,
+        416,
+        2124
+      ],
+      "v2_bbox": [
+        128,
+        1708,
+        416,
+        2124
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_009_candidate_01",
+      "pdf_page": 9,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TABLE",
+      "v2_reason": "regular ruled grid (261 horizontal / 44 vertical ruling lines)",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        192,
+        1388,
+        2064,
+        1980
+      ],
+      "v1_bbox": [
+        182,
+        1042,
+        2081,
+        2001
+      ],
+      "v2_pre_trim_bbox": [
+        182,
+        1042,
+        2081,
+        2001
+      ],
+      "v2_bbox": [
+        182,
+        1199,
+        2081,
+        1983
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_009_candidate_02",
+      "pdf_page": 9,
+      "ground_truth": "NEEDS_CORRECTION",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        92,
+        2032,
+        988
+      ],
+      "v1_bbox": [
+        144,
+        82,
+        2085,
+        1011
+      ],
+      "v2_pre_trim_bbox": [
+        144,
+        82,
+        2085,
+        1011
+      ],
+      "v2_bbox": [
+        144,
+        82,
+        2085,
+        1011
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_010_candidate_01",
+      "pdf_page": 10,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        208,
+        1276,
+        2032,
+        2300
+      ],
+      "v1_bbox": [
+        208,
+        1276,
+        2032,
+        2300
+      ],
+      "v2_pre_trim_bbox": [
+        208,
+        1276,
+        2032,
+        2300
+      ],
+      "v2_bbox": [
+        208,
+        1360,
+        2032,
+        2300
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_011_candidate_01",
+      "pdf_page": 11,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        1136,
+        940,
+        2032,
+        1308
+      ],
+      "v1_bbox": [
+        1104,
+        918,
+        2061,
+        1331
+      ],
+      "v2_pre_trim_bbox": [
+        1104,
+        918,
+        2061,
+        1331
+      ],
+      "v2_bbox": [
+        1104,
+        918,
+        2061,
+        1331
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_011_candidate_02",
+      "pdf_page": 11,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.12) forming one dominant connected stroke (0.60) spanning 1.00 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        1568,
+        1756,
+        2000,
+        2300
+      ],
+      "v1_bbox": [
+        1444,
+        1736,
+        2038,
+        2370
+      ],
+      "v2_pre_trim_bbox": [
+        1444,
+        1736,
+        2038,
+        2370
+      ],
+      "v2_bbox": [
+        1517,
+        1736,
+        1997,
+        2370
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_011_candidate_03",
+      "pdf_page": 11,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.3,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        1516,
+        1504,
+        1596
+      ],
+      "v1_bbox": [
+        160,
+        1516,
+        1504,
+        1596
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        1516,
+        1504,
+        1596
+      ],
+      "v2_bbox": [
+        160,
+        1516,
+        1504,
+        1596
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_011_candidate_04",
+      "pdf_page": 11,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.3,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        1612,
+        976,
+        1676
+      ],
+      "v1_bbox": [
+        160,
+        1612,
+        976,
+        1676
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        1612,
+        976,
+        1676
+      ],
+      "v2_bbox": [
+        160,
+        1612,
+        976,
+        1676
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_011_candidate_05",
+      "pdf_page": 11,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        192,
+        2444,
+        2032,
+        2716
+      ],
+      "v1_bbox": [
+        192,
+        2444,
+        2032,
+        2716
+      ],
+      "v2_pre_trim_bbox": [
+        192,
+        2444,
+        2032,
+        2716
+      ],
+      "v2_bbox": [
+        753,
+        2506,
+        2028,
+        2716
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_011_candidate_06",
+      "pdf_page": 11,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "figure",
+      "v1_confidence": 0.8,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.05) forming one dominant connected stroke (0.95) spanning 0.93 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        1680,
+        492,
+        2000,
+        812
+      ],
+      "v1_bbox": [
+        1478,
+        289,
+        2025,
+        874
+      ],
+      "v2_pre_trim_bbox": [
+        1478,
+        289,
+        2025,
+        874
+      ],
+      "v2_bbox": [
+        1478,
+        289,
+        2025,
+        874
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_012_candidate_01",
+      "pdf_page": 12,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "DECORATIVE",
+      "v2_reason": "wide solid-fill shape (ink_coverage=0.35, dominant_fraction=0.88, aspect_ratio=4.7) -- banner/pill/heading, not a figure",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        416,
+        652,
+        2032,
+        860
+      ],
+      "v1_bbox": [
+        140,
+        488,
+        2063,
+        901
+      ],
+      "v2_pre_trim_bbox": [
+        140,
+        488,
+        2063,
+        901
+      ],
+      "v2_bbox": [
+        140,
+        488,
+        2063,
+        901
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_012_candidate_02",
+      "pdf_page": 12,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        208,
+        2140,
+        2032,
+        2412
+      ],
+      "v1_bbox": [
+        142,
+        2069,
+        2063,
+        2433
+      ],
+      "v2_pre_trim_bbox": [
+        142,
+        2069,
+        2063,
+        2433
+      ],
+      "v2_bbox": [
+        142,
+        2069,
+        2063,
+        2433
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_012_candidate_03",
+      "pdf_page": 12,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "6 text-line bands, no dominant graphical stroke",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        160,
+        1564,
+        2048,
+        1788
+      ],
+      "v1_bbox": [
+        140,
+        1544,
+        2063,
+        2081
+      ],
+      "v2_pre_trim_bbox": [
+        140,
+        1544,
+        2063,
+        2081
+      ],
+      "v2_bbox": [
+        140,
+        1544,
+        2063,
+        2081
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_012_candidate_04",
+      "pdf_page": 12,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.3,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        1996,
+        1056,
+        2124
+      ],
+      "v1_bbox": [
+        160,
+        1996,
+        1056,
+        2124
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        1996,
+        1056,
+        2124
+      ],
+      "v2_bbox": [
+        426,
+        1996,
+        1053,
+        2124
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_012_candidate_05",
+      "pdf_page": 12,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.3,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        508,
+        1152,
+        572
+      ],
+      "v1_bbox": [
+        160,
+        508,
+        1152,
+        572
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        508,
+        1152,
+        572
+      ],
+      "v2_bbox": [
+        160,
+        508,
+        1152,
+        572
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_012_candidate_06",
+      "pdf_page": 12,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        160,
+        604,
+        416,
+        860
+      ],
+      "v1_bbox": [
+        160,
+        604,
+        416,
+        860
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        604,
+        416,
+        860
+      ],
+      "v2_bbox": [
+        160,
+        604,
+        416,
+        860
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_013_candidate_01",
+      "pdf_page": 13,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "figure",
+      "v1_confidence": 0.8,
+      "v2_classification": "DECORATIVE",
+      "v2_reason": "wide solid-fill shape (ink_coverage=0.42, dominant_fraction=0.87, aspect_ratio=7.5) -- banner/pill/heading, not a figure",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        160,
+        972,
+        2048,
+        1148
+      ],
+      "v1_bbox": [
+        142,
+        962,
+        2063,
+        1217
+      ],
+      "v2_pre_trim_bbox": [
+        142,
+        962,
+        2063,
+        1217
+      ],
+      "v2_bbox": [
+        142,
+        962,
+        2063,
+        1217
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_013_candidate_02",
+      "pdf_page": 13,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.11) forming one dominant connected stroke (0.57) spanning 1.00 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        1552,
+        476,
+        1920,
+        956
+      ],
+      "v1_bbox": [
+        1451,
+        427,
+        1989,
+        965
+      ],
+      "v2_pre_trim_bbox": [
+        1451,
+        427,
+        1989,
+        965
+      ],
+      "v2_bbox": [
+        1524,
+        427,
+        1921,
+        965
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_013_candidate_03",
+      "pdf_page": 13,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        1852,
+        704,
+        1996
+      ],
+      "v1_bbox": [
+        144,
+        1834,
+        711,
+        2017
+      ],
+      "v2_pre_trim_bbox": [
+        144,
+        1834,
+        711,
+        2017
+      ],
+      "v2_bbox": [
+        144,
+        1834,
+        711,
+        2017
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_013_candidate_04",
+      "pdf_page": 13,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "figure",
+      "v1_confidence": 0.6,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.08) forming one dominant connected stroke (1.00) spanning 0.97 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        1376,
+        2316,
+        2048,
+        2652
+      ],
+      "v1_bbox": [
+        1376,
+        2316,
+        2048,
+        2652
+      ],
+      "v2_pre_trim_bbox": [
+        1376,
+        2316,
+        2048,
+        2652
+      ],
+      "v2_bbox": [
+        1376,
+        2316,
+        2048,
+        2652
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_014_candidate_01",
+      "pdf_page": 14,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        160,
+        732,
+        2032,
+        1244
+      ],
+      "v1_bbox": [
+        140,
+        722,
+        2063,
+        1265
+      ],
+      "v2_pre_trim_bbox": [
+        140,
+        722,
+        2063,
+        1265
+      ],
+      "v2_bbox": [
+        140,
+        722,
+        2063,
+        1265
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_014_candidate_02",
+      "pdf_page": 14,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        208,
+        2092,
+        2032,
+        2460
+      ],
+      "v1_bbox": [
+        140,
+        2008,
+        2063,
+        2489
+      ],
+      "v2_pre_trim_bbox": [
+        140,
+        2008,
+        2063,
+        2489
+      ],
+      "v2_bbox": [
+        140,
+        2008,
+        2063,
+        2489
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_014_candidate_03",
+      "pdf_page": 14,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "figure",
+      "v1_confidence": 0.8,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.07) forming one dominant connected stroke (0.96) spanning 0.95 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        1232,
+        412,
+        2000,
+        540
+      ],
+      "v1_bbox": [
+        1216,
+        289,
+        2060,
+        596
+      ],
+      "v2_pre_trim_bbox": [
+        1216,
+        289,
+        2060,
+        596
+      ],
+      "v2_bbox": [
+        1216,
+        289,
+        2060,
+        596
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_015_candidate_01",
+      "pdf_page": 15,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        508,
+        400,
+        748
+      ],
+      "v1_bbox": [
+        160,
+        508,
+        400,
+        748
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        508,
+        400,
+        748
+      ],
+      "v2_bbox": [
+        281,
+        508,
+        400,
+        748
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_015_candidate_02",
+      "pdf_page": 15,
+      "ground_truth": "NEEDS_CORRECTION",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.18) forming one dominant connected stroke (0.54) spanning 0.98 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        2028,
+        2048,
+        2732
+      ],
+      "v1_bbox": [
+        140,
+        2008,
+        2063,
+        2753
+      ],
+      "v2_pre_trim_bbox": [
+        140,
+        2008,
+        2063,
+        2753
+      ],
+      "v2_bbox": [
+        140,
+        2008,
+        2063,
+        2753
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_015_candidate_03",
+      "pdf_page": 15,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.3,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.15) forming one dominant connected stroke (0.59) spanning 1.00 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        272,
+        1516,
+        656,
+        1900
+      ],
+      "v1_bbox": [
+        272,
+        1516,
+        656,
+        1900
+      ],
+      "v2_pre_trim_bbox": [
+        272,
+        1516,
+        656,
+        1900
+      ],
+      "v2_bbox": [
+        272,
+        1516,
+        656,
+        1900
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_015_candidate_04",
+      "pdf_page": 15,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.3,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.14) forming one dominant connected stroke (0.62) spanning 1.00 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        832,
+        1564,
+        1392,
+        1916
+      ],
+      "v1_bbox": [
+        832,
+        1564,
+        1392,
+        1916
+      ],
+      "v2_pre_trim_bbox": [
+        832,
+        1564,
+        1392,
+        1916
+      ],
+      "v2_bbox": [
+        832,
+        1564,
+        1392,
+        1916
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_015_candidate_05",
+      "pdf_page": 15,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        1164,
+        1552,
+        1228
+      ],
+      "v1_bbox": [
+        140,
+        1144,
+        1571,
+        1329
+      ],
+      "v2_pre_trim_bbox": [
+        140,
+        1144,
+        1571,
+        1329
+      ],
+      "v2_bbox": [
+        220,
+        1144,
+        1559,
+        1329
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_016_candidate_01",
+      "pdf_page": 16,
+      "ground_truth": "NEEDS_CORRECTION",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        92,
+        2064,
+        1692
+      ],
+      "v1_bbox": [
+        140,
+        72,
+        2085,
+        1860
+      ],
+      "v2_pre_trim_bbox": [
+        140,
+        72,
+        2085,
+        1860
+      ],
+      "v2_bbox": [
+        140,
+        92,
+        2085,
+        1792
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_017_candidate_01",
+      "pdf_page": 17,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        416,
+        2652,
+        2064,
+        2892
+      ],
+      "v1_bbox": [
+        144,
+        2584,
+        2077,
+        2967
+      ],
+      "v2_pre_trim_bbox": [
+        144,
+        2584,
+        2077,
+        2967
+      ],
+      "v2_bbox": [
+        144,
+        2584,
+        2077,
+        2967
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_017_candidate_02",
+      "pdf_page": 17,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "figure",
+      "v1_confidence": 0.8,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.05) forming one dominant connected stroke (1.00) spanning 0.89 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        1744,
+        380,
+        1920,
+        796
+      ],
+      "v1_bbox": [
+        1647,
+        261,
+        1996,
+        849
+      ],
+      "v2_pre_trim_bbox": [
+        1647,
+        261,
+        1996,
+        849
+      ],
+      "v2_bbox": [
+        1647,
+        261,
+        1996,
+        849
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_017_candidate_03",
+      "pdf_page": 17,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.3,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        2604,
+        416,
+        2892
+      ],
+      "v1_bbox": [
+        160,
+        2604,
+        416,
+        2892
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        2604,
+        416,
+        2892
+      ],
+      "v2_bbox": [
+        160,
+        2604,
+        416,
+        2892
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_018_candidate_01",
+      "pdf_page": 18,
+      "ground_truth": "NEEDS_CORRECTION",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        416,
+        1676,
+        2048,
+        2140
+      ],
+      "v1_bbox": [
+        140,
+        1608,
+        2063,
+        2323
+      ],
+      "v2_pre_trim_bbox": [
+        140,
+        1608,
+        2063,
+        2323
+      ],
+      "v2_bbox": [
+        140,
+        1608,
+        2063,
+        2323
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_018_candidate_02",
+      "pdf_page": 18,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.13) forming one dominant connected stroke (0.59) spanning 0.94 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        1392,
+        1100,
+        1952,
+        1436
+      ],
+      "v1_bbox": [
+        1340,
+        1065,
+        1992,
+        1472
+      ],
+      "v2_pre_trim_bbox": [
+        1340,
+        1065,
+        1992,
+        1472
+      ],
+      "v2_bbox": [
+        1340,
+        1075,
+        1992,
+        1433
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_018_candidate_03",
+      "pdf_page": 18,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        988,
+        1696,
+        1052
+      ],
+      "v1_bbox": [
+        140,
+        968,
+        1717,
+        1061
+      ],
+      "v2_pre_trim_bbox": [
+        140,
+        968,
+        1717,
+        1061
+      ],
+      "v2_bbox": [
+        140,
+        968,
+        1717,
+        1061
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_018_candidate_04",
+      "pdf_page": 18,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        160,
+        1628,
+        416,
+        2220
+      ],
+      "v1_bbox": [
+        160,
+        1628,
+        416,
+        2220
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        1628,
+        416,
+        2220
+      ],
+      "v2_bbox": [
+        160,
+        1628,
+        416,
+        2220
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_019_candidate_01",
+      "pdf_page": 19,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        1676,
+        2032,
+        2172
+      ],
+      "v1_bbox": [
+        144,
+        1608,
+        2063,
+        2342
+      ],
+      "v2_pre_trim_bbox": [
+        144,
+        1608,
+        2063,
+        2342
+      ],
+      "v2_bbox": [
+        144,
+        1608,
+        2063,
+        2342
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_019_candidate_02",
+      "pdf_page": 19,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "figure",
+      "v1_confidence": 0.8,
+      "v2_classification": "DECORATIVE",
+      "v2_reason": "wide solid-fill shape (ink_coverage=0.43, dominant_fraction=0.96, aspect_ratio=7.3) -- banner/pill/heading, not a figure",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        208,
+        2460,
+        2032,
+        2620
+      ],
+      "v1_bbox": [
+        140,
+        2376,
+        2063,
+        2641
+      ],
+      "v2_pre_trim_bbox": [
+        140,
+        2376,
+        2063,
+        2641
+      ],
+      "v2_bbox": [
+        140,
+        2376,
+        2063,
+        2641
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_019_candidate_03",
+      "pdf_page": 19,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "figure",
+      "v1_confidence": 0.6,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        92,
+        1264,
+        284
+      ],
+      "v1_bbox": [
+        160,
+        92,
+        1264,
+        284
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        92,
+        1264,
+        284
+      ],
+      "v2_bbox": [
+        160,
+        92,
+        1264,
+        284
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_019_candidate_04",
+      "pdf_page": 19,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "figure",
+      "v1_confidence": 0.8,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.10) forming one dominant connected stroke (0.95) spanning 0.91 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        1664,
+        700,
+        1904,
+        876
+      ],
+      "v1_bbox": [
+        1506,
+        596,
+        1939,
+        1038
+      ],
+      "v2_pre_trim_bbox": [
+        1506,
+        596,
+        1939,
+        1038
+      ],
+      "v2_bbox": [
+        1506,
+        596,
+        1939,
+        1038
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_019_candidate_05",
+      "pdf_page": 19,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        1500,
+        1936,
+        1564
+      ],
+      "v1_bbox": [
+        140,
+        1480,
+        1957,
+        1585
+      ],
+      "v2_pre_trim_bbox": [
+        140,
+        1480,
+        1957,
+        1585
+      ],
+      "v2_bbox": [
+        140,
+        1480,
+        1957,
+        1585
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_020_candidate_01",
+      "pdf_page": 20,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "TABLE",
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "tinted callout/reminder box background",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        192,
+        316,
+        2032,
+        860
+      ],
+      "v1_bbox": [
+        146,
+        214,
+        2047,
+        881
+      ],
+      "v2_pre_trim_bbox": [
+        146,
+        214,
+        2047,
+        881
+      ],
+      "v2_bbox": [
+        146,
+        214,
+        2047,
+        881
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_023_candidate_01",
+      "pdf_page": 23,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.3,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        784,
+        2780,
+        1440,
+        2860
+      ],
+      "v1_bbox": [
+        784,
+        2780,
+        1440,
+        2860
+      ],
+      "v2_pre_trim_bbox": [
+        784,
+        2780,
+        1440,
+        2860
+      ],
+      "v2_bbox": [
+        784,
+        2780,
+        1440,
+        2860
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_024_candidate_01",
+      "pdf_page": 24,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        160,
+        572,
+        256,
+        1020
+      ],
+      "v1_bbox": [
+        160,
+        572,
+        256,
+        1020
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        572,
+        256,
+        1020
+      ],
+      "v2_bbox": [
+        160,
+        572,
+        256,
+        1020
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_024_candidate_02",
+      "pdf_page": 24,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "figure",
+      "v1_confidence": 0.8,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.06) forming one dominant connected stroke (0.98) spanning 0.94 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        1184,
+        956,
+        2016,
+        1612
+      ],
+      "v1_bbox": [
+        1164,
+        938,
+        2037,
+        1623
+      ],
+      "v2_pre_trim_bbox": [
+        1164,
+        938,
+        2037,
+        1623
+      ],
+      "v2_bbox": [
+        1164,
+        938,
+        2037,
+        1623
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_024_candidate_03",
+      "pdf_page": 24,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "5 text-line bands, no dominant graphical stroke",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        160,
+        1356,
+        256,
+        1772
+      ],
+      "v1_bbox": [
+        160,
+        1356,
+        256,
+        1772
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        1356,
+        256,
+        1772
+      ],
+      "v2_bbox": [
+        160,
+        1356,
+        256,
+        1772
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_025_candidate_01",
+      "pdf_page": 25,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "figure",
+      "v1_confidence": 0.6,
+      "v2_classification": "DECORATIVE",
+      "v2_reason": "wide solid-fill shape (ink_coverage=0.45, dominant_fraction=0.86, aspect_ratio=3.1) -- banner/pill/heading, not a figure",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "v1_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "v2_pre_trim_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "v2_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_025_candidate_02",
+      "pdf_page": 25,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.5,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.13) forming one dominant connected stroke (0.59) spanning 1.00 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        1440,
+        556,
+        1872,
+        940
+      ],
+      "v1_bbox": [
+        1308,
+        536,
+        1893,
+        1029
+      ],
+      "v2_pre_trim_bbox": [
+        1308,
+        536,
+        1893,
+        1029
+      ],
+      "v2_bbox": [
+        1345,
+        552,
+        1846,
+        964
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_025_candidate_03",
+      "pdf_page": 25,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.0,
+      "v2_classification": "TEXT_BLOCK",
+      "v2_reason": "6 text-line bands, no dominant graphical stroke",
+      "v2_enters_queue": false,
+      "seed_bbox": [
+        160,
+        1468,
+        272,
+        1932
+      ],
+      "v1_bbox": [
+        160,
+        1468,
+        272,
+        1932
+      ],
+      "v2_pre_trim_bbox": [
+        160,
+        1468,
+        272,
+        1932
+      ],
+      "v2_bbox": [
+        160,
+        1468,
+        272,
+        1932
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_027_candidate_01",
+      "pdf_page": 27,
+      "ground_truth": "REJECTED",
+      "ground_truth_subtype": "DECORATIVE",
+      "v1_classification_hint": "ambiguous",
+      "v1_confidence": 0.3,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "v1_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "v2_pre_trim_bbox": [
+        752,
+        92,
+        1488,
+        332
+      ],
+      "v2_bbox": [
+        752,
+        94,
+        1488,
+        239
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_027_candidate_02",
+      "pdf_page": 27,
+      "ground_truth": "VALIDATED",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "figure",
+      "v1_confidence": 0.6,
+      "v2_classification": "FIGURE",
+      "v2_reason": "sparse ink (coverage=0.17) forming one dominant connected stroke (0.96) spanning 1.00 of the crop width",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        1424,
+        1244,
+        1776,
+        1452
+      ],
+      "v1_bbox": [
+        1424,
+        1244,
+        1776,
+        1452
+      ],
+      "v2_pre_trim_bbox": [
+        1424,
+        1244,
+        1776,
+        1452
+      ],
+      "v2_bbox": [
+        1424,
+        1244,
+        1776,
+        1452
+      ],
+      "bbox_trimmed": false
+    },
+    {
+      "candidate_id": "page_027_candidate_03",
+      "pdf_page": 27,
+      "ground_truth": "NEEDS_CORRECTION",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        416,
+        1756,
+        736,
+        2060
+      ],
+      "v1_bbox": [
+        146,
+        1638,
+        992,
+        2310
+      ],
+      "v2_pre_trim_bbox": [
+        146,
+        1638,
+        992,
+        2310
+      ],
+      "v2_bbox": [
+        178,
+        1762,
+        948,
+        2093
+      ],
+      "bbox_trimmed": true
+    },
+    {
+      "candidate_id": "page_027_candidate_04",
+      "pdf_page": 27,
+      "ground_truth": "NEEDS_CORRECTION",
+      "ground_truth_subtype": null,
+      "v1_classification_hint": "text_only",
+      "v1_confidence": 0.2,
+      "v2_classification": "AMBIGUOUS",
+      "v2_reason": "signals disagree or are inconclusive -- needs human review",
+      "v2_enters_queue": true,
+      "seed_bbox": [
+        336,
+        604,
+        896,
+        940
+      ],
+      "v1_bbox": [
+        146,
+        392,
+        978,
+        1033
+      ],
+      "v2_pre_trim_bbox": [
+        146,
+        392,
+        978,
+        1033
+      ],
+      "v2_bbox": [
+        146,
+        510,
+        978,
+        1017
+      ],
+      "bbox_trimmed": true
+    }
+  ]
+}
