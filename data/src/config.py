@@ -497,3 +497,97 @@ def embeddings_records_json(chapter_id: str, model_name: str = EMBEDDING_MODEL_N
 def embeddings_validation_report_json(chapter_id: str, model_name: str = EMBEDDING_MODEL_NAME,
                                        model_revision: str = EMBEDDING_MODEL_REVISION) -> Path:
     return embeddings_dir(chapter_id, model_name, model_revision) / "validation_report.json"
+
+
+# --- Phase 12: Vector DB import (import_embeddings.py) -- reads the
+# existing embedding artifacts (manifest.json/records.json/vectors.npy,
+# read-only) and syncs them into a local PostgreSQL+pgvector table. Never
+# regenerates embeddings, never modifies chunks/enrichment/relations/
+# normalization/figures/associations/backend/frontend. Schema
+# initialization (init_vector_db_schema.py) is a separate step from import
+# (import_embeddings.py) by design -- see data/schema/vector_db_design.md
+# / vector_db_payload.schema.json for the full rationale (one table PER
+# DIMENSION, e.g. embeddings_1024, holding every chapter/model/revision
+# that happens to share that dimension -- never one table per chapter). ---
+
+VECTOR_DB_SCHEMA_SQL = DATA_DIR / "schema" / "vector_db_schema.sql"
+VECTOR_DB_IMPORT_PIPELINE_VERSION = "import-v1"
+
+
+def vector_table_name(dimension: int) -> str:
+    """One table per embedding DIMENSION, never per chapter or model --
+    pgvector's vector(N) column is fixed-width, so a differently-dimensioned
+    future model gets its own table (embeddings_768, ...), never a column
+    added to an existing one (see vector_db_design.md §5/§8)."""
+    return f"embeddings_{dimension}"
+
+
+def _load_env_file_if_present() -> None:
+    """Minimal .env loader (no new dependency, matching this file's own
+    'plain constants on purpose' philosophy) -- reads DATA_DIR's repo-root
+    .env if present, setting os.environ only for keys not already set
+    (real environment variables always take precedence). Never raises if
+    the file is absent (a real deployment may set POSTGRES_*/DATABASE_URL
+    directly in its environment instead)."""
+    import os
+
+    env_path = DATA_DIR.parent / ".env"
+    if not env_path.exists():
+        return
+    for line in env_path.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key = key.strip()
+        if key and key not in os.environ:
+            os.environ[key] = value.strip()
+
+
+def database_url() -> str:
+    """Reads DATABASE_URL from the environment (see .env.example) -- never
+    hardcoded, never committed. Falls back to assembling one from the
+    individual POSTGRES_* variables (same two-tier layout .env.example
+    already documents) if DATABASE_URL itself isn't set."""
+    import os
+
+    _load_env_file_if_present()
+    url = os.environ.get("DATABASE_URL")
+    if url:
+        return url
+    host = os.environ.get("POSTGRES_HOST", "localhost")
+    port = os.environ.get("POSTGRES_PORT", "5432")
+    db = os.environ.get("POSTGRES_DB", "ai_education")
+    user = os.environ.get("POSTGRES_USER", "ai_education")
+    password = os.environ.get("POSTGRES_PASSWORD", "")
+    return f"postgresql://{user}:{password}@{host}:{port}/{db}"
+
+
+# --- Phase 13: Semantic Search (search_embeddings.py) -- read-only query
+# layer over embeddings_1024. Reuses SentenceTransformerBackend/
+# l2_normalize (embed_knowledge.py) and table_dimension (import_embeddings.py)
+# as-is; never regenerates document embeddings, never modifies chunks/
+# enrichment/relations/normalization/figures/associations/backend/frontend/
+# the embeddings_1024 table's rows. See data/schema/semantic_search_design.md
+# / search_result.schema.json for the full rationale. ---
+
+SEARCH_DEFAULT_TOP_K = 5
+# Generous sanity cap, not a tuned value -- guards against an accidental
+# unbounded pull, never meant to be a realistic "normal" top_k.
+SEARCH_MAX_TOP_K = 100
+
+
+# --- Phase 14: RAG Context Assembly (rag_context.py) -- deterministic,
+# rule-based transformation of Semantic Search results into a bounded,
+# ordered, provenance-carrying context for a future LLM. Calls
+# search_embeddings.search() unchanged; never queries PostgreSQL
+# directly; never duplicates chunk text into a new store. Every constant
+# below is grounded in the real Chapter 1 corpus -- see
+# data/schema/rag_context_design.md for the full rationale. ---
+
+RAG_CANDIDATE_TOP_K = 20
+RAG_MAX_CONTEXT_CHUNKS = 8
+RAG_MAX_CONTEXT_CHARS = 10000
+RAG_MAX_EXPANSION_PER_SEED = 1
+RAG_MAX_CHUNKS_PER_SUBSECTION = 2
+RAG_MAX_CHUNKS_PER_SECTION = 3

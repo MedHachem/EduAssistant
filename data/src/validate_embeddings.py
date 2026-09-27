@@ -96,20 +96,25 @@ def _numerical_errors(vectors: np.ndarray) -> list[str]:
 
 
 def _duplicate_id_errors(records: list[dict]) -> list[str]:
+    # Uses .get() defensively: a record missing one of these keys entirely
+    # is already reported by _record_schema_errors' jsonschema check -- this
+    # function must not itself crash on that same malformed record (dict
+    # literal evaluation in validate() would abort every other check too).
     errors = []
     seen_embedding_ids: set[str] = set()
     seen_chunk_ids_per_model_rev: dict[tuple, set[str]] = {}
     for rec in records:
-        eid = rec["embedding_id"]
+        eid = rec.get("embedding_id")
         if eid in seen_embedding_ids:
             errors.append(f"duplicate embedding_id: {eid}")
         seen_embedding_ids.add(eid)
 
-        key = (rec["embedding_model"], rec["model_revision"])
+        key = (rec.get("embedding_model"), rec.get("model_revision"))
         seen = seen_chunk_ids_per_model_rev.setdefault(key, set())
-        if rec["chunk_id"] in seen:
-            errors.append(f"duplicate chunk_id {rec['chunk_id']!r} within model/revision {key}")
-        seen.add(rec["chunk_id"])
+        chunk_id = rec.get("chunk_id")
+        if chunk_id in seen:
+            errors.append(f"duplicate chunk_id {chunk_id!r} within model/revision {key}")
+        seen.add(chunk_id)
     return errors
 
 
@@ -147,11 +152,15 @@ def _chunk_coverage_errors(records: list[dict], chunks_doc: dict | None) -> list
 
 
 def _content_hash_errors(records: list[dict], chunks_doc: dict | None, chapter_title: str | None) -> list[str]:
+    # .get() throughout: a record missing content_hash/embedding_id/chunk_id
+    # entirely is already reported by _record_schema_errors -- this function
+    # must report a clean error for it too, not crash (see _duplicate_id_errors).
     errors = []
     hash_re_ok = lambda h: isinstance(h, str) and h.startswith("sha256:") and len(h) == 71
     for rec in records:
-        if not hash_re_ok(rec["content_hash"]):
-            errors.append(f"record {rec['embedding_id']}: malformed content_hash {rec['content_hash']!r}")
+        content_hash_value = rec.get("content_hash")
+        if not hash_re_ok(content_hash_value):
+            errors.append(f"record {rec.get('embedding_id')}: malformed content_hash {content_hash_value!r}")
 
     if chunks_doc is None:
         return errors
@@ -159,31 +168,33 @@ def _content_hash_errors(records: list[dict], chunks_doc: dict | None, chapter_t
     for rec in records:
         if rec.get("status") == "stale":
             continue  # the source chunk no longer exists -- nothing to recompute against
-        chunk = chunks_by_id.get(rec["chunk_id"])
+        chunk = chunks_by_id.get(rec.get("chunk_id"))
         if chunk is None:
             continue  # already reported by _chunk_coverage_errors
         expected_input = build_embedding_input(chunk, chapter_title)
         expected_hash = content_hash(expected_input)
-        if rec["content_hash"] != expected_hash:
+        if rec.get("content_hash") != expected_hash:
             errors.append(
-                f"record {rec['embedding_id']}: content_hash {rec['content_hash']} does not match a fresh "
-                f"recomputation of build_embedding_input for chunk {rec['chunk_id']!r} -- the chunk or the "
+                f"record {rec.get('embedding_id')}: content_hash {rec.get('content_hash')} does not match a fresh "
+                f"recomputation of build_embedding_input for chunk {rec.get('chunk_id')!r} -- the chunk or the "
                 f"embedding-input template changed since this record was written"
             )
     return errors
 
 
 def _manifest_consistency_errors(manifest: dict, records: list[dict]) -> list[str]:
+    # .get() throughout -- see _duplicate_id_errors for why.
     errors = []
+    manifest_model = manifest.get("embedding_model", {})
     for rec in records:
-        if rec["embedding_model"] != manifest["embedding_model"]["name"]:
-            errors.append(f"record {rec['embedding_id']}: embedding_model {rec['embedding_model']!r} != manifest {manifest['embedding_model']['name']!r}")
-        if rec["model_revision"] != manifest["embedding_model"]["revision"]:
-            errors.append(f"record {rec['embedding_id']}: model_revision {rec['model_revision']!r} != manifest {manifest['embedding_model']['revision']!r}")
-        if rec["embedding_dimension"] != manifest["embedding_model"]["dimension"]:
-            errors.append(f"record {rec['embedding_id']}: embedding_dimension {rec['embedding_dimension']} != manifest {manifest['embedding_model']['dimension']}")
-        if rec["normalization_strategy"] != manifest["normalization_strategy"]:
-            errors.append(f"record {rec['embedding_id']}: normalization_strategy {rec['normalization_strategy']!r} != manifest {manifest['normalization_strategy']!r}")
+        if rec.get("embedding_model") != manifest_model.get("name"):
+            errors.append(f"record {rec.get('embedding_id')}: embedding_model {rec.get('embedding_model')!r} != manifest {manifest_model.get('name')!r}")
+        if rec.get("model_revision") != manifest_model.get("revision"):
+            errors.append(f"record {rec.get('embedding_id')}: model_revision {rec.get('model_revision')!r} != manifest {manifest_model.get('revision')!r}")
+        if rec.get("embedding_dimension") != manifest_model.get("dimension"):
+            errors.append(f"record {rec.get('embedding_id')}: embedding_dimension {rec.get('embedding_dimension')} != manifest {manifest_model.get('dimension')}")
+        if rec.get("normalization_strategy") != manifest.get("normalization_strategy"):
+            errors.append(f"record {rec.get('embedding_id')}: normalization_strategy {rec.get('normalization_strategy')!r} != manifest {manifest.get('normalization_strategy')!r}")
     return errors
 
 

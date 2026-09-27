@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eduassistant.local/schema/search_result.schema.json",
+  "title": "SemanticSearchResult",
+  "description": "Phase 13. The result contract returned by data/src/search_embeddings.py's search() function -- one ranked chunk match for a single query. See data/schema/semantic_search_design.md §6 for the full rationale. `text` is resolved from the chapter's own knowledge_chunks.json at search time -- it is NEVER stored in PostgreSQL/embeddings_1024, which stays a ranked-pointer index, not an authoritative content store.",
+  "type": "object",
+
+  "$defs": {
+    "SearchResult": {
+      "type": "object",
+      "required": [
+        "chunk_id", "chapter_id", "score", "section_id", "subsection_id",
+        "content_role", "pdf_pages", "topics", "concepts", "item_types",
+        "has_uncertain_content", "embedding_model", "model_revision", "text"
+      ],
+      "properties": {
+        "chunk_id": { "type": "string", "description": "FK to knowledge_chunks.json's own chunk_id -- reused verbatim." },
+        "chapter_id": { "type": "string" },
+        "score": {
+          "type": "number",
+          "description": "Cosine similarity computed by PostgreSQL as 1 - (embedding <=> query_vector). Higher is better. Mathematically in [-1, 1]; empirically closer to [0, 1] for related text, but this is NOT a guaranteed bound and NOT a threshold -- see semantic_search_design.md §7/§9. Never called 'confidence'."
+        },
+        "section_id": { "type": ["string", "null"] },
+        "subsection_id": { "type": ["string", "null"] },
+        "content_role": { "type": "string", "enum": ["statement", "correction"] },
+        "pdf_pages": { "type": "array", "items": { "type": "integer", "minimum": 1 } },
+        "topics": { "type": "array", "items": { "type": "string" } },
+        "concepts": { "type": "array", "items": { "type": "string" } },
+        "item_types": { "type": "array", "items": { "type": "string" } },
+        "has_uncertain_content": { "type": "boolean" },
+        "embedding_model": { "type": "string", "description": "e.g. 'BAAI/bge-m3' -- the model that produced BOTH this row's stored vector and the query vector it was ranked against (see §9's compatibility rule)." },
+        "model_revision": { "type": "string" },
+        "text": { "type": "string", "description": "Resolved from the chapter's knowledge_chunks.json at search time -- the one and only authoritative source of chunk prose, never duplicated into PostgreSQL." }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "type": "array",
+  "items": { "$ref": "#/$defs/SearchResult" }
+}
