@@ -6,6 +6,7 @@ import { FigureReviewRound } from './features/admin/figure-review/figure-review'
 const pipelineStage = () => import('./features/admin/ai-pipeline/pipeline-stage').then((m) => m.PipelineStage);
 const figureReview = () => import('./features/admin/figure-review/figure-review').then((m) => m.FigureReview);
 const figureAssociation = () => import('./features/admin/figure-association/figure-association').then((m) => m.FigureAssociation);
+const ragAsk = () => import('./features/admin/ai-pipeline/rag-ask/rag-ask').then((m) => m.RagAsk);
 
 const FIGURE_REVIEW_ROUND_3: FigureReviewRound = {
   reviewFile: 'visual_elements_review_v3.json',
@@ -71,7 +72,7 @@ export const routes: Routes = [
         title: 'Admin · Figure ↔ Knowledge',
         loadComponent: figureAssociation,
       },
-      { path: 'ai-pipeline/rag', title: 'Admin · RAG', loadComponent: pipelineStage, data: { stage: PIPELINE_STAGES.rag } },
+      { path: 'ai-pipeline/rag', title: 'Admin · RAG', loadComponent: ragAsk },
 
       // Former URLs
       { path: 'data-pipeline', redirectTo: 'data-injection' },

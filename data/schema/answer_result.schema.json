@@ -1,0 +1,99 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://eduassistant.local/schema/answer_result.schema.json",
+  "title": "AnswerResult",
+  "description": "Phase 15. The structured result returned by data/src/generate_answer.py -- consumes an existing RagContext (rag_context.py, unchanged) and a Gemini-generated answer, after deterministic structural + provenance validation. See data/schema/llm_answer_generation_design.md §10/§11 for the full rationale. This schema describes generate_answer.py's OWN output -- it is NOT the schema Gemini itself is asked to produce (see GEMINI_RESPONSE_SCHEMA in generate_answer.py for that narrower, model-facing shape).",
+  "type": "object",
+
+  "$defs": {
+    "AnswerStatus": {
+      "type": "string",
+      "enum": ["ANSWERED", "INSUFFICIENT_CONTEXT", "CONFLICTING_CONTEXT", "VALIDATION_FAILED"],
+      "description": "Exactly the four statuses justified by llm_answer_generation_design.md §6/§10 -- ANSWERED/INSUFFICIENT_CONTEXT/CONFLICTING_CONTEXT may be chosen by the model itself (within GEMINI_RESPONSE_SCHEMA's own narrower enum); VALIDATION_FAILED is assigned ONLY by generate_answer.py's own deterministic validator, never requested from or returned by the model."
+    },
+
+    "SupportingChunk": {
+      "type": "object",
+      "description": "Resolved by generate_answer.py from the RagContext it was given -- never from anything the model claims about a chunk beyond its bare chunk_id.",
+      "required": ["chunk_id", "chapter_id", "section_id", "subsection_id", "pdf_pages"],
+      "properties": {
+        "chunk_id": { "type": "string" },
+        "chapter_id": { "type": "string" },
+        "section_id": { "type": ["string", "null"] },
+        "subsection_id": { "type": ["string", "null"] },
+        "pdf_pages": { "type": "array", "items": { "type": "integer", "minimum": 1 } }
+      },
+      "additionalProperties": false
+    },
+
+    "Grounding": {
+      "type": "object",
+      "description": "Plain, verifiable facts about what was used -- never a manufactured numeric confidence/probability (llm_answer_generation_design.md §10).",
+      "required": ["context_chunk_count", "cited_chunk_count", "has_uncertain_source", "has_review_required_source"],
+      "properties": {
+        "context_chunk_count": { "type": "integer", "minimum": 0, "description": "Passthrough of RagContext.context_chunk_count." },
+        "cited_chunk_count": { "type": "integer", "minimum": 0, "description": "How many of those the answer actually cites (post-validation)." },
+        "has_uncertain_source": { "type": "boolean" },
+        "has_review_required_source": { "type": "boolean" }
+      },
+      "additionalProperties": false
+    },
+
+    "Provenance": {
+      "type": "object",
+      "required": ["chapter_id", "source_chunks_hash"],
+      "properties": {
+        "chapter_id": { "type": "string" },
+        "source_chunks_hash": { "type": ["string", "null"], "pattern": "^sha256:[0-9a-f]{64}$" }
+      },
+      "additionalProperties": false
+    },
+
+    "ModelMetadata": {
+      "type": "object",
+      "required": ["provider", "model", "model_revision"],
+      "properties": {
+        "provider": { "type": "string" },
+        "model": { "type": "string" },
+        "model_revision": { "type": ["string", "null"], "description": "Not every provider exposes one -- see llm_answer_generation_design.md §4/§13." }
+      },
+      "additionalProperties": false
+    },
+
+    "GenerationMetadata": {
+      "type": "object",
+      "required": ["prompt_version", "generation_config", "generated_at"],
+      "properties": {
+        "prompt_version": { "type": "string" },
+        "generation_config": {
+          "type": "object",
+          "required": ["temperature", "max_output_tokens"],
+          "properties": {
+            "temperature": { "type": "number" },
+            "max_output_tokens": { "type": "integer", "minimum": 1 },
+            "seed": { "type": ["integer", "null"] }
+          },
+          "additionalProperties": false
+        },
+        "generated_at": { "type": "string", "format": "date-time" }
+      },
+      "additionalProperties": false
+    }
+  },
+
+  "required": [
+    "answer", "status", "supporting_chunks", "warnings", "grounding",
+    "provenance", "model_metadata", "generation_metadata"
+  ],
+  "properties": {
+    "answer": { "type": "string" },
+    "status": { "$ref": "#/$defs/AnswerStatus" },
+    "supporting_chunks": { "type": "array", "items": { "$ref": "#/$defs/SupportingChunk" } },
+    "warnings": { "type": "array", "items": { "type": "string" } },
+    "grounding": { "$ref": "#/$defs/Grounding" },
+    "provenance": { "$ref": "#/$defs/Provenance" },
+    "model_metadata": { "$ref": "#/$defs/ModelMetadata" },
+    "generation_metadata": { "$ref": "#/$defs/GenerationMetadata" }
+  },
+  "additionalProperties": false
+}

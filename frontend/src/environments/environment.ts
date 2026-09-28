@@ -1,6 +1,11 @@
 export const environment = {
   production: false,
   apiUrl: '/api',
+  // FastAPI (data/src/api/) -- Semantic Search / RAG Context Assembly / Gemini
+  // Answer Generation, POST /api/v1/ask. A distinct prefix from apiUrl (Spring
+  // Boot) because it's a separate service; proxy.conf.json routes it to a
+  // different target (its own "/api/v1" entry, matched before the "/api" one).
+  aiApiUrl: '/api/v1',
   // Temporary: skip real authentication until the Spring Boot auth (JWT) is ready.
   authBypass: true,
   documents: {

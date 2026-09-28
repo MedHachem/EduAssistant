@@ -591,3 +591,51 @@ RAG_MAX_CONTEXT_CHARS = 10000
 RAG_MAX_EXPANSION_PER_SEED = 1
 RAG_MAX_CHUNKS_PER_SUBSECTION = 2
 RAG_MAX_CHUNKS_PER_SECTION = 3
+
+
+# --- Phase 15: LLM Answer Generation (generate_answer.py) -- consumes an
+# existing RagContext (rag_context.py, unchanged) and produces a
+# structured, deterministically-validated AnswerResult via the Gemini
+# API. Never re-runs semantic search, never re-assembles context, never
+# queries PostgreSQL directly. See
+# data/schema/llm_answer_generation_design.md for the full rationale --
+# temperature fixed low (favors grounded, consistent phrasing over
+# creative variation, design §13); model pinned explicitly, never a
+# bare/movable alias (same discipline as EMBEDDING_MODEL_REVISION). ---
+
+GEMINI_MODEL = "gemini-3.8-flash"
+GEMINI_TEMPERATURE = 0.1
+GEMINI_MAX_OUTPUT_TOKENS = 1024
+GEMINI_API_TIMEOUT_SECONDS = 30
+LLM_ANSWER_PROMPT_VERSION = "llm-answer-prompt-v1"
+
+
+def gemini_api_key() -> str | None:
+    """Reads GEMINI_API_KEY from the environment (see .env) -- never
+    hardcoded, never committed, never logged. Returns None (rather than
+    raising) if unset, so callers can produce a clear, specific error at
+    the point the key is actually needed."""
+    import os
+
+    _load_env_file_if_present()
+    return os.environ.get("GEMINI_API_KEY")
+
+
+# --- Phase 16: FastAPI API layer (data/src/api/) -- a thin HTTP
+# orchestration layer over the already-validated Semantic Search / RAG
+# Context Assembly / Gemini Answer Generation pipeline. Never
+# reimplements any of their logic -- search top_k, Gemini settings, and
+# every RAG limit are already configurable above; this phase introduces
+# exactly one new setting. See data/schema/fastapi_api_design.md. ---
+
+def api_cors_origins() -> list[str]:
+    """Reads API_CORS_ORIGINS (comma-separated) from the environment --
+    same .env convention as database_url()/gemini_api_key(). Defaults to
+    the Angular dev server's own already-established port
+    (frontend/proxy.conf.json) -- local development only, never a
+    hardcoded production origin."""
+    import os
+
+    _load_env_file_if_present()
+    raw = os.environ.get("API_CORS_ORIGINS", "http://localhost:4200")
+    return [origin.strip() for origin in raw.split(",") if origin.strip()]

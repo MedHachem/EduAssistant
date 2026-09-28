@@ -1,0 +1,105 @@
+<header class="page-header">
+  <span class="kicker">Build AI Pipeline</span>
+  <h1>RAG — Ask the AI Teacher</h1>
+  <p>Semantic Search → RAG Context Assembly → Gemini Answer Generation, exercised end-to-end via <code>POST /api/v1/ask</code>.</p>
+</header>
+
+<div class="grid">
+  <section class="card">
+    <h2>Question</h2>
+
+    <label>
+      Chapter ID
+      <input
+        type="text"
+        [value]="chapterId()"
+        (input)="chapterId.set($any($event.target).value)"
+        placeholder="math-4eme-tome1-ch01"
+      />
+    </label>
+
+    <label>
+      Query
+      <textarea
+        rows="4"
+        [value]="query()"
+        (input)="query.set($any($event.target).value)"
+        placeholder="Comment étudier les variations d'une fonction ?"
+      ></textarea>
+    </label>
+
+    <button type="button" class="btn-primary" [disabled]="loading() || !canSubmit()" (click)="submit()">
+      {{ loading() ? 'Asking…' : 'Ask' }}
+    </button>
+
+    @if (error(); as e) {
+      <p class="error">{{ e }}</p>
+    }
+  </section>
+
+  <section class="card">
+    @if (result(); as r) {
+      <h2>
+        Answer
+        <span class="badge" [attr.data-status]="r.status">{{ statusLabel(r.status) }}</span>
+      </h2>
+
+      @if (r.answer) {
+        <div class="answer">
+          <app-math-text [text]="r.answer" [markdown]="true" />
+        </div>
+      } @else {
+        <p class="muted">(no answer text for this status)</p>
+      }
+
+      @if (r.warnings.length) {
+        <h3>Warnings</h3>
+        <ul class="warnings">
+          @for (w of r.warnings; track w) {
+            <li>{{ w }}</li>
+          }
+        </ul>
+      }
+
+      @if (r.supporting_chunks.length) {
+        <h3>Supporting chunks</h3>
+        <ul class="chunks">
+          @for (c of r.supporting_chunks; track c.chunk_id) {
+            <li>
+              <code>{{ c.chunk_id }}</code>
+              <span class="muted">{{ chunkLocationLabel(c) }}</span>
+            </li>
+          }
+        </ul>
+      }
+
+      <h3>Details</h3>
+      <dl class="details">
+        <dt>Chapter</dt>
+        <dd>{{ r.provenance.chapter_id }}</dd>
+
+        <dt>Source hash</dt>
+        <dd><code>{{ r.provenance.source_chunks_hash ?? '—' }}</code></dd>
+
+        <dt>Context</dt>
+        <dd>{{ r.grounding.context_chunk_count }} retrieved · {{ r.grounding.cited_chunk_count }} cited</dd>
+
+        <dt>Uncertain / review-required source</dt>
+        <dd>{{ r.grounding.has_uncertain_source ? 'yes' : 'no' }} / {{ r.grounding.has_review_required_source ? 'yes' : 'no' }}</dd>
+
+        <dt>Provider / model</dt>
+        <dd>
+          {{ r.model_metadata.provider }} · {{ r.model_metadata.model }}
+          @if (r.model_metadata.model_revision) {
+            ({{ r.model_metadata.model_revision }})
+          }
+        </dd>
+
+        <dt>Generated at</dt>
+        <dd>{{ r.generation_metadata.generated_at }}</dd>
+      </dl>
+    } @else if (!loading()) {
+      <p class="muted">Ask a question to see the rendered <code>AnswerResult</code>.</p>
+    }
+  </section>
+</div>
